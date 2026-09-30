@@ -111,6 +111,9 @@ Consulte [ETHICS.md](ETHICS.md).
 | [Nuclear & CBRNE OSINT](catalog/NUCLEAR-CBRNE.md) | High-consequence public-source research with strict verification |
 | [Awesome Lists & Meta-indexes](catalog/AWESOME-REPOSITORIES.md) | Reference collections and discovery hubs |
 | [Validation](VALIDATION.md) | Verification status, link health and evidence quality |
+| [Machine-readable Index](catalog/INDEX.generated.md) | Generated catalog from canonical JSON data |
+| [Data Model](docs/DATA-MODEL.md) | Schema, identifiers and validation rules |
+| [Roadmap](ROADMAP.md) | Project evolution and coverage plan |
 | [Contributing](CONTRIBUTING.md) | How to add or correct resources |
 
 ---
@@ -242,7 +245,9 @@ OSINT4ALL is intended to evolve from a catalog into a maintainable intelligence-
 Resource → Country/Federation → Discipline → Use Case → Source Type → Validation → Evidence
 ```
 
-Future-friendly additions include machine-readable YAML/JSON catalogs, automated link-health checks, searchable GitHub Pages, contribution templates, source scoring and change history.
+Version **0.2** now includes a canonical machine-readable catalog in `data/resources.json`, JSON Schema, canonical taxonomy registry, generated Markdown index, contribution forms, CI validation and scheduled advisory link-health checks.
+
+The next major step is the **country atlas**: expanding federal/national and subnational sources while preserving the same metadata model. Searchable GitHub Pages and richer provenance/scoring remain planned.
 
 ---
 
