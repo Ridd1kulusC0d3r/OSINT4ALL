@@ -1,149 +1,114 @@
 # OSINT4ALL 🌍
 
-> **A bilingual, jurisdiction-aware OSINT atlas organized by intelligence discipline, country/federation, and investigative use case.**  
-> **Um atlas OSINT bilíngue, orientado por jurisdição, organizado por disciplina de inteligência, país/federação e caso de uso.**
+> **Open Intelligence Atlas · Atlas Aberto de Inteligência**  
+> Jurisdiction-aware · evidence-first · machine-readable · bilingual · AI-assisted with human validation
 
 [![Language](https://img.shields.io/badge/language-English%20%7C%20Portugu%C3%AAs-0A66C2)](#languages)
-[![Scope](https://img.shields.io/badge/scope-OSINT%20%2B%20INTs-222222)](#intelligence-disciplines)
+[![Catalog](https://img.shields.io/badge/catalog-v0.3.0-blue)](data/resources.json)
+[![Resources](https://img.shields.io/badge/resources-59-informational)](catalog/INDEX.generated.md)
 [![Ethics](https://img.shields.io/badge/use-ethical%20%26%20lawful-success)](ETHICS.md)
-[![AI Assisted](https://img.shields.io/badge/curation-AI--assisted-orange)](#ai-assisted-curation-notice)
+[![AI Assisted](https://img.shields.io/badge/curation-AI--assisted-orange)](#ai-assisted-curation)
+
+## What this repository is / O que este repositório é
+
+**OSINT4ALL** is not meant to become the longest list of links on GitHub. It is being built as a **maintainable intelligence-resource atlas** that answers:
+
+1. **Where does a source apply? / Onde se aplica?**
+2. **Which intelligence discipline does it support? / Qual disciplina apoia?**
+3. **What analytical task does it solve? / Qual tarefa resolve?**
+4. **How current and trustworthy is the catalog entry? / Quão atual e confiável é a entrada?**
+5. **How should evidence and provenance be preserved? / Como preservar evidência e proveniência?**
+
+The canonical data source is [data/resources.json](data/resources.json). Markdown catalogs explain methodology and use; generated views come from the structured data.
 
 ---
 
-## English
+## Start here / Comece aqui
 
-### What is OSINT4ALL?
-
-**OSINT4ALL** is a community-oriented knowledge base for analysts, researchers, journalists, investigators, defenders and students who work with public information.
-
-Instead of being another flat list of links, the repository is designed around three questions:
-
-1. **Where does this source apply?** — country, federation, region or global scope.
-2. **What intelligence discipline does it support?** — OSINT, SOCMINT, GEOINT, IMINT, CTI, FININT, etc.
-3. **What investigative task does it help solve?** — people search, companies, infrastructure, geolocation, conflict verification, environmental monitoring, cyber threat intelligence, satellite analysis and more.
-
-### AI-assisted curation notice
-
-This repository is **created and maintained with the assistance of Artificial Intelligence** for classification, translation, normalization, deduplication and drafting.
-
-AI assistance can introduce:
-
-- outdated links;
-- incorrect descriptions;
-- duplicated resources;
-- wrong jurisdiction tags;
-- hallucinated capabilities;
-- licensing or access assumptions that have changed;
-- tools that are abandoned, renamed, archived or no longer safe.
-
-**Do not treat inclusion as verification, endorsement or proof of reliability.** Analysts must independently validate every source before operational use.
-
-See [VALIDATION.md](VALIDATION.md).
-
-### Ethical and lawful use
-
-OSINT is not a synonym for surveillance without limits.
-
-Use this repository only for **lawful, ethical and authorized purposes**. Respect privacy, data-protection law, terms of service, proportionality, source safety and the rights of individuals.
-
-Do not use this catalog to facilitate stalking, harassment, doxxing, coercion, discrimination, unauthorized access, targeting of vulnerable people, or physical harm.
-
-See [ETHICS.md](ETHICS.md).
-
----
-
-## Português
-
-### O que é o OSINT4ALL?
-
-O **OSINT4ALL** é uma base de conhecimento comunitária para analistas, pesquisadores, jornalistas, investigadores, profissionais de defesa e estudantes que trabalham com informações públicas.
-
-Em vez de ser apenas mais uma lista gigantesca de links, o repositório é estruturado em torno de três perguntas:
-
-1. **Onde essa fonte se aplica?** — país, federação, região ou escopo global.
-2. **Qual disciplina de inteligência ela apoia?** — OSINT, SOCMINT, GEOINT, IMINT, CTI, FININT etc.
-3. **Qual problema investigativo ela ajuda a resolver?** — pessoas, empresas, infraestrutura, geolocalização, conflitos, meio ambiente, inteligência de ameaças, satélites e muito mais.
-
-### Aviso sobre curadoria com IA
-
-Este repositório é **criado e mantido com auxílio de Inteligência Artificial** para classificação, tradução, normalização, deduplicação e redação.
-
-O uso de IA pode introduzir:
-
-- links desatualizados;
-- descrições incorretas;
-- recursos duplicados;
-- classificação jurisdicional errada;
-- capacidades alucinadas;
-- premissas de licença ou acesso que mudaram;
-- ferramentas abandonadas, renomeadas ou inseguras.
-
-**A presença de um recurso aqui não significa validação, recomendação ou comprovação de confiabilidade.** Todo analista deve verificar cada fonte antes do uso operacional.
-
-Consulte [VALIDATION.md](VALIDATION.md).
-
-### Uso ético e legal
-
-OSINT não significa vigilância sem limites.
-
-Use este repositório apenas para **finalidades legais, éticas e autorizadas**. Respeite privacidade, legislação de proteção de dados, termos de uso, proporcionalidade, segurança de fontes e direitos individuais.
-
-Não use este catálogo para stalking, assédio, doxxing, coerção, discriminação, acesso não autorizado, direcionamento de pessoas vulneráveis ou dano físico.
-
-Consulte [ETHICS.md](ETHICS.md).
-
----
-
-## Navigation / Navegação
-
-| Area | Purpose / Finalidade |
+| Need / Necessidade | Go to / Vá para |
 |---|---|
-| [Intelligence Disciplines](docs/INTELLIGENCE-DISCIPLINES.md) | Working taxonomy of intelligence disciplines and OSINT specializations |
-| [Country & Federation Index](countries/README.md) | Jurisdiction-first entry point |
-| [Brazil](countries/BR/README.md) | Initial country profile with federal, state and local applicability |
-| [SOCMINT](catalog/SOCMINT.md) | Social media intelligence |
-| [IMINT & GEOINT](catalog/IMINT-GEOINT.md) | Imagery, geolocation and geospatial analysis |
-| [Cyber Threat Intelligence & OT](catalog/CTI-OT.md) | CTI, infrastructure exposure and OT/ICS |
-| [People & Identity OSINT](catalog/PEOPLE-OSINT.md) | Usernames, email, phone, public records and identity correlation |
-| [Missing Persons OSINT](catalog/MISSING-PERSONS-OSINT.md) | Ethical people-centric investigation, validation and passive-recon methodology |
-| [Space & Satellite OSINT](catalog/SPACE-SATELLITE.md) | Orbital tracking and remote sensing |
-| [Conflict OSINT](catalog/CONFLICT-OSINT.md) | Conflict monitoring, verification and evidentiary workflows |
-| [Environmental OSINT](catalog/ENVIRONMENTAL-OSINT.md) | Deforestation, land-use change and environmental investigations |
-| [Nuclear & CBRNE OSINT](catalog/NUCLEAR-CBRNE.md) | High-consequence public-source research with strict verification |
-| [Awesome Lists & Meta-indexes](catalog/AWESOME-REPOSITORIES.md) | Reference collections and discovery hubs |
-| [Validation](VALIDATION.md) | Verification status, link health and evidence quality |
-| [Tool Selection Policy](docs/TOOL-SELECTION-POLICY.md) | Admission, maintenance and exclusion criteria |
-| [Machine-readable Index](catalog/INDEX.generated.md) | Generated catalog from canonical JSON data |
-| [Data Model](docs/DATA-MODEL.md) | Schema, identifiers and validation rules |
-| [Roadmap](ROADMAP.md) | Project evolution and coverage plan |
-| [Contributing](CONTRIBUTING.md) | How to add or correct resources |
+| Find any structured resource | [Generated Resource Index](catalog/INDEX.generated.md) |
+| Understand intelligence disciplines | [Intelligence Disciplines](docs/INTELLIGENCE-DISCIPLINES.md) |
+| Search techniques and discovery | [Search & Discovery](catalog/SEARCH-DISCOVERY.md) |
+| Preserve web/media evidence | [Evidence Capture & Preservation](catalog/EVIDENCE-PRESERVATION.md) |
+| People / usernames / email / phone | [People OSINT](catalog/PEOPLE-OSINT.md) |
+| Missing-person methodology | [Missing Persons OSINT](catalog/MISSING-PERSONS-OSINT.md) |
+| Social platforms | [SOCMINT](catalog/SOCMINT.md) |
+| Image / geolocation / maps | [IMINT & GEOINT](catalog/IMINT-GEOINT.md) |
+| Companies / ownership / finance | [Corporate & Financial OSINT](catalog/CORPORATE-FINANCIAL.md) |
+| Aircraft / vessels / transport | [Transport / Maritime / Aviation](catalog/TRANSPORT-MARITIME-AVIATION.md) |
+| Satellite / orbital / Earth observation | [Space & Satellite](catalog/SPACE-SATELLITE.md) |
+| Cyber threat intelligence | [CTI & OT](catalog/CTI-OT.md) |
+| Conflict verification | [Conflict OSINT](catalog/CONFLICT-OSINT.md) |
+| Environment / deforestation | [Environmental OSINT](catalog/ENVIRONMENTAL-OSINT.md) |
+| Nuclear / CBRNE public-source verification | [Nuclear & CBRNE](catalog/NUCLEAR-CBRNE.md) |
+| Academic / media / monitoring | [Academic, Media & Monitoring](catalog/ACADEMIC-MEDIA-MONITORING.md) |
+| AI assistance | [AI-Assisted OSINT](catalog/AI-ASSISTED-OSINT.md) |
+| Sources by country | [Country & Federation Atlas](countries/README.md) |
+| Brazil | [Brazil Country Profile](countries/BR/README.md) |
+| Upstream lists we learn from | [Upstream Reference Ecosystems](docs/UPSTREAM-SOURCES.md) |
+| Project evolution | [Analyst-Centered Roadmap](docs/ANALYST-ROADMAP.md) |
+| Add/correct a resource | [Contributing](CONTRIBUTING.md) |
 
 ---
 
-## Intelligence disciplines
+## Analyst workflow / Fluxo do analista
 
-OSINT4ALL separates **formal intelligence disciplines** from **practitioner specializations**. Terminology varies between governments, academia and industry, so the repository uses a practical taxonomy rather than pretending the world agreed on one naming scheme. Humanity has not even standardized power plugs; intelligence acronyms never had a chance.
-
-Core groups tracked here include:
-
-**OSINT · HUMINT · SIGINT · COMINT · ELINT · FISINT · GEOINT · IMINT · MASINT · TECHINT · MEDINT · FININT · CYBINT · CTI · SOCMINT · WEBINT · DNINT · DOMEX · PAI/PAI-derived intelligence · Maritime Intelligence · Aviation Intelligence · Space Intelligence · Environmental Intelligence · Nuclear/CBRNE Intelligence · Corporate/Business Intelligence · Supply-Chain Intelligence · Dark-Web/Underground Intelligence · Threat Intelligence · Identity Intelligence · Infrastructure Intelligence**
-
-Read the definitions, overlaps and repository mapping in [docs/INTELLIGENCE-DISCIPLINES.md](docs/INTELLIGENCE-DISCIPLINES.md).
-
----
-
-## Jurisdiction model
-
-Resources are organized using ISO country codes and, where useful, subnational/federal applicability.
+OSINT4ALL is organized around an intelligence workflow rather than a random toolbox.
 
 ```text
-countries/
-├── README.md
-└── BR/
-    └── README.md
+Intelligence requirement
+        ↓
+Scope + red lines + jurisdiction
+        ↓
+Source mapping
+        ↓
+Collection
+        ↓
+Capture + provenance
+        ↓
+Normalization / entity candidates
+        ↓
+Verification + corroboration
+        ↓
+Hypotheses + alternatives
+        ↓
+Confidence assessment
+        ↓
+Intelligence product
+        ↓
+Feedback + revalidation
 ```
 
-The target long-term pattern is:
+### Evidence language
+
+Use explicit analytical labels:
+
+| Label | Meaning |
+|---|---|
+| **Observed** | Directly visible in a source |
+| **Claimed** | Asserted by a source |
+| **Corroborated** | Supported by independent evidence |
+| **Inferred** | Analytical conclusion derived from evidence |
+| **Unresolved** | Plausible but insufficiently supported |
+
+A username hit is a lead. A search result is a lead. An AI answer is not a source. Humanity did invent entire careers by forgetting these three sentences.
+
+---
+
+## Coverage map / Mapa de cobertura
+
+### Core collection & intelligence disciplines
+
+**OSINT · HUMINT · SIGINT · COMINT · ELINT · FISINT · GEOINT · IMINT · MASINT · TECHINT · CYBINT · CTI · MEDINT · FININT · DOMEX · WEBINT · DNINT · SOCMINT**
+
+See [docs/INTELLIGENCE-DISCIPLINES.md](docs/INTELLIGENCE-DISCIPLINES.md) for definitions and overlap.
+
+### Investigative domains tracked
+
+**Search & discovery · People & identity · Missing persons · SOCMINT · GEOINT · IMINT · Media verification · Evidence preservation · Web archives · Corporate intelligence · Financial intelligence · Public records · Cyber infrastructure · CTI · OT/ICS defensive research · Space & satellite · Aviation · Maritime · Transport · Environmental intelligence · Conflict verification · Nuclear/CBRNE public-source research · Academic/grey literature · News/media · Monitoring/RSS · AI-assisted analysis · Training**
+
+### Jurisdiction model
 
 ```text
 countries/<ISO-3166-1 alpha-2>/
@@ -153,60 +118,174 @@ countries/<ISO-3166-1 alpha-2>/
 └── sources/
 ```
 
-Each country page should distinguish:
+Country packs should distinguish:
 
-- federal/national sources;
-- state/province/region sources;
-- municipal/local sources;
-- courts and justice;
-- companies and beneficial ownership;
-- land/property;
-- procurement and public spending;
-- transport and infrastructure;
-- elections and political finance;
-- environmental data;
-- cyber and digital infrastructure;
-- archives and media;
-- legal restrictions and privacy considerations.
+**national/federal · states/provinces/regions · municipal/local · courts · companies · property/land · procurement · elections/civic data · environment · transport · infrastructure · archives/media · privacy/legal constraints**
 
 ---
 
-## Resource status
+## Reference ecosystems incorporated
 
-Every resource should gradually receive a validation marker:
+OSINT4ALL uses major lists as **upstream discovery ecosystems**, not as content to blindly mirror.
 
-| Marker | Meaning |
+| Upstream | What it contributes |
 |---|---|
-| 🟢 Verified | URL and core capability manually checked |
-| 🟡 Needs review | Plausible/useful, but not recently validated |
-| 🟠 Changed | Capability, ownership, access model or URL changed |
-| 🔴 Broken/unsafe | Dead, compromised, misleading or unsuitable |
-| ⚪ Historical | Retained for research/history, not recommended operationally |
+| [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint) | Classical OSINT taxonomy: search, people, SOCMINT, domains, archives, imagery, academic research, geospatial, monitoring and CTI |
+| [Astrosp/Awesome-OSINT-List](https://github.com/Astrosp/Awesome-OSINT-List) | Broad modern coverage: AI, identity resolution, media verification, metadata, vehicles, aviation, maritime, finance, blockchain, government/public records and training |
+| [Trace Labs repositories](https://github.com/orgs/tracelabs/repositories) | Missing-person methodology, passive research, evidence quality, analyst safety, VM/workstation, training and tooling-selection discipline |
+| [Bellingcat Toolkit](https://bellingcat.gitbook.io/toolkit) | Verification-oriented investigation resources |
+| [OSINT Framework](https://osintframework.com/) | Discovery-tree approach |
+| [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) | Brazilian OSINT ecosystem |
 
-New AI-assisted additions default to **🟡 Needs review** until a human validates them.
-
----
-
-## Inclusion philosophy
-
-A resource belongs here when it is useful for at least one legitimate intelligence or investigative workflow and can be described by:
-
-- **jurisdiction**;
-- **discipline**;
-- **use case**;
-- **source type**;
-- **access model**;
-- **verification status**.
-
-We prefer official sources, primary data, transparent open-source projects and well-documented research. Commercial tools may be listed when they fill an important investigative gap.
+Detailed provenance and import policy: [docs/UPSTREAM-SOURCES.md](docs/UPSTREAM-SOURCES.md).
 
 ---
 
-## Safety notes
+## Trace Labs lessons adopted
 
-Some categories are inherently sensitive, especially people search, conflict monitoring, nuclear/CBRNE, critical infrastructure and OT/ICS.
+From the current Trace Labs ecosystem OSINT4ALL now incorporates:
 
-OSINT4ALL focuses on **discovery, verification, analysis and defensive research**. It does not aim to provide instructions for intrusion, physical targeting, weapon construction, sabotage, evasion of law enforcement, or harm.
+- people-centric and missing-person methodology;
+- mission definition and stopping conditions;
+- passive-research principle for sensitive cases;
+- enumeration ≠ validation;
+- threat-model thinking;
+- evidence capture and archiving;
+- analyst workstation as a reproducible environment;
+- sanitized training/challenges;
+- explicit tool-selection quality criteria.
+
+Primary references:
+
+- [Trace Labs OSINT VM](https://github.com/tracelabs/tlosint-vm)
+- [Trace Labs Awesome OSINT](https://github.com/tracelabs/awesome-osint)
+- [Trace Labs OSINT Field Manual](https://github.com/tracelabs/tofm)
+- [Trace Labs Weekly OSINT Challenges](https://github.com/tracelabs/tracelabs-weekly-osint-challenges)
+
+Historical material is retained as historical, not silently promoted as current.
+
+---
+
+## Evidence capture & preservation
+
+Discovery without preservation is fragile.
+
+OSINT4ALL now tracks tools and methods for:
+
+**web archiving · screenshots · offline copies · public-media acquisition · frame extraction · OCR · document sanitization · metadata hygiene · archive access**
+
+See [catalog/EVIDENCE-PRESERVATION.md](catalog/EVIDENCE-PRESERVATION.md).
+
+Minimum provenance for an important finding:
+
+- canonical URL;
+- capture timestamp + timezone;
+- original publication time if known;
+- source/account/author;
+- capture method;
+- archive URL when available;
+- relevant metadata;
+- analyst observation;
+- fact/claim/inference label;
+- link to the intelligence requirement.
+
+---
+
+## AI-assisted curation
+
+This repository is **AI-assisted** for classification, normalization, translation, deduplication and drafting.
+
+AI assistance can introduce:
+
+- stale links;
+- incorrect descriptions;
+- wrong jurisdiction tags;
+- duplicate identities;
+- hallucinated capabilities;
+- incorrect access/licensing assumptions.
+
+Therefore:
+
+> **AI output is never treated as a source. New AI-assisted resource entries default to 🟡 Needs review.**
+
+See [VALIDATION.md](VALIDATION.md) and [AI-Assisted OSINT](catalog/AI-ASSISTED-OSINT.md).
+
+---
+
+## Resource validation
+
+| Marker | Machine status | Meaning |
+|---|---|---|
+| 🟢 | `verified` | URL and core capability manually checked |
+| 🟡 | `needs-review` | Candidate/useful, not yet fully validated |
+| 🟠 | `changed` | Important capability/ownership/access changed |
+| 🔴 | `broken-unsafe` | Dead, compromised, misleading or unsuitable |
+| ⚪ | `historical` | Kept for historical/learning context |
+
+Selection policy: [docs/TOOL-SELECTION-POLICY.md](docs/TOOL-SELECTION-POLICY.md).
+
+---
+
+## Machine-readable architecture
+
+```text
+data/resources.json
+        │
+        ├── validated by scripts/validate_catalog.py
+        │
+        ├── taxonomy → data/taxonomies.json
+        │
+        ├── schema → schema/resource.schema.json
+        │
+        └── generated view → catalog/INDEX.generated.md
+```
+
+The CI rejects malformed IDs, duplicate canonical URLs, invalid disciplines and malformed tags. Scheduled link health raises review signals without pretending every bot-blocked website is dead. A modest concession to reality.
+
+---
+
+## Current project maturity
+
+| Layer | Status |
+|---|---|
+| Bilingual foundation | ✅ |
+| Ethics / validation / contribution policy | ✅ |
+| Machine-readable catalog | ✅ |
+| Schema + taxonomy + CI | ✅ |
+| Link health | ✅ |
+| Trace Labs methodology integration | ✅ |
+| jivoi + Astrosp upstream mapping | ✅ |
+| Evidence preservation layer | ✅ |
+| Thematic catalogs | ✅ growing |
+| Brazil country seed | ✅ |
+| Brazil federal + 27 UFs | 🚧 |
+| Evidence-first playbooks | 🚧 |
+| GitHub Pages searchable UI | planned |
+| Knowledge graph / case graph | planned |
+| Change intelligence / monitoring | planned |
+| Academy / challenges | planned |
+
+Full plan: [docs/ANALYST-ROADMAP.md](docs/ANALYST-ROADMAP.md).
+
+---
+
+## Ethical and lawful use
+
+Use OSINT4ALL for lawful, ethical and authorized research.
+
+Do not use this catalog to facilitate:
+
+- stalking or harassment;
+- doxxing;
+- coercion or discrimination;
+- unauthorized access;
+- targeting vulnerable people;
+- physical harm;
+- interference with active investigations.
+
+Sensitive domains such as people search, conflict, critical infrastructure and CBRNE are documented for **verification, defensive research and public-interest analysis**, not harm.
+
+See [ETHICS.md](ETHICS.md).
 
 ---
 
@@ -214,45 +293,35 @@ OSINT4ALL focuses on **discovery, verification, analysis and defensive research*
 
 Corrections are as valuable as additions.
 
-Before submitting a resource, record:
+Every proposed resource should identify:
 
-- canonical name and URL;
-- country/region;
-- intelligence discipline(s);
-- use case(s);
-- whether login/payment/API key is required;
-- last verified date;
-- official vs community source;
-- privacy/ethical caveats;
-- archived replacement if the original is gone.
+**canonical URL · jurisdiction · discipline · use case · source type · access model · languages · validation state · privacy/legal caveats**
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+Start with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
 ## Languages
 
-- **English**: primary documentation language for global reach.
-- **Português (pt-BR)**: first-class language for the Brazilian and Lusophone community.
+- **English** — primary global documentation language.
+- **Português (pt-BR)** — first-class language for Brazil and the Lusophone community.
 
-Country-specific pages may include local-language labels where useful, but the canonical metadata should remain understandable in English and Portuguese.
+The machine-readable metadata uses stable canonical values; human-facing documentation may be bilingual or localized.
 
 ---
 
-## Project direction
-
-OSINT4ALL is intended to evolve from a catalog into a maintainable intelligence-resource graph:
+## Long-term model
 
 ```text
-Resource → Country/Federation → Discipline → Use Case → Source Type → Validation → Evidence
+Resource ↔ Jurisdiction ↔ Discipline ↔ Use Case
+    ↕
+Entity ↔ Relationship ↔ Evidence
+    ↕
+ Case ↔ Hypothesis ↔ Assessment
 ```
 
-Version **0.2** now includes a canonical machine-readable catalog in `data/resources.json`, JSON Schema, canonical taxonomy registry, generated Markdown index, contribution forms, CI validation and scheduled advisory link-health checks.
-
-The next major step is the **country atlas**: expanding federal/national and subnational sources while preserving the same metadata model. Searchable GitHub Pages and richer provenance/scoring remain planned.
-
----
+The destination is an **open intelligence resource graph** where analysts can discover sources, understand applicability, preserve evidence, evaluate confidence and produce reproducible intelligence products.
 
 ## Disclaimer
 
-OSINT4ALL is an educational and research index. The maintainers do not control third-party tools or websites and cannot guarantee their availability, legality in every jurisdiction, accuracy, security or terms of service. Responsibility for lawful and proportionate use remains with the analyst.
+OSINT4ALL is an educational and research index. Third-party resources can change, disappear, become paid, alter their terms, or simply be wrong. Inclusion is not endorsement. Responsibility for lawful and proportionate use remains with the analyst.

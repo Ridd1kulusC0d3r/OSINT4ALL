@@ -1,5 +1,5 @@
 {
-  "catalog_version": "0.2.1",
+  "catalog_version": "0.3.0",
   "generated_policy": "AI-assisted entries default to needs-review until a human validates the canonical URL and core capability.",
   "resources": [
     {
@@ -80,6 +80,92 @@
       "last_verified": null
     },
     {
+      "id": "global-archivebox",
+      "name": "ArchiveBox",
+      "canonical_url": "https://github.com/ArchiveBox/ArchiveBox",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "evidence-preservation",
+        "web-archives"
+      ],
+      "use_cases": [
+        "web-archiving",
+        "evidence-capture"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-astrosp-awesome-osint-list",
+      "name": "Astrosp Awesome OSINT List",
+      "canonical_url": "https://github.com/Astrosp/Awesome-OSINT-List",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT",
+        "GEOINT",
+        "IMINT",
+        "CTI",
+        "FININT",
+        "CYBINT"
+      ],
+      "domains": [
+        "meta-index"
+      ],
+      "use_cases": [
+        "resource-discovery",
+        "taxonomy-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "notes": "Broad, actively maintained OSINT meta-index covering search, identity, social platforms, media verification, metadata, transport, finance, blockchain, public records, training and AI-related resources."
+    },
+    {
+      "id": "global-bellingcat-auto-archiver",
+      "name": "Bellingcat auto-archiver",
+      "canonical_url": "https://github.com/bellingcat/auto-archiver",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "evidence-preservation",
+        "web-archives"
+      ],
+      "use_cases": [
+        "web-archiving",
+        "media-preservation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-bellingcat-toolkit",
       "name": "Bellingcat Online Investigation Toolkit",
       "canonical_url": "https://bellingcat.gitbook.io/toolkit",
@@ -101,6 +187,33 @@
         "geolocation"
       ],
       "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-carbon14",
+      "name": "Carbon14",
+      "canonical_url": "https://github.com/Lazza/Carbon14",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "web-archives",
+        "web-research"
+      ],
+      "use_cases": [
+        "web-timeline",
+        "page-age-estimation"
+      ],
+      "source_type": "open-source",
       "access": "free",
       "languages": [
         "en"
@@ -162,6 +275,32 @@
       "last_verified": null
     },
     {
+      "id": "global-dangerzone",
+      "name": "Dangerzone",
+      "canonical_url": "https://github.com/freedomofpress/dangerzone",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "analyst-safety",
+        "document-analysis"
+      ],
+      "use_cases": [
+        "document-sanitization"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-exiftool",
       "name": "ExifTool",
       "canonical_url": "https://exiftool.org/",
@@ -185,6 +324,86 @@
       ],
       "status": "needs-review",
       "last_verified": null
+    },
+    {
+      "id": "global-ffmpeg",
+      "name": "FFmpeg",
+      "canonical_url": "https://ffmpeg.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "IMINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "media-forensics",
+        "media-preservation"
+      ],
+      "use_cases": [
+        "media-processing",
+        "frame-extraction"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-gallery-dl",
+      "name": "gallery-dl",
+      "canonical_url": "https://github.com/mikf/gallery-dl",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "media-preservation"
+      ],
+      "use_cases": [
+        "public-media-acquisition"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "notes": "Use only where lawful and consistent with platform terms and evidence-handling requirements."
+    },
+    {
+      "id": "global-ghunt",
+      "name": "GHunt",
+      "canonical_url": "https://github.com/mxrch/GHunt",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "public-account-research"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "notes": "Use only for lawful research into information exposed through supported public/account-authorized surfaces."
     },
     {
       "id": "global-global-fishing-watch",
@@ -241,6 +460,114 @@
       "last_verified": null
     },
     {
+      "id": "global-gowitness",
+      "name": "gowitness",
+      "canonical_url": "https://github.com/sensepost/gowitness",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "evidence-preservation",
+        "web-research"
+      ],
+      "use_cases": [
+        "web-capture",
+        "screenshot-preservation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-haveibeenpwned",
+      "name": "Have I Been Pwned",
+      "canonical_url": "https://haveibeenpwned.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CTI"
+      ],
+      "domains": [
+        "breach-exposure"
+      ],
+      "use_cases": [
+        "breach-notification",
+        "exposure-check"
+      ],
+      "source_type": "commercial",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "notes": "Defensive exposure-checking reference; OSINT4ALL does not promote access to stolen credentials or illicit datasets."
+    },
+    {
+      "id": "global-httrack",
+      "name": "HTTrack",
+      "canonical_url": "https://www.httrack.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "web-archives",
+        "web-research"
+      ],
+      "use_cases": [
+        "offline-browsing",
+        "website-copy"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-instaloader",
+      "name": "Instaloader",
+      "canonical_url": "https://github.com/instaloader/instaloader",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "social-media-intelligence",
+        "media-preservation"
+      ],
+      "use_cases": [
+        "public-profile-collection",
+        "media-preservation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-intelowl",
       "name": "IntelOwl",
       "canonical_url": "https://github.com/intelowlproject/IntelOwl",
@@ -256,6 +583,33 @@
       ],
       "use_cases": [
         "ioc-enrichment"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-internetarchive-cli",
+      "name": "Internet Archive CLI",
+      "canonical_url": "https://github.com/jjjake/internetarchive",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "evidence-preservation",
+        "web-archives"
+      ],
+      "use_cases": [
+        "archive-access",
+        "archive-upload"
       ],
       "source_type": "open-source",
       "access": "free",
@@ -286,8 +640,9 @@
       "languages": [
         "en"
       ],
-      "status": "needs-review",
-      "last_verified": null
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "notes": "Large, actively maintained OSINT reference covering search, SOCMINT, people, domains, web history, imagery, academic research, geospatial analysis, monitoring, CTI and related resources."
     },
     {
       "id": "global-maigret",
@@ -315,6 +670,89 @@
       "last_verified": null
     },
     {
+      "id": "global-maltego",
+      "name": "Maltego",
+      "canonical_url": "https://www.maltego.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "entity-resolution",
+        "link-analysis"
+      ],
+      "use_cases": [
+        "graph-analysis",
+        "entity-correlation"
+      ],
+      "source_type": "commercial",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-mapillary",
+      "name": "Mapillary",
+      "canonical_url": "https://www.mapillary.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT",
+        "IMINT"
+      ],
+      "domains": [
+        "geospatial-analysis",
+        "street-level-imagery"
+      ],
+      "use_cases": [
+        "geolocation",
+        "visual-verification"
+      ],
+      "source_type": "commercial",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-mat2",
+      "name": "MAT2",
+      "canonical_url": "https://0xacab.org/jvoisin/mat2",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "analyst-safety",
+        "metadata"
+      ],
+      "use_cases": [
+        "metadata-removal",
+        "document-hygiene"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-misp",
       "name": "MISP",
       "canonical_url": "https://github.com/MISP/MISP",
@@ -331,6 +769,31 @@
       "use_cases": [
         "ioc-sharing",
         "threat-correlation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-monolith",
+      "name": "Monolith",
+      "canonical_url": "https://github.com/Y2Z/monolith",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "evidence-preservation"
+      ],
+      "use_cases": [
+        "single-file-web-capture"
       ],
       "source_type": "open-source",
       "access": "free",
@@ -496,6 +959,30 @@
       "last_verified": null
     },
     {
+      "id": "global-phoneinfoga",
+      "name": "PhoneInfoga",
+      "canonical_url": "https://github.com/sundowndev/phoneinfoga",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "phone-number-research"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-qgis",
       "name": "QGIS",
       "canonical_url": "https://qgis.org/",
@@ -598,6 +1085,32 @@
       "last_verified": null
     },
     {
+      "id": "global-searxng",
+      "name": "SearXNG",
+      "canonical_url": "https://github.com/searxng/searxng",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "search-discovery"
+      ],
+      "use_cases": [
+        "metasearch",
+        "privacy-aware-search"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-sherlock",
       "name": "Sherlock",
       "canonical_url": "https://github.com/sherlock-project/sherlock",
@@ -641,6 +1154,33 @@
       ],
       "source_type": "commercial",
       "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-sn0int",
+      "name": "sn0int",
+      "canonical_url": "https://github.com/kpcyrd/sn0int",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "osint-framework",
+        "cyber-infrastructure"
+      ],
+      "use_cases": [
+        "structured-collection",
+        "entity-correlation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
       "languages": [
         "en"
       ],
@@ -698,6 +1238,61 @@
       ],
       "status": "needs-review",
       "last_verified": null
+    },
+    {
+      "id": "global-tesseract-ocr",
+      "name": "Tesseract OCR",
+      "canonical_url": "https://github.com/tesseract-ocr/tesseract",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "IMINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "document-analysis",
+        "media-forensics"
+      ],
+      "use_cases": [
+        "ocr",
+        "text-extraction"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-theharvester",
+      "name": "theHarvester",
+      "canonical_url": "https://github.com/laramies/theHarvester",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "cyber-infrastructure",
+        "search-discovery"
+      ],
+      "use_cases": [
+        "public-infrastructure-research"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "notes": "Cataloged for lawful public-source infrastructure research."
     },
     {
       "id": "global-tracelabs-awesome-osint",
@@ -879,6 +1474,33 @@
       "last_verified": null
     },
     {
+      "id": "global-wayback-machine",
+      "name": "Internet Archive Wayback Machine",
+      "canonical_url": "https://web.archive.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "web-archives",
+        "web-research"
+      ],
+      "use_cases": [
+        "historical-web-research",
+        "page-preservation"
+      ],
+      "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
       "id": "global-whatsmyname",
       "name": "WhatsMyName",
       "canonical_url": "https://github.com/WebBreacher/WhatsMyName",
@@ -902,6 +1524,58 @@
       ],
       "status": "needs-review",
       "last_verified": null
+    },
+    {
+      "id": "global-wigle",
+      "name": "WiGLE",
+      "canonical_url": "https://wigle.net/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT"
+      ],
+      "domains": [
+        "wireless-intelligence",
+        "geospatial-analysis"
+      ],
+      "use_cases": [
+        "wireless-mapping"
+      ],
+      "source_type": "community",
+      "access": "account",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-yt-dlp",
+      "name": "yt-dlp",
+      "canonical_url": "https://github.com/yt-dlp/yt-dlp",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "media-preservation"
+      ],
+      "use_cases": [
+        "public-media-acquisition"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "notes": "Use only where lawful and consistent with platform terms and evidence-handling requirements."
     }
   ]
 }

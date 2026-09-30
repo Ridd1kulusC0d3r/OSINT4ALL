@@ -1,14 +1,21 @@
 # OSINT4ALL Catalog
 
-This folder contains thematic catalogs. All AI-assisted imports default to **🟡 Needs review** until human validation.
+This folder contains thematic catalogs. AI-assisted imports default to **🟡 Needs review** until human validation.
 
 | Catalog | Focus |
 |---|---|
-| [Awesome Repositories](AWESOME-REPOSITORIES.md) | Lists, meta-indexes, frameworks and discovery hubs |
+| [Generated Index](INDEX.generated.md) | Machine-generated view of canonical resource data |
+| [Awesome Repositories](AWESOME-REPOSITORIES.md) | Upstream lists, meta-indexes and discovery hubs |
+| [Search & Discovery](SEARCH-DISCOVERY.md) | Search surfaces, archives and discovery discipline |
+| [Evidence Preservation](EVIDENCE-PRESERVATION.md) | Capture, archive, provenance and media preservation |
+| [AI-Assisted OSINT](AI-ASSISTED-OSINT.md) | Safe AI roles, provenance and validation guardrails |
 | [SOCMINT](SOCMINT.md) | Social media intelligence |
 | [People OSINT](PEOPLE-OSINT.md) | Identity, username, email, phone and public-record research |
 | [Missing Persons OSINT](MISSING-PERSONS-OSINT.md) | Passive, ethical people-centric investigation and verification |
 | [IMINT & GEOINT](IMINT-GEOINT.md) | Imagery, maps, geolocation, chronolocation and GIS |
+| [Corporate & Financial](CORPORATE-FINANCIAL.md) | Companies, ownership, finance and authoritative registries |
+| [Transport / Maritime / Aviation](TRANSPORT-MARITIME-AVIATION.md) | Movement, logistics and transport-context research |
+| [Academic / Media / Monitoring](ACADEMIC-MEDIA-MONITORING.md) | Grey literature, news, fact checking and monitored sources |
 | [CTI & OT](CTI-OT.md) | Cyber threat intelligence and defensive OT/ICS research |
 | [Space & Satellite](SPACE-SATELLITE.md) | Orbital tracking and Earth observation |
 | [Conflict OSINT](CONFLICT-OSINT.md) | Verification and situational awareness in armed conflict |
@@ -17,6 +24,6 @@ This folder contains thematic catalogs. All AI-assisted imports default to **�
 
 ## Português
 
-Esta pasta contém os catálogos temáticos do OSINT4ALL. Recursos importados com auxílio de IA começam como **🟡 Needs review** até validação humana.
+A separação temática existe para facilitar navegação. O modelo canônico, porém, é relacional: um recurso pode apoiar várias disciplinas, jurisdições e casos de uso.
 
-A separação temática existe para facilitar navegação, mas um mesmo recurso pode aparecer em várias disciplinas. O modelo futuro será orientado a metadados e relações, não apenas pastas.
+Use [data/resources.json](../data/resources.json) para consumo estruturado e [INDEX.generated.md](INDEX.generated.md) para uma visão humana gerada automaticamente.
