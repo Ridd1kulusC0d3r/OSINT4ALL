@@ -1,0 +1,38 @@
+name: Correct or revalidate resource
+description: Report an outdated, moved, broken or inaccurate entry
+title: "[CORRECTION] "
+labels: ["correction"]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource ID or name
+    validations:
+      required: true
+  - type: input
+    id: current_url
+    attributes:
+      label: Current OSINT4ALL URL
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem type
+      options:
+        - Broken URL
+        - Redirect / moved
+        - Incorrect capability
+        - Wrong jurisdiction
+        - Wrong access model
+        - Archived / abandoned
+        - Security concern
+        - Duplicate
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / correction
+      description: Prefer an official source, repository, documentation or reproducible observation.
+    validations:
+      required: true
