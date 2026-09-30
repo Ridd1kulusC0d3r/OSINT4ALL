@@ -1,5 +1,5 @@
 {
-  "catalog_version": "0.3.0",
+  "catalog_version": "0.3.1",
   "generated_policy": "AI-assisted entries default to needs-review until a human validates the canonical URL and core capability.",
   "resources": [
     {
@@ -1326,6 +1326,33 @@
       "notes": "Trace Labs-endorsed curated list specifically scoped to missing-person searches and freely accessible resources."
     },
     {
+      "id": "global-tracelabs-gumshoe",
+      "name": "Trace Labs Gumshoe",
+      "canonical_url": "https://github.com/tracelabs/gumshoe",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "investigation-methodology",
+        "link-analysis"
+      ],
+      "use_cases": [
+        "historical-graph-concept",
+        "recursive-investigation-model"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "historical",
+      "last_verified": "2026-09-30",
+      "notes": "Historical proof-of-concept for recursively expanding OSINT findings into a directed investigation graph. Useful as an architectural antecedent, not a current primary tool."
+    },
+    {
       "id": "global-tracelabs-searchparty-writeups",
       "name": "Trace Labs Search Party CTF Writeups",
       "canonical_url": "https://github.com/tracelabs/searchparty-ctf-writeups",
@@ -1355,6 +1382,32 @@
       "status": "historical",
       "last_verified": "2026-09-30",
       "notes": "Archived Trace Labs Search Party CTF writeup repository. Retained as a historical learning reference rather than a current operational source."
+    },
+    {
+      "id": "global-tracelabs-tlosint-live",
+      "name": "Trace Labs OSINT Live",
+      "canonical_url": "https://github.com/tracelabs/tlosint-live",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "investigation-environment"
+      ],
+      "use_cases": [
+        "historical-workstation-build"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "historical",
+      "last_verified": "2026-09-30",
+      "notes": "Legacy Trace Labs Kali live-build project. Retained for historical/build-reference value; current OSINT VM work is centered on tracelabs/tlosint-vm."
     },
     {
       "id": "global-tracelabs-tlosint-vm",

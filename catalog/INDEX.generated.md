@@ -2,15 +2,15 @@
 
 > Generated from `data/resources.json`. Do not edit manually.
 
-**Catalog version:** 0.3.0  
-**Resources:** 59
+**Catalog version:** 0.3.1  
+**Resources:** 61
 
 ## Jurisdiction coverage
 
 | Jurisdiction | Resources |
 |---|---:|
 | BR | 3 |
-| GLOBAL | 56 |
+| GLOBAL | 58 |
 
 ## By domain
 
@@ -107,12 +107,14 @@
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
+| [Trace Labs OSINT Live](https://github.com/tracelabs/tlosint-live) | GLOBAL | OSINT, SOCMINT | free | historical |
 | [Trace Labs OSINT VM](https://github.com/tracelabs/tlosint-vm) | GLOBAL | OSINT, SOCMINT | free | verified |
 
 ### investigation-methodology
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
+| [Trace Labs Gumshoe](https://github.com/tracelabs/gumshoe) | GLOBAL | OSINT | free | historical |
 | [Trace Labs OSINT Field Manual](https://github.com/tracelabs/tofm) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
 | [Trace Labs Weekly OSINT Challenges](https://github.com/tracelabs/tracelabs-weekly-osint-challenges) | GLOBAL | OSINT, GEOINT, IMINT | free | verified |
 
@@ -121,6 +123,7 @@
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
 | [Maltego](https://www.maltego.com/) | GLOBAL | OSINT, SOCMINT, CYBINT | freemium | needs-review |
+| [Trace Labs Gumshoe](https://github.com/tracelabs/gumshoe) | GLOBAL | OSINT | free | historical |
 
 ### maritime-intelligence
 

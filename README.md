@@ -5,7 +5,7 @@
 
 [![Language](https://img.shields.io/badge/language-English%20%7C%20Portugu%C3%AAs-0A66C2)](#languages)
 [![Catalog](https://img.shields.io/badge/catalog-v0.3.0-blue)](data/resources.json)
-[![Resources](https://img.shields.io/badge/resources-59-informational)](catalog/INDEX.generated.md)
+[![Resources](https://img.shields.io/badge/resources-61-informational)](catalog/INDEX.generated.md)
 [![Ethics](https://img.shields.io/badge/use-ethical%20%26%20lawful-success)](ETHICS.md)
 [![AI Assisted](https://img.shields.io/badge/curation-AI--assisted-orange)](#ai-assisted-curation)
 
@@ -229,6 +229,8 @@ Selection policy: [docs/TOOL-SELECTION-POLICY.md](docs/TOOL-SELECTION-POLICY.md)
 ## Machine-readable architecture
 
 ```text
+data/upstreams.json  → upstream provenance + curation decisions
+        │
 data/resources.json
         │
         ├── validated by scripts/validate_catalog.py

@@ -1,0 +1,137 @@
+{
+  "upstream_registry_version": "0.1.0",
+  "last_reviewed": "2026-09-30",
+  "policy": "Upstreams are discovery/provenance sources. Inclusion does not imply wholesale copying or automatic verification of child resources.",
+  "sources": [
+    {
+      "id": "jivoi-awesome-osint",
+      "url": "https://github.com/jivoi/awesome-osint",
+      "status": "active-reviewed",
+      "role": "classical-osint-taxonomy",
+      "last_push_observed": "2026-09-09",
+      "imported_as": "global-jivoi-awesome-osint",
+      "strengths": [
+        "search",
+        "national-search",
+        "socmint",
+        "people",
+        "email",
+        "phone",
+        "companies",
+        "domain-ip-dns",
+        "web-history",
+        "image-video",
+        "academic-grey-literature",
+        "geospatial",
+        "news-fact-checking",
+        "monitoring",
+        "cti",
+        "rss"
+      ]
+    },
+    {
+      "id": "astrosp-awesome-osint-list",
+      "url": "https://github.com/Astrosp/Awesome-OSINT-List",
+      "status": "active-reviewed",
+      "role": "broad-modern-gap-discovery",
+      "last_push_observed": "2026-09-30",
+      "imported_as": "global-astrosp-awesome-osint-list",
+      "strengths": [
+        "ai",
+        "breach-exposure",
+        "identity-resolution",
+        "social-platforms",
+        "messaging",
+        "media-verification",
+        "metadata",
+        "vehicles",
+        "aviation",
+        "maritime",
+        "source-code",
+        "iot",
+        "real-estate",
+        "public-records",
+        "government",
+        "finance",
+        "business",
+        "blockchain",
+        "conflict",
+        "academic",
+        "training"
+      ]
+    },
+    {
+      "id": "tracelabs",
+      "url": "https://github.com/orgs/tracelabs/repositories",
+      "status": "organization-reviewed",
+      "role": "methodology-training-workstation",
+      "repositories": [
+        {
+          "repo": "tracelabs/tlosint-vm",
+          "decision": "incorporated",
+          "reason": "current maintained OSINT VM, tooling and OPSEC/evidence practices"
+        },
+        {
+          "repo": "tracelabs/awesome-osint",
+          "decision": "incorporated",
+          "reason": "missing-person-specific curated tool list"
+        },
+        {
+          "repo": "tracelabs/tofm",
+          "decision": "incorporated",
+          "reason": "field methodology, ethics, passive research, planning and validation"
+        },
+        {
+          "repo": "tracelabs/tracelabs-weekly-osint-challenges",
+          "decision": "incorporated",
+          "reason": "sanitized training and verification methodology"
+        },
+        {
+          "repo": "tracelabs/searchparty-ctf-writeups",
+          "decision": "historical",
+          "reason": "archived training/writeup value"
+        },
+        {
+          "repo": "tracelabs/tlosint-live",
+          "decision": "historical",
+          "reason": "legacy live-build, superseded by current VM direction"
+        },
+        {
+          "repo": "tracelabs/gumshoe",
+          "decision": "historical-concept",
+          "reason": "useful recursive investigation graph concept, but old WIP code"
+        },
+        {
+          "repo": "tracelabs/Trace-Labs-VM-Ras-Pi-Build",
+          "decision": "reviewed-not-cataloged",
+          "reason": "legacy platform-specific build variant"
+        },
+        {
+          "repo": "tracelabs/Trace-Labs-VM-M1-Mac-Build",
+          "decision": "reviewed-not-cataloged",
+          "reason": "platform-specific build variant; current VM supports ARM64 direction"
+        },
+        {
+          "repo": "tracelabs/ctf-prep",
+          "decision": "historical-moved",
+          "reason": "archived; content moved to Trace Labs documentation"
+        },
+        {
+          "repo": "tracelabs/h8mail",
+          "decision": "packaging-only",
+          "reason": "Kali packaging repository; canonical upstream should be preferred"
+        },
+        {
+          "repo": "tracelabs/Trace-Labs-Obsidian-Theme",
+          "decision": "not-cataloged",
+          "reason": "presentation/theme asset rather than OSINT capability"
+        },
+        {
+          "repo": "tracelabs/B-Sides-Bloomington",
+          "decision": "not-cataloged",
+          "reason": "event-specific material rather than a reusable OSINT resource"
+        }
+      ]
+    }
+  ]
+}

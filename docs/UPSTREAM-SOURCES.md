@@ -1,6 +1,8 @@
 # Upstream OSINT Reference Ecosystems
 
-OSINT4ALL does not wholesale-copy upstream lists. It uses them as **discovery sources**, normalizes high-value entries into the machine-readable catalog, and records what each ecosystem contributes.
+OSINT4ALL does not wholesale-copy upstream lists. It uses them as **discovery sources**, normalizes high-value entries into the canonical catalog, and records curatorial decisions.
+
+Machine-readable registry: [data/upstreams.json](../data/upstreams.json)
 
 Last reviewed: **2026-09-30**.
 
@@ -8,80 +10,41 @@ Last reviewed: **2026-09-30**.
 
 Repository: https://github.com/jivoi/awesome-osint
 
-Observed strengths:
+Role: **classical OSINT taxonomy and discovery baseline**.
 
-- general, meta and privacy-focused search;
-- national search engines;
-- data-breach and specialty search;
-- document, file and code search;
-- SOCMINT platform coverage;
-- people, email, phone and company research;
-- domains/IP/DNS;
-- web history and capture;
-- image/video;
-- academic and grey literature;
-- geospatial research;
-- news, fact checking and statistics;
-- monitoring, data visualization and social-network analysis;
-- maritime, CTI, blogs, RSS and learning resources.
-
-Role in OSINT4ALL: **classical tradecraft taxonomy and discovery baseline**.
+Observed strengths include general/meta/national search, breach and specialty search, files/code/documents, SOCMINT, people/email/phone/company research, domains and DNS, web history, language, imagery/video, academic/grey literature, geospatial analysis, news/fact checking, monitoring, data visualization, social-network analysis, maritime, threat intelligence, blogs and RSS.
 
 ## Astrosp/Awesome-OSINT-List
 
 Repository: https://github.com/Astrosp/Awesome-OSINT-List
 
-Observed strengths:
+Role: **broad modern surface coverage and gap detection**.
 
-- very broad modern surface coverage;
-- AI/search/research tooling;
-- breach-exposure awareness;
-- identity resolution and unified search;
-- messaging/social platforms;
-- media verification and metadata;
-- vehicles, aviation and maritime;
-- source-code/domain/IoT research;
-- real estate, public records and government;
-- finance, business, cryptocurrency/blockchain;
-- conflict-related resources;
-- academic/training resources;
-- frameworks/browser tooling.
+Observed strengths include AI-assisted research, breach-exposure awareness, identity resolution, social/messaging platforms, media verification, metadata/file analysis, vehicles/VIN, aviation, maritime, source code, domains/IP/DNS, IoT, radio, real estate, corporations, maps/GEO, cryptocurrency/blockchain, public records, government, finance/business, conflict, academic/research resources and OSINT training.
 
-Role in OSINT4ALL: **long-tail coverage discovery and gap detection**.
+Security/pentest-only material is not automatically imported. OSINT4ALL keeps public-source investigation distinct from exploitation.
 
-Security/pentest-only material is not automatically imported. OSINT4ALL separates public-source investigation from exploitation.
-
-## Trace Labs
+## Trace Labs organization review
 
 Organization: https://github.com/orgs/tracelabs/repositories
 
-High-value repositories incorporated:
+| Repository | Decision | Why |
+|---|---|---|
+| tracelabs/tlosint-vm | **Incorporated** | Current VM/workstation, tooling, capture, archiving and investigator-safety practices |
+| tracelabs/awesome-osint | **Incorporated** | Missing-person-specific curated list |
+| tracelabs/tofm | **Incorporated** | Ethics, passive research, planning, red lines, validation and people-centric tradecraft |
+| tracelabs/tracelabs-weekly-osint-challenges | **Incorporated** | Sanitized training and methodology |
+| tracelabs/searchparty-ctf-writeups | **Historical** | Archived learning/writeup material |
+| tracelabs/tlosint-live | **Historical** | Legacy Kali live-build; current direction is tlosint-vm |
+| tracelabs/gumshoe | **Historical concept** | Recursive investigation graph idea remains architecturally interesting; code is old WIP |
+| Trace-Labs-VM-Ras-Pi-Build | Reviewed, not primary catalog | Legacy platform-specific variant |
+| Trace-Labs-VM-M1-Mac-Build | Reviewed, not primary catalog | Platform-specific variant; current VM direction covers ARM64 |
+| tracelabs/ctf-prep | Historical/moved | Archived; content moved to current Trace Labs docs |
+| tracelabs/h8mail | Packaging-only | Prefer canonical h8mail upstream over distro packaging fork |
+| Trace-Labs-Obsidian-Theme | Not cataloged | Theme/presentation asset rather than OSINT capability |
+| B-Sides-Bloomington | Not cataloged | Event-specific material rather than reusable analyst capability |
 
-- https://github.com/tracelabs/tlosint-vm
-- https://github.com/tracelabs/awesome-osint
-- https://github.com/tracelabs/tofm
-- https://github.com/tracelabs/tracelabs-weekly-osint-challenges
-- https://github.com/tracelabs/searchparty-ctf-writeups (historical)
-
-Observed strengths:
-
-- missing-person and people-centric methodology;
-- ethics and passive reconnaissance;
-- investigation planning and red lines;
-- enumeration vs validation;
-- analyst OPSEC/threat modeling;
-- reproducible investigation workstation;
-- evidence capture and archiving;
-- practical training and writeups;
-- explicit tooling-quality policy.
-
-Role in OSINT4ALL: **methodology, evidence handling, training and analyst environment**.
-
-## Import rule
-
-An upstream mention creates a **candidate**, not an automatic recommendation.
-
-Candidates pass through:
+## Curatorial pipeline
 
     Upstream discovery
         ↓
@@ -89,9 +52,9 @@ Candidates pass through:
         ↓
     Deduplication
         ↓
-    Jurisdiction + discipline + use-case tagging
+    Jurisdiction / discipline / use-case tagging
         ↓
-    Safety / legal / maintenance review
+    Safety + legal + maintenance review
         ↓
     needs-review
         ↓
@@ -99,4 +62,4 @@ Candidates pass through:
         ↓
     verified
 
-This prevents the repository from becoming an unmaintainable mirror of other unmaintainable mirrors.
+The important part is that **rejection and historical classification are also data**. Otherwise the same obsolete fork gets rediscovered every six months and somebody proudly adds it again.
