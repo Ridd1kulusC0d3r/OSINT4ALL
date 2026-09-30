@@ -1,0 +1,61 @@
+{
+  "taxonomy_version": "0.2.0",
+  "disciplines": [
+    "OSINT",
+    "HUMINT",
+    "SIGINT",
+    "COMINT",
+    "ELINT",
+    "FISINT",
+    "GEOINT",
+    "IMINT",
+    "MASINT",
+    "TECHINT",
+    "CYBINT",
+    "CTI",
+    "MEDINT",
+    "FININT",
+    "DOMEX",
+    "WEBINT",
+    "DNINT",
+    "SOCMINT"
+  ],
+  "intelligence_levels": [
+    "strategic",
+    "operational",
+    "tactical"
+  ],
+  "cycle_stages": [
+    "direction",
+    "collection",
+    "processing",
+    "analysis",
+    "dissemination",
+    "feedback"
+  ],
+  "source_types": [
+    "official",
+    "academic",
+    "nonprofit",
+    "commercial",
+    "community",
+    "open-source"
+  ],
+  "access_models": [
+    "free",
+    "freemium",
+    "paid",
+    "account",
+    "api-key",
+    "local",
+    "mixed"
+  ],
+  "statuses": [
+    "verified",
+    "needs-review",
+    "changed",
+    "broken-unsafe",
+    "historical"
+  ],
+  "notes": "Domains and use_cases remain extensible kebab-case vocabularies in v0.2; disciplines and control fields are closed vocabularies."
+}
