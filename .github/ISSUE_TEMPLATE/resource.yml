@@ -1,0 +1,85 @@
+name: Add OSINT resource
+description: Propose a new lawful OSINT/intelligence resource
+title: "[RESOURCE] "
+labels: ["resource"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. AI-assisted suggestions are welcome, but they must start as **needs-review** until a human validates them.
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical HTTPS URL
+      placeholder: https://example.org/
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction
+      description: GLOBAL, ISO alpha-2 (BR), or subdivision such as BR-MG.
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What does it help an analyst do?
+      description: Describe concrete use cases, not marketing claims.
+    validations:
+      required: true
+  - type: input
+    id: disciplines
+    attributes:
+      label: Intelligence disciplines
+      placeholder: OSINT, GEOINT
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - official
+        - academic
+        - nonprofit
+        - commercial
+        - community
+        - open-source
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access model
+      options:
+        - free
+        - freemium
+        - paid
+        - account
+        - api-key
+        - local
+        - mixed
+    validations:
+      required: true
+  - type: textarea
+    id: caveats
+    attributes:
+      label: Legal, privacy, security or reliability caveats
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Contributor checks
+      options:
+        - label: I used the canonical/official URL where available.
+          required: true
+        - label: I did not describe an inferred capability as verified fact.
+          required: true
+        - label: This contribution is intended for lawful and ethical research.
+          required: true
