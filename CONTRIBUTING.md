@@ -48,3 +48,8 @@ Contribuições em português ou inglês são bem-vindas.
 Ao adicionar uma fonte, informe URL canônica, jurisdição, disciplina, caso de uso, modelo de acesso, tipo de fonte, data da última verificação e ressalvas legais/éticas quando aplicável.
 
 Correções de links, descrições e escopo são tão importantes quanto novas ferramentas.
+
+
+## Tool selection policy
+
+Before proposing a new tool, review [docs/TOOL-SELECTION-POLICY.md](docs/TOOL-SELECTION-POLICY.md). Prefer canonical upstream projects over packaging forks, document jurisdiction and limitations, and explain why the resource adds value beyond existing entries.
