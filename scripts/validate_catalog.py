@@ -7,11 +7,10 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "resources.json"
+TAXONOMY = ROOT / "data" / "taxonomies.json"
 
-ALLOWED_STATUS = {"verified", "needs-review", "changed", "broken-unsafe", "historical"}
-ALLOWED_SOURCE_TYPES = {"official", "academic", "nonprofit", "commercial", "community", "open-source"}
-ALLOWED_ACCESS = {"free", "freemium", "paid", "account", "api-key", "local", "mixed"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]+$")
+TAG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 JUR_RE = re.compile(r"^(GLOBAL|[A-Z]{2}(-[A-Z0-9]{1,3})?)$")
 
 def fail(errors):
@@ -21,11 +20,17 @@ def fail(errors):
 
 def main():
     payload = json.loads(DATA.read_text(encoding="utf-8"))
+    taxonomy = json.loads(TAXONOMY.read_text(encoding="utf-8"))
     resources = payload.get("resources")
     errors = []
 
     if not isinstance(resources, list) or not resources:
         fail(["resources must be a non-empty list"])
+
+    allowed_disciplines = set(taxonomy["disciplines"])
+    allowed_status = set(taxonomy["statuses"])
+    allowed_source_types = set(taxonomy["source_types"])
+    allowed_access = set(taxonomy["access_models"])
 
     ids, urls = set(), set()
 
@@ -64,21 +69,35 @@ def main():
             if not isinstance(value, list) or not value or len(value) != len(set(value)):
                 errors.append(f"{prefix}: {field} must be a non-empty unique list")
 
-        if r.get("status") not in ALLOWED_STATUS:
+        unknown_disciplines = set(r.get("disciplines", [])) - allowed_disciplines
+        if unknown_disciplines:
+            errors.append(f"{prefix}: unknown disciplines: {sorted(unknown_disciplines)}")
+
+        for field in ("domains", "use_cases"):
+            for value in r.get(field, []):
+                if not TAG_RE.match(value):
+                    errors.append(f"{prefix}: {field} value must be kebab-case: {value!r}")
+
+        if r.get("status") not in allowed_status:
             errors.append(f"{prefix}: invalid status")
-        if r.get("source_type") not in ALLOWED_SOURCE_TYPES:
+        if r.get("source_type") not in allowed_source_types:
             errors.append(f"{prefix}: invalid source_type")
-        if r.get("access") not in ALLOWED_ACCESS:
+        if r.get("access") not in allowed_access:
             errors.append(f"{prefix}: invalid access")
 
         verified = r.get("last_verified")
         if r.get("status") == "verified" and not verified:
             errors.append(f"{prefix}: verified resources require last_verified")
+        if verified is not None and not re.match(r"^\d{4}-\d{2}-\d{2}$", verified):
+            errors.append(f"{prefix}: last_verified must be YYYY-MM-DD or null")
 
     if errors:
         fail(errors)
 
-    print(f"OK: {len(resources)} resources validated; IDs and canonical URLs are unique.")
+    print(
+        f"OK: {len(resources)} resources validated; "
+        "IDs/URLs unique; disciplines and control vocabularies canonical."
+    )
 
 if __name__ == "__main__":
     main()
