@@ -105,12 +105,14 @@ Consulte [ETHICS.md](ETHICS.md).
 | [IMINT & GEOINT](catalog/IMINT-GEOINT.md) | Imagery, geolocation and geospatial analysis |
 | [Cyber Threat Intelligence & OT](catalog/CTI-OT.md) | CTI, infrastructure exposure and OT/ICS |
 | [People & Identity OSINT](catalog/PEOPLE-OSINT.md) | Usernames, email, phone, public records and identity correlation |
+| [Missing Persons OSINT](catalog/MISSING-PERSONS-OSINT.md) | Ethical people-centric investigation, validation and passive-recon methodology |
 | [Space & Satellite OSINT](catalog/SPACE-SATELLITE.md) | Orbital tracking and remote sensing |
 | [Conflict OSINT](catalog/CONFLICT-OSINT.md) | Conflict monitoring, verification and evidentiary workflows |
 | [Environmental OSINT](catalog/ENVIRONMENTAL-OSINT.md) | Deforestation, land-use change and environmental investigations |
 | [Nuclear & CBRNE OSINT](catalog/NUCLEAR-CBRNE.md) | High-consequence public-source research with strict verification |
 | [Awesome Lists & Meta-indexes](catalog/AWESOME-REPOSITORIES.md) | Reference collections and discovery hubs |
 | [Validation](VALIDATION.md) | Verification status, link health and evidence quality |
+| [Tool Selection Policy](docs/TOOL-SELECTION-POLICY.md) | Admission, maintenance and exclusion criteria |
 | [Machine-readable Index](catalog/INDEX.generated.md) | Generated catalog from canonical JSON data |
 | [Data Model](docs/DATA-MODEL.md) | Schema, identifiers and validation rules |
 | [Roadmap](ROADMAP.md) | Project evolution and coverage plan |
