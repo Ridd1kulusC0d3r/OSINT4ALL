@@ -1,0 +1,754 @@
+{
+  "catalog_version": "0.2.0",
+  "generated_policy": "AI-assisted entries default to needs-review until a human validates the canonical URL and core capability.",
+  "resources": [
+    {
+      "id": "global-rawfilejson-awesome-osint-arsenal",
+      "name": "awesome-osint-arsenal",
+      "canonical_url": "https://github.com/rawfilejson/awesome-osint-arsenal",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "meta-index"
+      ],
+      "use_cases": [
+        "resource-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-jivoi-awesome-osint",
+      "name": "jivoi/awesome-osint",
+      "canonical_url": "https://github.com/jivoi/awesome-osint",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "meta-index"
+      ],
+      "use_cases": [
+        "resource-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-osint-framework",
+      "name": "OSINT Framework",
+      "canonical_url": "https://osintframework.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "meta-index"
+      ],
+      "use_cases": [
+        "resource-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "br-osintbrazuca",
+      "name": "OSINT Brazuca",
+      "canonical_url": "https://github.com/osintbrazuca/osint-brazuca",
+      "jurisdictions": [
+        "BR"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "regional-osint"
+      ],
+      "use_cases": [
+        "resource-discovery",
+        "public-records"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "pt-BR"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-maigret",
+      "name": "Maigret",
+      "canonical_url": "https://github.com/soxoj/maigret",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "username-search"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-sherlock",
+      "name": "Sherlock",
+      "canonical_url": "https://github.com/sherlock-project/sherlock",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "username-search"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-whatsmyname",
+      "name": "WhatsMyName",
+      "canonical_url": "https://github.com/WebBreacher/WhatsMyName",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "username-search"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-spiderfoot",
+      "name": "SpiderFoot",
+      "canonical_url": "https://github.com/smicallef/spiderfoot",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "cyber-infrastructure"
+      ],
+      "use_cases": [
+        "entity-correlation",
+        "infrastructure-research"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-recon-ng",
+      "name": "Recon-ng",
+      "canonical_url": "https://github.com/lanmaster53/recon-ng",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "cyber-infrastructure"
+      ],
+      "use_cases": [
+        "reconnaissance"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-misp",
+      "name": "MISP",
+      "canonical_url": "https://github.com/MISP/MISP",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "CTI",
+        "CYBINT"
+      ],
+      "domains": [
+        "threat-intelligence"
+      ],
+      "use_cases": [
+        "ioc-sharing",
+        "threat-correlation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-opencti",
+      "name": "OpenCTI",
+      "canonical_url": "https://github.com/OpenCTI-Platform/opencti",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "CTI",
+        "CYBINT"
+      ],
+      "domains": [
+        "threat-intelligence"
+      ],
+      "use_cases": [
+        "knowledge-graph",
+        "threat-correlation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-intelowl",
+      "name": "IntelOwl",
+      "canonical_url": "https://github.com/intelowlproject/IntelOwl",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "CTI",
+        "CYBINT"
+      ],
+      "domains": [
+        "threat-intelligence"
+      ],
+      "use_cases": [
+        "ioc-enrichment"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-exiftool",
+      "name": "ExifTool",
+      "canonical_url": "https://exiftool.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "IMINT",
+        "OSINT"
+      ],
+      "domains": [
+        "media-forensics"
+      ],
+      "use_cases": [
+        "metadata-analysis"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-qgis",
+      "name": "QGIS",
+      "canonical_url": "https://qgis.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "GEOINT"
+      ],
+      "domains": [
+        "geospatial-analysis"
+      ],
+      "use_cases": [
+        "gis",
+        "mapping",
+        "spatial-analysis"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en",
+        "pt-BR"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-copernicus-browser",
+      "name": "Copernicus Browser",
+      "canonical_url": "https://browser.dataspace.copernicus.eu/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "GEOINT",
+        "IMINT"
+      ],
+      "domains": [
+        "satellite-osint",
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "satellite-imagery",
+        "change-detection"
+      ],
+      "source_type": "official",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-nasa-worldview",
+      "name": "NASA Worldview",
+      "canonical_url": "https://worldview.earthdata.nasa.gov/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "GEOINT",
+        "IMINT"
+      ],
+      "domains": [
+        "satellite-osint",
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "earth-observation",
+        "event-verification"
+      ],
+      "source_type": "official",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-usgs-earthexplorer",
+      "name": "USGS EarthExplorer",
+      "canonical_url": "https://earthexplorer.usgs.gov/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "GEOINT",
+        "IMINT"
+      ],
+      "domains": [
+        "satellite-osint"
+      ],
+      "use_cases": [
+        "satellite-imagery",
+        "elevation-data"
+      ],
+      "source_type": "official",
+      "access": "account",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-global-forest-watch",
+      "name": "Global Forest Watch",
+      "canonical_url": "https://www.globalforestwatch.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "GEOINT",
+        "OSINT"
+      ],
+      "domains": [
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "deforestation-monitoring",
+        "forest-alerts"
+      ],
+      "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "en",
+        "pt-BR"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "br-mapbiomas-alerta",
+      "name": "MapBiomas Alerta",
+      "canonical_url": "https://alerta.mapbiomas.org/",
+      "jurisdictions": [
+        "BR"
+      ],
+      "disciplines": [
+        "GEOINT",
+        "OSINT"
+      ],
+      "domains": [
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "deforestation-monitoring",
+        "alert-validation"
+      ],
+      "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "pt-BR"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "br-terrabrasilis",
+      "name": "TerraBrasilis",
+      "canonical_url": "https://terrabrasilis.dpi.inpe.br/",
+      "jurisdictions": [
+        "BR"
+      ],
+      "disciplines": [
+        "GEOINT",
+        "OSINT"
+      ],
+      "domains": [
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "deforestation-monitoring",
+        "fire-monitoring"
+      ],
+      "source_type": "official",
+      "access": "free",
+      "languages": [
+        "pt-BR"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-opencorporates",
+      "name": "OpenCorporates",
+      "canonical_url": "https://opencorporates.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "FININT"
+      ],
+      "domains": [
+        "corporate-intelligence"
+      ],
+      "use_cases": [
+        "company-search",
+        "ownership-research"
+      ],
+      "source_type": "commercial",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-bellingcat-toolkit",
+      "name": "Bellingcat Online Investigation Toolkit",
+      "canonical_url": "https://bellingcat.gitbook.io/toolkit",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT",
+        "GEOINT",
+        "IMINT"
+      ],
+      "domains": [
+        "verification"
+      ],
+      "use_cases": [
+        "resource-discovery",
+        "verification",
+        "geolocation"
+      ],
+      "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-opensky",
+      "name": "OpenSky Network",
+      "canonical_url": "https://opensky-network.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT"
+      ],
+      "domains": [
+        "aviation-intelligence"
+      ],
+      "use_cases": [
+        "aircraft-tracking",
+        "aviation-research"
+      ],
+      "source_type": "academic",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-global-fishing-watch",
+      "name": "Global Fishing Watch",
+      "canonical_url": "https://globalfishingwatch.org/map/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT"
+      ],
+      "domains": [
+        "maritime-intelligence",
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "vessel-analysis",
+        "fishing-activity"
+      ],
+      "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-safecast",
+      "name": "Safecast",
+      "canonical_url": "https://safecast.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "MASINT"
+      ],
+      "domains": [
+        "radiological-monitoring",
+        "environmental-intelligence"
+      ],
+      "use_cases": [
+        "radiation-monitoring"
+      ],
+      "source_type": "nonprofit",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-space-track",
+      "name": "Space-Track.org",
+      "canonical_url": "https://www.space-track.org/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT"
+      ],
+      "domains": [
+        "space-intelligence"
+      ],
+      "use_cases": [
+        "orbital-data",
+        "satellite-tracking"
+      ],
+      "source_type": "official",
+      "access": "account",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-n2yo",
+      "name": "N2YO",
+      "canonical_url": "https://www.n2yo.com/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT"
+      ],
+      "domains": [
+        "space-intelligence"
+      ],
+      "use_cases": [
+        "satellite-tracking",
+        "pass-prediction"
+      ],
+      "source_type": "commercial",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-shodan",
+      "name": "Shodan",
+      "canonical_url": "https://www.shodan.io/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "cyber-infrastructure"
+      ],
+      "use_cases": [
+        "internet-exposure-research"
+      ],
+      "source_type": "commercial",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    },
+    {
+      "id": "global-censys-search",
+      "name": "Censys Search",
+      "canonical_url": "https://search.censys.io/",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "cyber-infrastructure"
+      ],
+      "use_cases": [
+        "internet-exposure-research",
+        "certificate-research"
+      ],
+      "source_type": "commercial",
+      "access": "freemium",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null
+    }
+  ]
+}
