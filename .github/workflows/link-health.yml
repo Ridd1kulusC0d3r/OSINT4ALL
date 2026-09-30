@@ -1,0 +1,26 @@
+name: Link Health
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 7 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check canonical URLs
+        run: python scripts/check_links.py
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: osint4all-link-health
+          path: artifacts/link-health.md
