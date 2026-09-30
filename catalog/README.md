@@ -7,6 +7,7 @@ This folder contains thematic catalogs. All AI-assisted imports default to **ðŸŸ
 | [Awesome Repositories](AWESOME-REPOSITORIES.md) | Lists, meta-indexes, frameworks and discovery hubs |
 | [SOCMINT](SOCMINT.md) | Social media intelligence |
 | [People OSINT](PEOPLE-OSINT.md) | Identity, username, email, phone and public-record research |
+| [Missing Persons OSINT](MISSING-PERSONS-OSINT.md) | Passive, ethical people-centric investigation and verification |
 | [IMINT & GEOINT](IMINT-GEOINT.md) | Imagery, maps, geolocation, chronolocation and GIS |
 | [CTI & OT](CTI-OT.md) | Cyber threat intelligence and defensive OT/ICS research |
 | [Space & Satellite](SPACE-SATELLITE.md) | Orbital tracking and Earth observation |
