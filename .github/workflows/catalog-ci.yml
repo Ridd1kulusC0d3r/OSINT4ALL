@@ -1,0 +1,33 @@
+name: Catalog CI
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "scripts/**"
+      - "catalog/INDEX.generated.md"
+      - ".github/workflows/catalog-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "scripts/**"
+      - "catalog/INDEX.generated.md"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate resource catalog
+        run: python scripts/validate_catalog.py
+      - name: Check generated index
+        run: python scripts/generate_catalog.py --check
