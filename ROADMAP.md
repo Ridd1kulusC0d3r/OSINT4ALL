@@ -22,12 +22,12 @@
 
 ## v0.2 — Machine-readable catalog
 
-- [ ] Introduce YAML/JSON resource records
-- [ ] Add schema validation
-- [ ] Add canonical IDs and deduplication
-- [ ] Track last-verified dates
-- [ ] Add access model and source type
-- [ ] Add jurisdiction and ISO tags
+- [x] Introduce YAML/JSON resource records
+- [x] Add schema validation
+- [x] Add canonical IDs and deduplication
+- [x] Track last-verified dates
+- [x] Add access model and source type
+- [x] Add jurisdiction and ISO tags
 - [ ] Add intelligence-cycle tags
 - [ ] Add strategic/operational/tactical tags
 
@@ -67,12 +67,12 @@ Priority should follow contributor coverage and availability of official/public 
 
 ## v0.4 — Quality automation
 
-- [ ] Scheduled link-health checks
-- [ ] Detect redirects and dead domains
+- [x] Scheduled link-health checks
+- [x] Detect redirects and dead domains
 - [ ] Flag archived GitHub repositories
-- [ ] Detect duplicated canonical URLs
+- [x] Detect duplicated canonical URLs
 - [ ] Generate stale-resource reports
-- [ ] Require human verification for promotion from 🟡 to 🟢
+- [x] Require human verification for promotion from 🟡 to 🟢
 
 ## v0.5 — Searchable website
 
