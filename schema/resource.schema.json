@@ -61,7 +61,27 @@
             "minItems": 1,
             "uniqueItems": true,
             "items": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "OSINT",
+                "HUMINT",
+                "SIGINT",
+                "COMINT",
+                "ELINT",
+                "FISINT",
+                "GEOINT",
+                "IMINT",
+                "MASINT",
+                "TECHINT",
+                "CYBINT",
+                "CTI",
+                "MEDINT",
+                "FININT",
+                "DOMEX",
+                "WEBINT",
+                "DNINT",
+                "SOCMINT"
+              ]
             }
           },
           "domains": {
@@ -69,7 +89,8 @@
             "minItems": 1,
             "uniqueItems": true,
             "items": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
             }
           },
           "use_cases": {
@@ -77,7 +98,8 @@
             "minItems": 1,
             "uniqueItems": true,
             "items": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
             }
           },
           "source_type": {
@@ -127,6 +149,33 @@
           },
           "notes": {
             "type": "string"
+          },
+          "intelligence_levels": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "strategic",
+                "operational",
+                "tactical"
+              ]
+            }
+          },
+          "cycle_stages": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "direction",
+                "collection",
+                "processing",
+                "analysis",
+                "dissemination",
+                "feedback"
+              ]
+            }
           }
         }
       }
