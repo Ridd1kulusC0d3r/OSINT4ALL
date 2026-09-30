@@ -2,15 +2,15 @@
 
 > Generated from `data/resources.json`. Do not edit manually.
 
-**Catalog version:** 0.2.0  
-**Resources:** 29
+**Catalog version:** 0.2.1  
+**Resources:** 34
 
 ## Jurisdiction coverage
 
 | Jurisdiction | Resources |
 |---|---:|
 | BR | 3 |
-| GLOBAL | 26 |
+| GLOBAL | 31 |
 
 ## By domain
 
@@ -61,6 +61,19 @@
 | [Sherlock](https://github.com/sherlock-project/sherlock) | GLOBAL | OSINT, SOCMINT | free | needs-review |
 | [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) | GLOBAL | OSINT, SOCMINT | free | needs-review |
 
+### investigation-environment
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Trace Labs OSINT VM](https://github.com/tracelabs/tlosint-vm) | GLOBAL | OSINT, SOCMINT | free | verified |
+
+### investigation-methodology
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Trace Labs OSINT Field Manual](https://github.com/tracelabs/tofm) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
+| [Trace Labs Weekly OSINT Challenges](https://github.com/tracelabs/tracelabs-weekly-osint-challenges) | GLOBAL | OSINT, GEOINT, IMINT | free | verified |
+
 ### maritime-intelligence
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
@@ -80,6 +93,23 @@
 | [awesome-osint-arsenal](https://github.com/rawfilejson/awesome-osint-arsenal) | GLOBAL | OSINT | free | needs-review |
 | [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint) | GLOBAL | OSINT | free | needs-review |
 | [OSINT Framework](https://osintframework.com/) | GLOBAL | OSINT | free | needs-review |
+| [Trace Labs Awesome OSINT](https://github.com/tracelabs/awesome-osint) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
+
+### missing-persons-osint
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Trace Labs Awesome OSINT](https://github.com/tracelabs/awesome-osint) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
+| [Trace Labs OSINT Field Manual](https://github.com/tracelabs/tofm) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
+| [Trace Labs OSINT VM](https://github.com/tracelabs/tlosint-vm) | GLOBAL | OSINT, SOCMINT | free | verified |
+| [Trace Labs Search Party CTF Writeups](https://github.com/tracelabs/searchparty-ctf-writeups) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | historical |
+
+### osint-training
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Trace Labs Search Party CTF Writeups](https://github.com/tracelabs/searchparty-ctf-writeups) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | historical |
+| [Trace Labs Weekly OSINT Challenges](https://github.com/tracelabs/tracelabs-weekly-osint-challenges) | GLOBAL | OSINT, GEOINT, IMINT | free | verified |
 
 ### radiological-monitoring
 
