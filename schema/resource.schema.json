@@ -176,6 +176,73 @@
                 "feedback"
               ]
             }
+          },
+          "target_inputs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "aircraft-id",
+                "asn",
+                "audio",
+                "bssid-ssid",
+                "cidr",
+                "coordinates",
+                "crypto-address",
+                "cve-id",
+                "dataset",
+                "document",
+                "domain",
+                "email",
+                "event-data",
+                "file",
+                "file-hash",
+                "image",
+                "ip-address",
+                "keyword",
+                "location",
+                "name",
+                "onion-service",
+                "organization-name",
+                "phone-number",
+                "repository-url",
+                "text",
+                "url",
+                "username",
+                "video",
+                "no-fixed-input"
+              ]
+            }
+          },
+          "implementation_type": {
+            "type": "string",
+            "enum": [
+              "cli",
+              "desktop",
+              "library",
+              "web-app",
+              "browser-extension",
+              "framework",
+              "platform",
+              "dataset-tool",
+              "skill",
+              "skill-pack",
+              "plugin",
+              "mcp-server",
+              "agent",
+              "agent-plus-mcp",
+              "service",
+              "meta-index"
+            ]
+          },
+          "upstream_refs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]+$"
+            }
           }
         }
       }

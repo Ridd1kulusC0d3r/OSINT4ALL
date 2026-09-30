@@ -75,3 +75,18 @@ Planned fields include:
 - legal notes;
 - maintenance/activity metadata;
 - aliases and former names.
+
+
+## v0.3.2 input-oriented metadata
+
+OSINT4ALL now supports three optional fields:
+
+| Field | Purpose |
+|---|---|
+| `target_inputs` | Concrete observable(s) the resource accepts or investigates |
+| `implementation_type` | CLI, platform, library, MCP server, skill pack, etc. |
+| `upstream_refs` | Provenance IDs identifying upstream discovery ecosystems |
+
+See [INPUT-TAXONOMY.md](INPUT-TAXONOMY.md).
+
+These fields are optional during migration so existing catalog records are not fabricated merely to satisfy a schema.

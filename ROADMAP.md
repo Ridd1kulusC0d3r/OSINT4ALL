@@ -7,6 +7,13 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [x] Trace Labs methodology integration
 - [x] jivoi upstream reference integration
 - [x] Astrosp upstream reference integration
+- [x] OSINT Shifu upstream + repository-first taxonomy integration
+- [x] Target-input taxonomy
+- [x] Implementation-type metadata
+- [x] Generated tools-by-input index
+- [x] Code Repository OSINT catalog
+- [x] Investigation Workbenches catalog
+- [x] Agentic OSINT catalog
 - [x] Evidence Capture & Preservation catalog
 - [x] Search & Discovery catalog
 - [x] AI-Assisted OSINT guidance
@@ -41,6 +48,8 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [ ] Stale-resource reports
 - [ ] Ownership/domain-change detection
 - [ ] Provenance URLs
+- [ ] Emerging-project automated watchlist
+- [ ] Upstream catalogue diffing
 - [ ] License field
 - [ ] API/authentication metadata
 

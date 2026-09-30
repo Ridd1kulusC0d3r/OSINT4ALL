@@ -24,6 +24,26 @@ Observed strengths include AI-assisted research, breach-exposure awareness, iden
 
 Security/pentest-only material is not automatically imported. OSINT4ALL keeps public-source investigation distinct from exploitation.
 
+## OSINT Shifu / awesome-osint-repos
+
+Repository: https://github.com/osintshifu/awesome-osint-repos
+
+Role: **repository-first structured OSINT catalogue**.
+
+The reviewed catalogue exposes 12 main categories, 28 target-input types, a canonical CSV, an emerging-project view, a timeline, and a dedicated Agentic/MCP view. Its strongest contribution to OSINT4ALL is therefore structural: tools can be discovered by the concrete artifact an analyst already has.
+
+Adopted concepts:
+
+- `target_inputs`;
+- implementation type;
+- repository-first curation;
+- emerging-project watchlist;
+- Agentic/MCP as a separate analytical layer;
+- catalogue timeline/change intelligence;
+- machine-readable upstream provenance.
+
+Selected project imports include Bellingcat Octosuite, ICIJ Datashare, FollowTheMoney, OpenTrace, changedetection.io, UseOSINT Skills and additional investigation/discovery tools.
+
 ## Trace Labs organization review
 
 Organization: https://github.com/orgs/tracelabs/repositories

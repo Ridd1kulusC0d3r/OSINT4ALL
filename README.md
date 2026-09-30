@@ -4,8 +4,8 @@
 > Jurisdiction-aware · evidence-first · machine-readable · bilingual · AI-assisted with human validation
 
 [![Language](https://img.shields.io/badge/language-English%20%7C%20Portugu%C3%AAs-0A66C2)](#languages)
-[![Catalog](https://img.shields.io/badge/catalog-v0.3.0-blue)](data/resources.json)
-[![Resources](https://img.shields.io/badge/resources-61-informational)](catalog/INDEX.generated.md)
+[![Catalog](https://img.shields.io/badge/catalog-v0.3.2-blue)](data/resources.json)
+[![Resources](https://img.shields.io/badge/resources-76-informational)](catalog/INDEX.generated.md)
 [![Ethics](https://img.shields.io/badge/use-ethical%20%26%20lawful-success)](ETHICS.md)
 [![AI Assisted](https://img.shields.io/badge/curation-AI--assisted-orange)](#ai-assisted-curation)
 
@@ -30,6 +30,10 @@ The canonical data source is [data/resources.json](data/resources.json). Markdow
 | Find any structured resource | [Generated Resource Index](catalog/INDEX.generated.md) |
 | Understand intelligence disciplines | [Intelligence Disciplines](docs/INTELLIGENCE-DISCIPLINES.md) |
 | Search techniques and discovery | [Search & Discovery](catalog/SEARCH-DISCOVERY.md) |
+| Start from a username/email/domain/image/etc. | [Tools by Target Input](catalog/INPUTS.generated.md) |
+| GitHub / public code repositories | [Code Repository OSINT](catalog/CODE-REPOSITORY-OSINT.md) |
+| Organize cases, evidence and hypotheses | [Investigation Workbenches](catalog/INVESTIGATION-WORKBENCHES.md) |
+| Agent/MCP-assisted workflows | [Agentic OSINT](catalog/AGENTIC-OSINT.md) |
 | Preserve web/media evidence | [Evidence Capture & Preservation](catalog/EVIDENCE-PRESERVATION.md) |
 | People / usernames / email / phone | [People OSINT](catalog/PEOPLE-OSINT.md) |
 | Missing-person methodology | [Missing Persons OSINT](catalog/MISSING-PERSONS-OSINT.md) |
@@ -106,7 +110,7 @@ See [docs/INTELLIGENCE-DISCIPLINES.md](docs/INTELLIGENCE-DISCIPLINES.md) for def
 
 ### Investigative domains tracked
 
-**Search & discovery · People & identity · Missing persons · SOCMINT · GEOINT · IMINT · Media verification · Evidence preservation · Web archives · Corporate intelligence · Financial intelligence · Public records · Cyber infrastructure · CTI · OT/ICS defensive research · Space & satellite · Aviation · Maritime · Transport · Environmental intelligence · Conflict verification · Nuclear/CBRNE public-source research · Academic/grey literature · News/media · Monitoring/RSS · AI-assisted analysis · Training**
+**Search & discovery · Target-input discovery · Code repository intelligence · Investigation workbenches · Agentic OSINT · People & identity · Missing persons · SOCMINT · GEOINT · IMINT · Media verification · Evidence preservation · Web archives · Corporate intelligence · Financial intelligence · Public records · Cyber infrastructure · CTI · OT/ICS defensive research · Space & satellite · Aviation · Maritime · Transport · Environmental intelligence · Conflict verification · Nuclear/CBRNE public-source research · Academic/grey literature · News/media · Monitoring/RSS · AI-assisted analysis · Training**
 
 ### Jurisdiction model
 
@@ -132,6 +136,7 @@ OSINT4ALL uses major lists as **upstream discovery ecosystems**, not as content 
 |---|---|
 | [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint) | Classical OSINT taxonomy: search, people, SOCMINT, domains, archives, imagery, academic research, geospatial, monitoring and CTI |
 | [Astrosp/Awesome-OSINT-List](https://github.com/Astrosp/Awesome-OSINT-List) | Broad modern coverage: AI, identity resolution, media verification, metadata, vehicles, aviation, maritime, finance, blockchain, government/public records and training |
+| [OSINT Shifu / awesome-osint-repos](https://github.com/osintshifu/awesome-osint-repos) | Repository-first catalogue, target-input model, emerging projects, agentic/MCP integrations and investigation workbenches |
 | [Trace Labs repositories](https://github.com/orgs/tracelabs/repositories) | Missing-person methodology, passive research, evidence quality, analyst safety, VM/workstation, training and tooling-selection discipline |
 | [Bellingcat Toolkit](https://bellingcat.gitbook.io/toolkit) | Verification-oriented investigation resources |
 | [OSINT Framework](https://osintframework.com/) | Discovery-tree approach |
@@ -239,6 +244,8 @@ data/resources.json
         │
         ├── schema → schema/resource.schema.json
         │
+        ├── input taxonomy → catalog/INPUTS.generated.md
+        │
         └── generated view → catalog/INDEX.generated.md
 ```
 
@@ -256,7 +263,7 @@ The CI rejects malformed IDs, duplicate canonical URLs, invalid disciplines and 
 | Schema + taxonomy + CI | ✅ |
 | Link health | ✅ |
 | Trace Labs methodology integration | ✅ |
-| jivoi + Astrosp upstream mapping | ✅ |
+| jivoi + Astrosp + OSINT Shifu upstream mapping | ✅ |
 | Evidence preservation layer | ✅ |
 | Thematic catalogs | ✅ growing |
 | Brazil country seed | ✅ |

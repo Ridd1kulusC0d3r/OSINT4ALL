@@ -31,3 +31,5 @@ jobs:
         run: python scripts/validate_catalog.py
       - name: Check generated index
         run: python scripts/generate_catalog.py --check
+      - name: Check generated target-input index
+        run: python scripts/generate_inputs.py --check

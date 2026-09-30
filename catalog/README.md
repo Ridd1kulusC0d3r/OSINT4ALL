@@ -7,6 +7,10 @@ This folder contains thematic catalogs. AI-assisted imports default to **🟡 Ne
 | [Generated Index](INDEX.generated.md) | Machine-generated view of canonical resource data |
 | [Awesome Repositories](AWESOME-REPOSITORIES.md) | Upstream lists, meta-indexes and discovery hubs |
 | [Search & Discovery](SEARCH-DISCOVERY.md) | Search surfaces, archives and discovery discipline |
+| [Tools by Target Input](INPUTS.generated.md) | Generated input-oriented resource view |
+| [Code Repository OSINT](CODE-REPOSITORY-OSINT.md) | Public source-code repository and identity research |
+| [Investigation Workbenches](INVESTIGATION-WORKBENCHES.md) | Cases, entities, evidence, timelines and hypotheses |
+| [Agentic OSINT](AGENTIC-OSINT.md) | Skills, MCP and agent-assisted investigation with provenance |
 | [Evidence Preservation](EVIDENCE-PRESERVATION.md) | Capture, archive, provenance and media preservation |
 | [AI-Assisted OSINT](AI-ASSISTED-OSINT.md) | Safe AI roles, provenance and validation guardrails |
 | [SOCMINT](SOCMINT.md) | Social media intelligence |

@@ -1,5 +1,5 @@
 {
-  "catalog_version": "0.3.1",
+  "catalog_version": "0.3.2",
   "generated_policy": "AI-assisted entries default to needs-review until a human validates the canonical URL and core capability.",
   "resources": [
     {
@@ -104,7 +104,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "platform"
     },
     {
       "id": "global-astrosp-awesome-osint-list",
@@ -163,7 +167,47 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "cli"
+    },
+    {
+      "id": "global-bellingcat-octosuite",
+      "name": "Bellingcat Octosuite",
+      "canonical_url": "https://github.com/bellingcat/octosuite",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "code-repository-intelligence",
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "github-user-research",
+        "github-repository-research",
+        "github-organization-research"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "username",
+        "repository-url"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Verified from upstream README as a terminal-based toolkit for GitHub user, repository, organization and search analysis."
     },
     {
       "id": "global-bellingcat-toolkit",
@@ -245,7 +289,48 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "ip-address",
+        "domain"
+      ],
+      "implementation_type": "service"
+    },
+    {
+      "id": "global-changedetection-io",
+      "name": "changedetection.io",
+      "canonical_url": "https://github.com/dgtlmoon/changedetection.io",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "change-intelligence",
+        "web-monitoring"
+      ],
+      "use_cases": [
+        "website-change-monitoring",
+        "diff-monitoring",
+        "alerting"
+      ],
+      "source_type": "open-source",
+      "access": "mixed",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "web-app",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Verified from project README as a web-page change-monitoring platform with diffing and alert integrations. AI summaries remain secondary to the underlying captured diff."
     },
     {
       "id": "global-copernicus-browser",
@@ -298,7 +383,12 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "document",
+        "file"
+      ],
+      "implementation_type": "desktop"
     },
     {
       "id": "global-exiftool",
@@ -323,7 +413,13 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "file",
+        "image",
+        "video"
+      ],
+      "implementation_type": "cli"
     },
     {
       "id": "global-ffmpeg",
@@ -351,7 +447,88 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "audio",
+        "video",
+        "file"
+      ],
+      "implementation_type": "cli"
+    },
+    {
+      "id": "global-flowsint",
+      "name": "Flowsint",
+      "canonical_url": "https://github.com/reconurge/flowsint",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "investigation-workbench",
+        "link-analysis",
+        "entity-resolution"
+      ],
+      "use_cases": [
+        "graph-investigation",
+        "entity-enrichment"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "name",
+        "organization-name"
+      ],
+      "implementation_type": "web-app",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ]
+    },
+    {
+      "id": "global-followthemoney",
+      "name": "FollowTheMoney",
+      "canonical_url": "https://github.com/alephdata/followthemoney",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "FININT",
+        "DOMEX"
+      ],
+      "domains": [
+        "entity-resolution",
+        "corporate-intelligence",
+        "investigative-data"
+      ],
+      "use_cases": [
+        "entity-modeling",
+        "data-normalization",
+        "relationship-modeling"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "name",
+        "organization-name",
+        "dataset"
+      ],
+      "implementation_type": "library",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Verified from project README as a pragmatic data model for people, companies, assets, payments, court cases and related investigative entities."
     },
     {
       "id": "global-gallery-dl",
@@ -403,7 +580,45 @@
       ],
       "status": "needs-review",
       "last_verified": null,
-      "notes": "Use only for lawful research into information exposed through supported public/account-authorized surfaces."
+      "notes": "Use only for lawful research into information exposed through supported public/account-authorized surfaces.",
+      "target_inputs": [
+        "name"
+      ],
+      "implementation_type": "cli"
+    },
+    {
+      "id": "global-gitfive",
+      "name": "GitFive",
+      "canonical_url": "https://github.com/mxrch/GitFive",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "code-repository-intelligence",
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "github-identity-correlation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "name",
+        "username",
+        "repository-url"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ]
     },
     {
       "id": "global-global-fishing-watch",
@@ -430,7 +645,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "location"
+      ],
+      "implementation_type": "service"
     },
     {
       "id": "global-global-forest-watch",
@@ -484,7 +703,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "cli"
     },
     {
       "id": "global-haveibeenpwned",
@@ -514,6 +737,38 @@
       "notes": "Defensive exposure-checking reference; OSINT4ALL does not promote access to stolen credentials or illicit datasets."
     },
     {
+      "id": "global-holehe",
+      "name": "Holehe",
+      "canonical_url": "https://github.com/megadose/holehe",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "email-account-discovery"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "email"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Candidate identity-discovery tool. Registration/account hits are leads, not identity proof."
+    },
+    {
       "id": "global-httrack",
       "name": "HTTrack",
       "canonical_url": "https://www.httrack.com/",
@@ -541,6 +796,45 @@
       "last_verified": null
     },
     {
+      "id": "global-icij-datashare",
+      "name": "ICIJ Datashare",
+      "canonical_url": "https://github.com/ICIJ/datashare",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "document-analysis",
+        "investigative-data"
+      ],
+      "use_cases": [
+        "full-text-search",
+        "ocr",
+        "entity-extraction",
+        "document-review"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "document",
+        "file",
+        "dataset"
+      ],
+      "implementation_type": "platform",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Verified from ICIJ README as a self-hosted document search and analysis platform with OCR, metadata and named-entity extraction."
+    },
+    {
       "id": "global-instaloader",
       "name": "Instaloader",
       "canonical_url": "https://github.com/instaloader/instaloader",
@@ -565,7 +859,13 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "name",
+        "username",
+        "image"
+      ],
+      "implementation_type": "library"
     },
     {
       "id": "global-intelowl",
@@ -590,7 +890,14 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "domain",
+        "ip-address",
+        "file-hash",
+        "url"
+      ],
+      "implementation_type": "platform"
     },
     {
       "id": "global-internetarchive-cli",
@@ -667,7 +974,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "username"
+      ],
+      "implementation_type": "cli"
     },
     {
       "id": "global-maltego",
@@ -723,7 +1034,13 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "location",
+        "coordinates",
+        "image"
+      ],
+      "implementation_type": "service"
     },
     {
       "id": "global-mat2",
@@ -776,7 +1093,13 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "domain",
+        "ip-address",
+        "file-hash"
+      ],
+      "implementation_type": "platform"
     },
     {
       "id": "global-monolith",
@@ -906,7 +1229,48 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "domain",
+        "ip-address",
+        "file-hash"
+      ],
+      "implementation_type": "platform"
+    },
+    {
+      "id": "global-openrefine",
+      "name": "OpenRefine",
+      "canonical_url": "https://github.com/OpenRefine/OpenRefine",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "data-processing",
+        "document-analysis"
+      ],
+      "use_cases": [
+        "data-cleaning",
+        "entity-normalization",
+        "dataset-transformation"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "dataset"
+      ],
+      "implementation_type": "desktop",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ]
     },
     {
       "id": "global-opensky",
@@ -932,7 +1296,53 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "aircraft-id",
+        "location"
+      ],
+      "implementation_type": "service"
+    },
+    {
+      "id": "global-opentrace",
+      "name": "OpenTrace",
+      "canonical_url": "https://github.com/Gacut/OpenTrace",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "investigation-workbench",
+        "evidence-preservation",
+        "link-analysis"
+      ],
+      "use_cases": [
+        "case-management",
+        "hypothesis-tracking",
+        "evidence-organization",
+        "relationship-mapping"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "name",
+        "url",
+        "document",
+        "image"
+      ],
+      "implementation_type": "desktop",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Verified from project README as an offline, privacy-oriented investigation workspace with relationships, hypotheses, sources, SHA-256 integrity data and portable exports."
     },
     {
       "id": "global-osint-framework",
@@ -959,6 +1369,48 @@
       "last_verified": null
     },
     {
+      "id": "global-osintshifu-awesome-osint-repos",
+      "name": "Awesome OSINT Repositories by OSINT Shifu",
+      "canonical_url": "https://github.com/osintshifu/awesome-osint-repos",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT",
+        "GEOINT",
+        "IMINT",
+        "CTI",
+        "CYBINT",
+        "FININT"
+      ],
+      "domains": [
+        "meta-index",
+        "agentic-osint"
+      ],
+      "use_cases": [
+        "resource-discovery",
+        "taxonomy-discovery",
+        "input-based-discovery",
+        "emerging-project-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Repository-first OSINT catalogue with category, target-input, emerging-project, agentic/MCP and timeline views. Useful as a structured upstream rather than a list to mirror wholesale."
+    },
+    {
       "id": "global-phoneinfoga",
       "name": "PhoneInfoga",
       "canonical_url": "https://github.com/sundowndev/phoneinfoga",
@@ -980,7 +1432,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "phone-number"
+      ],
+      "implementation_type": "cli"
     },
     {
       "id": "global-qgis",
@@ -1007,7 +1463,13 @@
         "pt-BR"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "dataset",
+        "coordinates",
+        "location"
+      ],
+      "implementation_type": "desktop"
     },
     {
       "id": "global-rawfilejson-awesome-osint-arsenal",
@@ -1056,7 +1518,14 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "domain",
+        "ip-address",
+        "name",
+        "organization-name"
+      ],
+      "implementation_type": "framework"
     },
     {
       "id": "global-safecast",
@@ -1082,7 +1551,12 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "location",
+        "coordinates"
+      ],
+      "implementation_type": "service"
     },
     {
       "id": "global-searxng",
@@ -1133,7 +1607,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "username"
+      ],
+      "implementation_type": "cli"
     },
     {
       "id": "global-shodan",
@@ -1158,7 +1636,45 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "ip-address",
+        "domain"
+      ],
+      "implementation_type": "service"
+    },
+    {
+      "id": "global-singlefile",
+      "name": "SingleFile",
+      "canonical_url": "https://github.com/gildas-lormeau/SingleFile",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "evidence-preservation",
+        "web-archives"
+      ],
+      "use_cases": [
+        "single-file-web-capture"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "browser-extension",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ]
     },
     {
       "id": "global-sn0int",
@@ -1188,6 +1704,40 @@
       "last_verified": null
     },
     {
+      "id": "global-social-analyzer",
+      "name": "Social Analyzer",
+      "canonical_url": "https://github.com/qeeqbox/social-analyzer",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT"
+      ],
+      "domains": [
+        "social-media-intelligence",
+        "identity-intelligence"
+      ],
+      "use_cases": [
+        "cross-platform-profile-discovery"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "name",
+        "username"
+      ],
+      "implementation_type": "platform",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ]
+    },
+    {
       "id": "global-space-track",
       "name": "Space-Track.org",
       "canonical_url": "https://www.space-track.org/",
@@ -1211,7 +1761,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "aircraft-id"
+      ],
+      "implementation_type": "service"
     },
     {
       "id": "global-spiderfoot",
@@ -1237,7 +1791,14 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "domain",
+        "ip-address",
+        "username",
+        "email"
+      ],
+      "implementation_type": "platform"
     },
     {
       "id": "global-tesseract-ocr",
@@ -1265,7 +1826,12 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "image",
+        "document"
+      ],
+      "implementation_type": "cli"
     },
     {
       "id": "global-theharvester",
@@ -1292,7 +1858,45 @@
       ],
       "status": "needs-review",
       "last_verified": null,
-      "notes": "Cataloged for lawful public-source infrastructure research."
+      "notes": "Cataloged for lawful public-source infrastructure research.",
+      "target_inputs": [
+        "domain"
+      ],
+      "implementation_type": "cli"
+    },
+    {
+      "id": "global-timesketch",
+      "name": "Timesketch",
+      "canonical_url": "https://github.com/google/timesketch",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "timeline-analysis",
+        "investigation-workbench"
+      ],
+      "use_cases": [
+        "timeline-analysis",
+        "collaborative-analysis"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "event-data"
+      ],
+      "implementation_type": "platform",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ]
     },
     {
       "id": "global-tracelabs-awesome-osint",
@@ -1501,6 +2105,44 @@
       "notes": "Educational repository with sanitized OSINT challenges, methodologies, verification steps and redacted answers."
     },
     {
+      "id": "global-useosint-skills",
+      "name": "UseOSINT Skills",
+      "canonical_url": "https://github.com/UseOSINT/Skills",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT",
+        "GEOINT",
+        "CYBINT"
+      ],
+      "domains": [
+        "agentic-osint",
+        "investigation-methodology"
+      ],
+      "use_cases": [
+        "agent-assisted-research",
+        "evidence-grading",
+        "source-grounded-reporting"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "skill-pack",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Verified from README as an agent skill pack emphasizing source-backed reports and confidence. OSINT4ALL treats agent output as analysis assistance, never as a source."
+    },
+    {
       "id": "global-usgs-earthexplorer",
       "name": "USGS EarthExplorer",
       "canonical_url": "https://earthexplorer.usgs.gov/",
@@ -1551,7 +2193,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "service"
     },
     {
       "id": "global-whatsmyname",
@@ -1576,7 +2222,11 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "target_inputs": [
+        "username"
+      ],
+      "implementation_type": "framework"
     },
     {
       "id": "global-wigle",
@@ -1603,6 +2253,45 @@
       ],
       "status": "needs-review",
       "last_verified": null
+    },
+    {
+      "id": "global-world-intel-mcp",
+      "name": "World Intel MCP",
+      "canonical_url": "https://github.com/marc-shade/world-intel-mcp",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "GEOINT"
+      ],
+      "domains": [
+        "agentic-osint",
+        "situational-awareness",
+        "monitoring"
+      ],
+      "use_cases": [
+        "cited-research",
+        "event-monitoring",
+        "situation-briefing"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "keyword",
+        "location",
+        "event-data"
+      ],
+      "implementation_type": "mcp-server",
+      "upstream_refs": [
+        "osintshifu-awesome-osint-repos"
+      ],
+      "notes": "Candidate agentic integration. Any generated brief must retain underlying source provenance."
     },
     {
       "id": "global-yt-dlp",

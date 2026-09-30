@@ -1,5 +1,5 @@
 {
-  "taxonomy_version": "0.2.0",
+  "taxonomy_version": "0.3.0",
   "disciplines": [
     "OSINT",
     "HUMINT",
@@ -57,5 +57,54 @@
     "broken-unsafe",
     "historical"
   ],
-  "notes": "Domains and use_cases remain extensible kebab-case vocabularies in v0.2; disciplines and control fields are closed vocabularies."
+  "notes": "Domains and use_cases remain extensible kebab-case vocabularies. Disciplines, target_inputs, implementation_types and control fields are canonical vocabularies.",
+  "target_inputs": [
+    "aircraft-id",
+    "asn",
+    "audio",
+    "bssid-ssid",
+    "cidr",
+    "coordinates",
+    "crypto-address",
+    "cve-id",
+    "dataset",
+    "document",
+    "domain",
+    "email",
+    "event-data",
+    "file",
+    "file-hash",
+    "image",
+    "ip-address",
+    "keyword",
+    "location",
+    "name",
+    "onion-service",
+    "organization-name",
+    "phone-number",
+    "repository-url",
+    "text",
+    "url",
+    "username",
+    "video",
+    "no-fixed-input"
+  ],
+  "implementation_types": [
+    "cli",
+    "desktop",
+    "library",
+    "web-app",
+    "browser-extension",
+    "framework",
+    "platform",
+    "dataset-tool",
+    "skill",
+    "skill-pack",
+    "plugin",
+    "mcp-server",
+    "agent",
+    "agent-plus-mcp",
+    "service",
+    "meta-index"
+  ]
 }

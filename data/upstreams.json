@@ -61,6 +61,41 @@
       ]
     },
     {
+      "id": "osintshifu-awesome-osint-repos",
+      "url": "https://github.com/osintshifu/awesome-osint-repos",
+      "status": "active-reviewed",
+      "role": "repository-first-structured-osint-catalogue",
+      "last_push_observed": "2026-09-28",
+      "imported_as": "global-osintshifu-awesome-osint-repos",
+      "observed_scale": {
+        "catalogue_projects": 493,
+        "target_inputs": 28,
+        "emerging_projects": 109,
+        "agentic_integrations": 136
+      },
+      "strengths": [
+        "repository-first-curation",
+        "target-input-taxonomy",
+        "identity",
+        "social-media",
+        "code-repositories",
+        "infrastructure",
+        "web",
+        "dark-web",
+        "threat-intelligence",
+        "documents-records",
+        "media",
+        "geolocation",
+        "cryptocurrency",
+        "investigation-workbenches",
+        "agentic-ai",
+        "mcp",
+        "emerging-projects",
+        "timeline",
+        "csv-dataset"
+      ]
+    },
+    {
       "id": "tracelabs",
       "url": "https://github.com/orgs/tracelabs/repositories",
       "status": "organization-reviewed",

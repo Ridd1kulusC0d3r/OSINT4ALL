@@ -31,6 +31,8 @@ def main():
     allowed_status = set(taxonomy["statuses"])
     allowed_source_types = set(taxonomy["source_types"])
     allowed_access = set(taxonomy["access_models"])
+    allowed_inputs = set(taxonomy.get("target_inputs", []))
+    allowed_impl = set(taxonomy.get("implementation_types", []))
 
     ids, urls = set(), set()
 
@@ -78,6 +80,26 @@ def main():
                 if not TAG_RE.match(value):
                     errors.append(f"{prefix}: {field} value must be kebab-case: {value!r}")
 
+        inputs = r.get("target_inputs")
+        if inputs is not None:
+            if not isinstance(inputs, list) or not inputs or len(inputs) != len(set(inputs)):
+                errors.append(f"{prefix}: target_inputs must be a non-empty unique list when present")
+            else:
+                unknown_inputs = set(inputs) - allowed_inputs
+                if unknown_inputs:
+                    errors.append(f"{prefix}: unknown target_inputs: {sorted(unknown_inputs)}")
+
+        impl = r.get("implementation_type")
+        if impl is not None and impl not in allowed_impl:
+            errors.append(f"{prefix}: unknown implementation_type {impl!r}")
+
+        refs = r.get("upstream_refs")
+        if refs is not None:
+            if not isinstance(refs, list) or len(refs) != len(set(refs)):
+                errors.append(f"{prefix}: upstream_refs must be a unique list")
+            elif any(not ID_RE.match(x) for x in refs):
+                errors.append(f"{prefix}: upstream_refs values must be canonical IDs")
+
         if r.get("status") not in allowed_status:
             errors.append(f"{prefix}: invalid status")
         if r.get("source_type") not in allowed_source_types:
@@ -94,9 +116,10 @@ def main():
     if errors:
         fail(errors)
 
+    with_inputs = sum(1 for r in resources if r.get("target_inputs"))
     print(
-        f"OK: {len(resources)} resources validated; "
-        "IDs/URLs unique; disciplines and control vocabularies canonical."
+        f"OK: {len(resources)} resources validated; {with_inputs} have target-input metadata; "
+        "IDs/URLs unique; taxonomies canonical."
     )
 
 if __name__ == "__main__":

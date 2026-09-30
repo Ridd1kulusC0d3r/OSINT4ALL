@@ -2,17 +2,25 @@
 
 > Generated from `data/resources.json`. Do not edit manually.
 
-**Catalog version:** 0.3.1  
-**Resources:** 61
+**Catalog version:** 0.3.2  
+**Resources:** 76
 
 ## Jurisdiction coverage
 
 | Jurisdiction | Resources |
 |---|---:|
 | BR | 3 |
-| GLOBAL | 58 |
+| GLOBAL | 73 |
 
 ## By domain
+
+### agentic-osint
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Awesome OSINT Repositories by OSINT Shifu](https://github.com/osintshifu/awesome-osint-repos) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT, CTI, CYBINT, FININT | free | verified |
+| [UseOSINT Skills](https://github.com/UseOSINT/Skills) | GLOBAL | OSINT, SOCMINT, GEOINT, CYBINT | free | verified |
+| [World Intel MCP](https://github.com/marc-shade/world-intel-mcp) | GLOBAL | OSINT, GEOINT | free | needs-review |
 
 ### analyst-safety
 
@@ -33,10 +41,24 @@
 |---|---|---|---|---|
 | [Have I Been Pwned](https://haveibeenpwned.com/) | GLOBAL | OSINT, CTI | freemium | needs-review |
 
+### change-intelligence
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [changedetection.io](https://github.com/dgtlmoon/changedetection.io) | GLOBAL | OSINT, WEBINT | mixed | verified |
+
+### code-repository-intelligence
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Bellingcat Octosuite](https://github.com/bellingcat/octosuite) | GLOBAL | OSINT | free | verified |
+| [GitFive](https://github.com/mxrch/GitFive) | GLOBAL | OSINT | free | needs-review |
+
 ### corporate-intelligence
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
+| [FollowTheMoney](https://github.com/alephdata/followthemoney) | GLOBAL | OSINT, FININT, DOMEX | free | verified |
 | [OpenCorporates](https://opencorporates.com/) | GLOBAL | OSINT, FININT | freemium | needs-review |
 
 ### cyber-infrastructure
@@ -50,17 +72,27 @@
 | [SpiderFoot](https://github.com/smicallef/spiderfoot) | GLOBAL | OSINT, CYBINT | free | needs-review |
 | [theHarvester](https://github.com/laramies/theHarvester) | GLOBAL | OSINT, CYBINT | free | needs-review |
 
+### data-processing
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [OpenRefine](https://github.com/OpenRefine/OpenRefine) | GLOBAL | OSINT, DOMEX | free | needs-review |
+
 ### document-analysis
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
 | [Dangerzone](https://github.com/freedomofpress/dangerzone) | GLOBAL | OSINT, DOMEX | free | needs-review |
+| [ICIJ Datashare](https://github.com/ICIJ/datashare) | GLOBAL | OSINT, DOMEX | free | verified |
+| [OpenRefine](https://github.com/OpenRefine/OpenRefine) | GLOBAL | OSINT, DOMEX | free | needs-review |
 | [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) | GLOBAL | OSINT, IMINT, DOMEX | free | needs-review |
 
 ### entity-resolution
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
+| [Flowsint](https://github.com/reconurge/flowsint) | GLOBAL | OSINT | free | needs-review |
+| [FollowTheMoney](https://github.com/alephdata/followthemoney) | GLOBAL | OSINT, FININT, DOMEX | free | verified |
 | [Maltego](https://www.maltego.com/) | GLOBAL | OSINT, SOCMINT, CYBINT | freemium | needs-review |
 
 ### environmental-intelligence
@@ -84,6 +116,8 @@
 | [gowitness](https://github.com/sensepost/gowitness) | GLOBAL | OSINT, DOMEX | free | needs-review |
 | [Internet Archive CLI](https://github.com/jjjake/internetarchive) | GLOBAL | OSINT, DOMEX | free | needs-review |
 | [Monolith](https://github.com/Y2Z/monolith) | GLOBAL | OSINT, DOMEX | free | needs-review |
+| [OpenTrace](https://github.com/Gacut/OpenTrace) | GLOBAL | OSINT, DOMEX | free | verified |
+| [SingleFile](https://github.com/gildas-lormeau/SingleFile) | GLOBAL | OSINT, DOMEX | free | needs-review |
 
 ### geospatial-analysis
 
@@ -97,10 +131,14 @@
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
+| [Bellingcat Octosuite](https://github.com/bellingcat/octosuite) | GLOBAL | OSINT | free | verified |
 | [GHunt](https://github.com/mxrch/GHunt) | GLOBAL | OSINT, SOCMINT | free | needs-review |
+| [GitFive](https://github.com/mxrch/GitFive) | GLOBAL | OSINT | free | needs-review |
+| [Holehe](https://github.com/megadose/holehe) | GLOBAL | OSINT | free | needs-review |
 | [Maigret](https://github.com/soxoj/maigret) | GLOBAL | OSINT, SOCMINT | free | needs-review |
 | [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) | GLOBAL | OSINT | free | needs-review |
 | [Sherlock](https://github.com/sherlock-project/sherlock) | GLOBAL | OSINT, SOCMINT | free | needs-review |
+| [Social Analyzer](https://github.com/qeeqbox/social-analyzer) | GLOBAL | OSINT, SOCMINT | free | needs-review |
 | [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) | GLOBAL | OSINT, SOCMINT | free | needs-review |
 
 ### investigation-environment
@@ -117,12 +155,30 @@
 | [Trace Labs Gumshoe](https://github.com/tracelabs/gumshoe) | GLOBAL | OSINT | free | historical |
 | [Trace Labs OSINT Field Manual](https://github.com/tracelabs/tofm) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
 | [Trace Labs Weekly OSINT Challenges](https://github.com/tracelabs/tracelabs-weekly-osint-challenges) | GLOBAL | OSINT, GEOINT, IMINT | free | verified |
+| [UseOSINT Skills](https://github.com/UseOSINT/Skills) | GLOBAL | OSINT, SOCMINT, GEOINT, CYBINT | free | verified |
+
+### investigation-workbench
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Flowsint](https://github.com/reconurge/flowsint) | GLOBAL | OSINT | free | needs-review |
+| [OpenTrace](https://github.com/Gacut/OpenTrace) | GLOBAL | OSINT, DOMEX | free | verified |
+| [Timesketch](https://github.com/google/timesketch) | GLOBAL | OSINT, DOMEX | free | needs-review |
+
+### investigative-data
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [FollowTheMoney](https://github.com/alephdata/followthemoney) | GLOBAL | OSINT, FININT, DOMEX | free | verified |
+| [ICIJ Datashare](https://github.com/ICIJ/datashare) | GLOBAL | OSINT, DOMEX | free | verified |
 
 ### link-analysis
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
+| [Flowsint](https://github.com/reconurge/flowsint) | GLOBAL | OSINT | free | needs-review |
 | [Maltego](https://www.maltego.com/) | GLOBAL | OSINT, SOCMINT, CYBINT | freemium | needs-review |
+| [OpenTrace](https://github.com/Gacut/OpenTrace) | GLOBAL | OSINT, DOMEX | free | verified |
 | [Trace Labs Gumshoe](https://github.com/tracelabs/gumshoe) | GLOBAL | OSINT | free | historical |
 
 ### maritime-intelligence
@@ -153,6 +209,7 @@
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
 | [Astrosp Awesome OSINT List](https://github.com/Astrosp/Awesome-OSINT-List) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT, CTI, FININT, CYBINT | free | verified |
+| [Awesome OSINT Repositories by OSINT Shifu](https://github.com/osintshifu/awesome-osint-repos) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT, CTI, CYBINT, FININT | free | verified |
 | [awesome-osint-arsenal](https://github.com/rawfilejson/awesome-osint-arsenal) | GLOBAL | OSINT | free | needs-review |
 | [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint) | GLOBAL | OSINT | free | verified |
 | [OSINT Framework](https://osintframework.com/) | GLOBAL | OSINT | free | needs-review |
@@ -172,6 +229,12 @@
 | [Trace Labs OSINT Field Manual](https://github.com/tracelabs/tofm) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | verified |
 | [Trace Labs OSINT VM](https://github.com/tracelabs/tlosint-vm) | GLOBAL | OSINT, SOCMINT | free | verified |
 | [Trace Labs Search Party CTF Writeups](https://github.com/tracelabs/searchparty-ctf-writeups) | GLOBAL | OSINT, SOCMINT, GEOINT, IMINT | free | historical |
+
+### monitoring
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [World Intel MCP](https://github.com/marc-shade/world-intel-mcp) | GLOBAL | OSINT, GEOINT | free | needs-review |
 
 ### osint-framework
 
@@ -213,11 +276,18 @@
 | [SearXNG](https://github.com/searxng/searxng) | GLOBAL | OSINT, WEBINT | free | needs-review |
 | [theHarvester](https://github.com/laramies/theHarvester) | GLOBAL | OSINT, CYBINT | free | needs-review |
 
+### situational-awareness
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [World Intel MCP](https://github.com/marc-shade/world-intel-mcp) | GLOBAL | OSINT, GEOINT | free | needs-review |
+
 ### social-media-intelligence
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
 |---|---|---|---|---|
 | [Instaloader](https://github.com/instaloader/instaloader) | GLOBAL | OSINT, SOCMINT | free | needs-review |
+| [Social Analyzer](https://github.com/qeeqbox/social-analyzer) | GLOBAL | OSINT, SOCMINT | free | needs-review |
 
 ### space-intelligence
 
@@ -240,6 +310,12 @@
 | [MISP](https://github.com/MISP/MISP) | GLOBAL | CTI, CYBINT | free | needs-review |
 | [OpenCTI](https://github.com/OpenCTI-Platform/opencti) | GLOBAL | CTI, CYBINT | free | needs-review |
 
+### timeline-analysis
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [Timesketch](https://github.com/google/timesketch) | GLOBAL | OSINT, DOMEX | free | needs-review |
+
 ### verification
 
 | Resource | Jurisdiction | Disciplines | Access | Status |
@@ -256,6 +332,13 @@
 | [HTTrack](https://www.httrack.com/) | GLOBAL | OSINT, WEBINT | free | needs-review |
 | [Internet Archive CLI](https://github.com/jjjake/internetarchive) | GLOBAL | OSINT, DOMEX | free | needs-review |
 | [Internet Archive Wayback Machine](https://web.archive.org/) | GLOBAL | OSINT, WEBINT | free | needs-review |
+| [SingleFile](https://github.com/gildas-lormeau/SingleFile) | GLOBAL | OSINT, DOMEX | free | needs-review |
+
+### web-monitoring
+
+| Resource | Jurisdiction | Disciplines | Access | Status |
+|---|---|---|---|---|
+| [changedetection.io](https://github.com/dgtlmoon/changedetection.io) | GLOBAL | OSINT, WEBINT | mixed | verified |
 
 ### web-research
 
