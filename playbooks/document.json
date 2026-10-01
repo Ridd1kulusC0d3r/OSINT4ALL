@@ -1,0 +1,68 @@
+{
+  "name": "document",
+  "label": "Document Intelligence Source Plan",
+  "version": "1.0.0",
+  "purpose": "Guide safe local analysis and provenance-preserving document review.",
+  "target_inputs": [
+    "document",
+    "file"
+  ],
+  "jurisdictions": [
+    "GLOBAL"
+  ],
+  "safety": {
+    "mode": "analyst-guided",
+    "requires_human_review": true,
+    "prohibited": [
+      "executing embedded content",
+      "uploading sensitive files to unapproved services"
+    ]
+  },
+  "steps": [
+    {
+      "id": "preserve-original",
+      "goal": "Preserve the original before analysis.",
+      "resource_filters": {
+        "domains": [
+          "evidence-preservation"
+        ],
+        "execution_classes": [
+          "local-analysis",
+          "catalog-only"
+        ]
+      },
+      "evidence_requirement": "Record filename, acquisition context and hash where feasible.",
+      "stop_condition": "Do not continue until the original is preserved."
+    },
+    {
+      "id": "local-analysis",
+      "goal": "Inspect metadata, structure, OCR and residual content locally where possible.",
+      "resource_filters": {
+        "target_inputs": [
+          "document",
+          "file"
+        ],
+        "execution_classes": [
+          "local-analysis"
+        ],
+        "statuses": [
+          "verified",
+          "needs-review"
+        ]
+      },
+      "evidence_requirement": "Tie every extracted value to file, location/page and analysis method.",
+      "stop_condition": "Stop if analysis requires unsafe execution or unnecessary disclosure."
+    },
+    {
+      "id": "corroborate",
+      "goal": "Corroborate candidate pivots using independent public sources.",
+      "resource_filters": {
+        "domains": [
+          "search-discovery"
+        ]
+      },
+      "evidence_requirement": "Do not treat extracted metadata as identity proof.",
+      "stop_condition": "Stop when pivots are corroborated or remain explicitly unresolved."
+    }
+  ]
+}

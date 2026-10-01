@@ -1,5 +1,5 @@
 {
-  "catalog_version": "0.3.3",
+  "catalog_version": "0.4.0",
   "generated_policy": "AI-assisted entries default to needs-review until a human validates the canonical URL and core capability.",
   "resources": [
     {
@@ -811,7 +811,14 @@
         "osintshifu-awesome-osint-repos"
       ],
       "notes": "Verified from project README as a pragmatic data model for people, companies, assets, payments, court cases and related investigative entities.",
-      "catalog_added": "2026-09-30"
+      "catalog_added": "2026-09-30",
+      "interfaces": [
+        "library"
+      ],
+      "network_mode": "offline",
+      "data_handling": "local",
+      "execution_class": "local-analysis",
+      "human_review_required": true
     },
     {
       "id": "global-gallery-dl",
@@ -1710,6 +1717,71 @@
       "catalog_added": "2026-09-30"
     },
     {
+      "id": "global-openosint-openosint",
+      "name": "OpenOSINT",
+      "canonical_url": "https://github.com/OpenOSINT/OpenOSINT",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CTI",
+        "CYBINT"
+      ],
+      "domains": [
+        "agentic-osint",
+        "investigation-workbench",
+        "entity-resolution",
+        "evidence-graph",
+        "mcp"
+      ],
+      "use_cases": [
+        "resource-orchestration",
+        "entity-correlation",
+        "evidence-provenance",
+        "playbook-execution",
+        "reporting"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "catalog_added": "2026-09-30",
+      "target_inputs": [
+        "email",
+        "username",
+        "domain",
+        "ip-address",
+        "phone-number",
+        "file-hash",
+        "url",
+        "name",
+        "organization-name",
+        "keyword"
+      ],
+      "implementation_type": "agent-plus-mcp",
+      "upstream_refs": [
+        "openosint-profile"
+      ],
+      "interfaces": [
+        "cli",
+        "web",
+        "mcp",
+        "repl"
+      ],
+      "network_mode": "mixed",
+      "data_handling": "mixed",
+      "execution_class": "mixed",
+      "human_review_required": true,
+      "license": "MIT",
+      "current_version": "2.29.0",
+      "last_release": "2026-09-17",
+      "notes": "Verified from repository documentation and release metadata. OpenOSINT exposes CLI/REPL/Web/MCP surfaces, declarative playbooks, bounded pivoting, reporting, entity correlation and an additive FollowTheMoney-backed graph with statement-level provenance and human-reviewed same_as resolution. OSINT4ALL adopts the architecture patterns, not automatic target collection."
+    },
+    {
       "id": "global-openrefine",
       "name": "OpenRefine",
       "canonical_url": "https://github.com/OpenRefine/OpenRefine",
@@ -1971,7 +2043,15 @@
         "osintshifu-profile"
       ],
       "catalog_added": "2026-09-30",
-      "notes": "Verified from README as a local, read-only file-intelligence tool that preserves source, match basis, location and time context; also exposes an MCP interface."
+      "notes": "Verified from README as a local, read-only file-intelligence tool that preserves source, match basis, location and time context; also exposes an MCP interface.",
+      "interfaces": [
+        "cli",
+        "mcp"
+      ],
+      "network_mode": "offline",
+      "data_handling": "local",
+      "execution_class": "local-analysis",
+      "human_review_required": true
     },
     {
       "id": "global-osintshifu-querytool",
@@ -2008,7 +2088,14 @@
         "osintshifu-profile"
       ],
       "catalog_added": "2026-09-30",
-      "notes": "Verified from README as a dependency-free standalone HTML query builder with an embedded curated source catalogue and JSON browser-session import/export."
+      "notes": "Verified from README as a dependency-free standalone HTML query builder with an embedded curated source catalogue and JSON browser-session import/export.",
+      "interfaces": [
+        "web"
+      ],
+      "network_mode": "mixed",
+      "data_handling": "local",
+      "execution_class": "catalog-only",
+      "human_review_required": false
     },
     {
       "id": "global-osintshifu-unmasker",
@@ -2047,7 +2134,14 @@
         "osintshifu-profile"
       ],
       "catalog_added": "2026-09-30",
-      "notes": "Verified from README as a local, read-only detector for hidden, residual and failed-redaction content. Findings are indicators to validate, not automatic conclusions."
+      "notes": "Verified from README as a local, read-only detector for hidden, residual and failed-redaction content. Findings are indicators to validate, not automatic conclusions.",
+      "interfaces": [
+        "cli"
+      ],
+      "network_mode": "offline",
+      "data_handling": "local",
+      "execution_class": "local-analysis",
+      "human_review_required": true
     },
     {
       "id": "global-phoneinfoga",

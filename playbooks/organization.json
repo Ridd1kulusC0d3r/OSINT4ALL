@@ -1,0 +1,64 @@
+{
+  "name": "organization",
+  "label": "Organization / Corporate Source Plan",
+  "version": "1.0.0",
+  "purpose": "Route analysts toward public corporate, registry, procurement and relationship sources.",
+  "target_inputs": [
+    "organization-name"
+  ],
+  "jurisdictions": [
+    "GLOBAL"
+  ],
+  "safety": {
+    "mode": "analyst-guided",
+    "requires_human_review": true,
+    "prohibited": [
+      "private-account access",
+      "coercion",
+      "automated identity merging"
+    ]
+  },
+  "steps": [
+    {
+      "id": "registry",
+      "goal": "Locate authoritative or well-sourced organization records.",
+      "resource_filters": {
+        "target_inputs": [
+          "organization-name"
+        ],
+        "domains": [
+          "corporate-intelligence"
+        ],
+        "statuses": [
+          "verified",
+          "needs-review"
+        ]
+      },
+      "evidence_requirement": "Distinguish official registry facts from third-party aggregation.",
+      "stop_condition": "Stop when authoritative identifiers and jurisdiction are established."
+    },
+    {
+      "id": "relationships",
+      "goal": "Map public relationships as candidate assertions.",
+      "resource_filters": {
+        "domains": [
+          "entity-resolution",
+          "investigative-data"
+        ]
+      },
+      "evidence_requirement": "Every relationship must cite a source and remain an assertion until corroborated.",
+      "stop_condition": "Stop before inferring control or ownership beyond the evidence."
+    },
+    {
+      "id": "preservation",
+      "goal": "Preserve decisive records.",
+      "resource_filters": {
+        "domains": [
+          "evidence-preservation"
+        ]
+      },
+      "evidence_requirement": "Capture URL, timestamp and document/page context.",
+      "stop_condition": "Stop when sufficient evidence supports the assessment."
+    }
+  ]
+}

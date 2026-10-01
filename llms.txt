@@ -1,0 +1,43 @@
+# OSINT4ALL
+> Jurisdiction-aware, evidence-first, machine-readable atlas of OSINT and intelligence resources.
+
+## Purpose
+OSINT4ALL maps resources by jurisdiction, intelligence discipline, target-input class, use case, implementation type, validation state and evidence workflow. It is a catalogue and methodology project, not an autonomous target-collection agent.
+
+## Canonical machine-readable files
+- data/resources.json — canonical resource catalogue
+- data/taxonomies.json — controlled vocabularies
+- data/upstreams.json — upstream provenance and curation decisions
+- data/emerging.json — emerging-project watchlist
+- data/history.json — catalogue evolution
+- data/upstream-snapshots.json — change-intelligence baselines
+- schema/resource.schema.json — resource schema
+- schema/playbook.schema.json — source-selection playbook schema
+- schema/evidence-bundle.schema.json — evidence/provenance graph bundle schema
+
+## Safe router
+Use scripts/osint4all_router.py to filter catalogue metadata by input type, jurisdiction, discipline, domain, status, execution class or playbook. The router makes no network requests and does not accept target values.
+
+## Evidence rules
+- AI output is not evidence.
+- Facts require source/capture provenance.
+- Machine similarity may create only unresolved entity-resolution candidates.
+- Human review is required for positive/negative same_as decisions.
+- Resource validation, observation confidence, resolution similarity and analytical confidence are separate scales.
+
+## Documentation
+- README.md — project cockpit
+- docs/INTELLIGENCE-DISCIPLINES.md — INT taxonomy
+- docs/AI-EXECUTION-CONTRACT.md — agent constraints
+- docs/EVIDENCE-GRAPH.md — statement/provenance/entity model
+- docs/CONFIDENCE-SCALES.md — confidence semantics
+- docs/PLAYBOOKS.md — declarative source-selection plans
+- docs/OPENOSINT-ADOPTION.md — architectural lessons adopted from OpenOSINT
+- ETHICS.md — ethical and lawful use
+- VALIDATION.md — catalogue validation
+
+## Languages
+English is the canonical machine-facing language. Portuguese (pt-BR) is a first-class human-facing language, especially for Brazil jurisdiction packs.
+
+## Repository
+https://github.com/Ridd1kulusC0d3r/OSINT4ALL

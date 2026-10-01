@@ -1,0 +1,67 @@
+{
+  "name": "image-geolocation",
+  "label": "Image & Geolocation Verification Plan",
+  "version": "1.0.0",
+  "purpose": "Structure image verification, metadata review and geolocation without automatic attribution.",
+  "target_inputs": [
+    "image",
+    "location",
+    "coordinates"
+  ],
+  "jurisdictions": [
+    "GLOBAL"
+  ],
+  "safety": {
+    "mode": "analyst-guided",
+    "requires_human_review": true,
+    "prohibited": [
+      "identifying private individuals from biometric inference",
+      "publishing sensitive precise locations"
+    ]
+  },
+  "steps": [
+    {
+      "id": "preserve",
+      "goal": "Preserve the original media and visible context.",
+      "resource_filters": {
+        "domains": [
+          "evidence-preservation"
+        ]
+      },
+      "evidence_requirement": "Record original URL/file, timestamp and capture method.",
+      "stop_condition": "Stop if provenance cannot be established."
+    },
+    {
+      "id": "metadata",
+      "goal": "Inspect embedded metadata as a lead.",
+      "resource_filters": {
+        "target_inputs": [
+          "image",
+          "file"
+        ],
+        "domains": [
+          "media-forensics"
+        ]
+      },
+      "evidence_requirement": "Label metadata as observed, not independently corroborated.",
+      "stop_condition": "Stop before treating editable metadata as conclusive."
+    },
+    {
+      "id": "geolocation",
+      "goal": "Compare public map, imagery and contextual clues.",
+      "resource_filters": {
+        "target_inputs": [
+          "location",
+          "coordinates",
+          "image"
+        ],
+        "disciplines": [
+          "GEOINT",
+          "IMINT"
+        ]
+      },
+      "evidence_requirement": "Record each independent clue and alternative explanation.",
+      "stop_condition": "Stop when confidence can be justified or the location remains unresolved."
+    }
+  ]
+}

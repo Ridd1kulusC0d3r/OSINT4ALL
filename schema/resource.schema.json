@@ -329,6 +329,67 @@
               "dork",
               "unknown"
             ]
+          },
+          "interfaces": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "api",
+                "cli",
+                "dataset",
+                "desktop",
+                "library",
+                "mcp",
+                "repl",
+                "web"
+              ]
+            }
+          },
+          "network_mode": {
+            "type": "string",
+            "enum": [
+              "offline",
+              "remote-query",
+              "mixed",
+              "unknown"
+            ]
+          },
+          "data_handling": {
+            "type": "string",
+            "enum": [
+              "transient",
+              "local",
+              "remote",
+              "mixed",
+              "unknown"
+            ]
+          },
+          "execution_class": {
+            "type": "string",
+            "enum": [
+              "catalog-only",
+              "local-analysis",
+              "passive-query",
+              "mixed",
+              "active-network"
+            ]
+          },
+          "human_review_required": {
+            "type": "boolean"
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "current_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "last_release": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
           }
         }
       }

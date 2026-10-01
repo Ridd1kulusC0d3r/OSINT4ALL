@@ -1,0 +1,60 @@
+{
+  "name": "cti-indicator",
+  "label": "Defensive CTI Indicator Enrichment Plan",
+  "version": "1.0.0",
+  "purpose": "Route defensive analysts to public threat-intelligence context for indicators.",
+  "target_inputs": [
+    "domain",
+    "ip-address",
+    "url",
+    "file-hash"
+  ],
+  "jurisdictions": [
+    "GLOBAL"
+  ],
+  "safety": {
+    "mode": "analyst-guided",
+    "requires_human_review": true,
+    "prohibited": [
+      "exploitation",
+      "credential acquisition",
+      "malware deployment"
+    ]
+  },
+  "steps": [
+    {
+      "id": "reputation-context",
+      "goal": "Collect public reputation and infrastructure context.",
+      "resource_filters": {
+        "disciplines": [
+          "CTI"
+        ],
+        "target_inputs": [
+          "domain",
+          "ip-address",
+          "url",
+          "file-hash"
+        ],
+        "execution_classes": [
+          "passive-query",
+          "mixed",
+          "catalog-only"
+        ]
+      },
+      "evidence_requirement": "Separate provider verdicts from direct observations.",
+      "stop_condition": "Stop when sufficient defensive context is obtained."
+    },
+    {
+      "id": "correlate",
+      "goal": "Correlate independent sources and timelines.",
+      "resource_filters": {
+        "domains": [
+          "threat-intelligence",
+          "cyber-infrastructure"
+        ]
+      },
+      "evidence_requirement": "Do not convert co-occurrence into actor attribution without corroboration.",
+      "stop_condition": "Stop before moving from enrichment into active probing."
+    }
+  ]
+}

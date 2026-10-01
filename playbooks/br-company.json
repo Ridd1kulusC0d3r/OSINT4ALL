@@ -1,0 +1,55 @@
+{
+  "name": "br-company",
+  "label": "Brazil Company / CNPJ Source Plan",
+  "version": "1.0.0",
+  "purpose": "Select Brazilian public sources and structured datasets for organization research.",
+  "target_inputs": [
+    "organization-name"
+  ],
+  "jurisdictions": [
+    "BR"
+  ],
+  "safety": {
+    "mode": "analyst-guided",
+    "requires_human_review": true,
+    "prohibited": [
+      "mass personal-data collection",
+      "unnecessary retention of personal identifiers"
+    ]
+  },
+  "steps": [
+    {
+      "id": "identifier",
+      "goal": "Resolve the organization to an authoritative CNPJ or company identifier.",
+      "resource_filters": {
+        "jurisdiction_inputs": [
+          "BR:cnpj"
+        ],
+        "jurisdictions": [
+          "BR"
+        ],
+        "statuses": [
+          "verified",
+          "needs-review"
+        ]
+      },
+      "evidence_requirement": "Record source nature and whether the identifier is official or third-party.",
+      "stop_condition": "Stop if multiple entities remain ambiguous."
+    },
+    {
+      "id": "public-records",
+      "goal": "Locate public corporate, procurement, court or regulatory context relevant to the requirement.",
+      "resource_filters": {
+        "jurisdictions": [
+          "BR"
+        ],
+        "domains": [
+          "regional-osint",
+          "corporate-intelligence"
+        ]
+      },
+      "evidence_requirement": "Apply LGPD-aware minimization and retain only relevant public facts.",
+      "stop_condition": "Stop when the intelligence requirement is answered."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "manifest_version": "0.1.0",
+  "name": "OSINT4ALL Resource Router",
+  "mode": "read-only-catalog",
+  "network_access": false,
+  "accepts_target_values": false,
+  "canonical_catalog": "data/resources.json",
+  "playbooks": "playbooks/*.json",
+  "outputs": [
+    "resource-selection",
+    "source-plan",
+    "evidence-requirements",
+    "stop-conditions"
+  ],
+  "guardrails": {
+    "ai_output_is_evidence": false,
+    "automatic_identity_merge": false,
+    "positive_resolution_requires_human": true,
+    "unbounded_pivoting": false
+  },
+  "supported_filters": [
+    "target_inputs",
+    "jurisdiction_inputs",
+    "jurisdictions",
+    "disciplines",
+    "domains",
+    "statuses",
+    "execution_classes"
+  ]
+}

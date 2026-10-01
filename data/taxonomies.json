@@ -1,5 +1,5 @@
 {
-  "taxonomy_version": "0.4.0",
+  "taxonomy_version": "0.5.0",
   "disciplines": [
     "OSINT",
     "HUMINT",
@@ -202,5 +202,60 @@
     "api",
     "dork",
     "unknown"
-  ]
+  ],
+  "interface_modes": [
+    "api",
+    "cli",
+    "dataset",
+    "desktop",
+    "library",
+    "mcp",
+    "repl",
+    "web"
+  ],
+  "network_modes": [
+    "offline",
+    "remote-query",
+    "mixed",
+    "unknown"
+  ],
+  "data_handling_modes": [
+    "transient",
+    "local",
+    "remote",
+    "mixed",
+    "unknown"
+  ],
+  "execution_classes": [
+    "catalog-only",
+    "local-analysis",
+    "passive-query",
+    "mixed",
+    "active-network"
+  ],
+  "step_states": [
+    "not_configured",
+    "invalid_input",
+    "empty",
+    "error",
+    "success"
+  ],
+  "assertion_labels": [
+    "observed",
+    "claimed",
+    "corroborated",
+    "inferred",
+    "unresolved"
+  ],
+  "resolution_judgements": [
+    "unsure",
+    "positive",
+    "negative"
+  ],
+  "confidence_scales": {
+    "resource_validation": "verified | needs-review | changed | broken-unsafe | historical",
+    "observation_confidence": "low | medium | high (ordinal; not probability)",
+    "resolution_similarity": "0..1 similarity score (not probability)",
+    "analytical_confidence": "low | medium | high with rationale"
+  }
 }

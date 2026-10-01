@@ -367,6 +367,43 @@
           "reason": "rootkit research rather than OSINT"
         }
       ]
+    },
+    {
+      "id": "openosint-profile",
+      "url": "https://github.com/OpenOSINT/OpenOSINT",
+      "status": "repository-reviewed",
+      "role": "agent-mcp-playbooks-evidence-graph-human-review",
+      "reviewed_on": "2026-09-30",
+      "observed_release": "v2.29.0",
+      "release_published": "2026-09-17",
+      "repositories": [
+        {
+          "repo": "OpenOSINT/OpenOSINT",
+          "decision": "incorporated-architecture-and-resource",
+          "reason": "CLI/REPL/Web/MCP interfaces, declarative playbooks, bounded automation, explicit step states, entity graph, statement provenance, FollowTheMoney interoperability and human-reviewed identity resolution."
+        }
+      ],
+      "adopted_patterns": [
+        "tool-routing-by-input",
+        "bounded-automation",
+        "declarative-playbooks",
+        "explicit-step-state",
+        "statement-level-provenance",
+        "append-only-evidence",
+        "deterministic-structured-identity",
+        "human-review-resolution",
+        "separate-confidence-scales",
+        "followthemoney-compatibility",
+        "local-first-graph-ui",
+        "llms-txt-discoverability"
+      ],
+      "intentionally_not_adopted": [
+        "automatic-target-collection",
+        "captcha-or-access-control-bypass",
+        "credential-dump-acquisition",
+        "unbounded-auto-pivot",
+        "automatic-identity-merge"
+      ]
     }
   ]
 }

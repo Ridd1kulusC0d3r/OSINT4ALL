@@ -1,0 +1,69 @@
+{
+  "name": "domain",
+  "label": "Domain Evidence-First Source Plan",
+  "version": "1.0.0",
+  "purpose": "Select public-source resources for domain context without executing collection.",
+  "target_inputs": [
+    "domain"
+  ],
+  "jurisdictions": [
+    "GLOBAL"
+  ],
+  "safety": {
+    "mode": "catalog-only",
+    "requires_human_review": true,
+    "prohibited": [
+      "automatic target execution",
+      "access-control bypass",
+      "unbounded pivoting"
+    ]
+  },
+  "steps": [
+    {
+      "id": "authoritative-context",
+      "goal": "Prefer registration, DNS and certificate context from transparent sources.",
+      "resource_filters": {
+        "target_inputs": [
+          "domain"
+        ],
+        "execution_classes": [
+          "passive-query",
+          "mixed",
+          "catalog-only"
+        ],
+        "statuses": [
+          "verified",
+          "needs-review"
+        ]
+      },
+      "evidence_requirement": "Record the exact source URL, capture time and what was directly observed.",
+      "stop_condition": "Stop when the intelligence requirement is satisfied or the next pivot lacks a lawful public-source basis."
+    },
+    {
+      "id": "history",
+      "goal": "Check historical and archived context.",
+      "resource_filters": {
+        "target_inputs": [
+          "url",
+          "domain"
+        ],
+        "domains": [
+          "web-archives"
+        ]
+      },
+      "evidence_requirement": "Keep current and historical observations separate and timestamped.",
+      "stop_condition": "Stop if historical material cannot be independently tied to the target."
+    },
+    {
+      "id": "preservation",
+      "goal": "Preserve important public evidence.",
+      "resource_filters": {
+        "domains": [
+          "evidence-preservation"
+        ]
+      },
+      "evidence_requirement": "Create a capture record and hash where feasible.",
+      "stop_condition": "Stop once the relevant evidence is reproducibly preserved."
+    }
+  ]
+}

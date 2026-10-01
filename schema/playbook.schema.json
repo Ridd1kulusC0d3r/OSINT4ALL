@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ridd1kulusC0d3r/OSINT4ALL/schema/playbook.schema.json",
+  "title": "OSINT4ALL Source-Selection Playbook",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "label",
+    "version",
+    "purpose",
+    "target_inputs",
+    "steps",
+    "safety"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_inputs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "jurisdictions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "requires_human_review",
+        "prohibited"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "catalog-only",
+            "analyst-guided"
+          ]
+        },
+        "requires_human_review": {
+          "type": "boolean"
+        },
+        "prohibited": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "goal",
+          "resource_filters",
+          "evidence_requirement",
+          "stop_condition"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]+$"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "resource_filters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "target_inputs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "jurisdiction_inputs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "jurisdictions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "disciplines": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "domains": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "statuses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "execution_classes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "evidence_requirement": {
+            "type": "string"
+          },
+          "stop_condition": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

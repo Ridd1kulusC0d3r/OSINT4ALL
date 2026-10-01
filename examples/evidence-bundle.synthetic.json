@@ -1,0 +1,122 @@
+{
+  "bundle_version": "0.1.0",
+  "case": {
+    "case_id": "synthetic-example-org",
+    "title": "Synthetic organization correlation demo",
+    "purpose": "Demonstrate statement provenance and human-reviewed resolution with fictional/reserved data.",
+    "jurisdictions": [
+      "GLOBAL"
+    ],
+    "created_at": "2026-09-30T12:00:00Z",
+    "handling": "synthetic"
+  },
+  "entities": [
+    {
+      "entity_id": "org:example-research-cooperative:a",
+      "entity_type": "organization",
+      "display_name": "Example Research Cooperative",
+      "identifiers": [
+        {
+          "kind": "domain",
+          "value": "example.org"
+        }
+      ]
+    },
+    {
+      "entity_id": "org:example-research-coop:b",
+      "entity_type": "organization",
+      "display_name": "Example Research Co-op",
+      "identifiers": [
+        {
+          "kind": "url",
+          "value": "https://example.org/about"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-001",
+      "resource_id": null,
+      "url": "https://example.org/",
+      "source_class": "primary"
+    },
+    {
+      "source_id": "source-002",
+      "resource_id": null,
+      "url": "https://example.org/about",
+      "source_class": "primary"
+    }
+  ],
+  "captures": [
+    {
+      "capture_id": "capture-001",
+      "source_id": "source-001",
+      "collected_at": "2026-09-30T12:01:00Z",
+      "method": "manual-public-web",
+      "archive_url": null,
+      "sha256": null
+    },
+    {
+      "capture_id": "capture-002",
+      "source_id": "source-002",
+      "collected_at": "2026-09-30T12:02:00Z",
+      "method": "manual-public-web",
+      "archive_url": null,
+      "sha256": null
+    }
+  ],
+  "statements": [
+    {
+      "statement_id": "stmt-001",
+      "entity_id": "org:example-research-cooperative:a",
+      "property": "website",
+      "value": "https://example.org/",
+      "assertion_label": "observed",
+      "source_id": "source-001",
+      "capture_id": "capture-001"
+    },
+    {
+      "statement_id": "stmt-002",
+      "entity_id": "org:example-research-coop:b",
+      "property": "website",
+      "value": "https://example.org/about",
+      "assertion_label": "observed",
+      "source_id": "source-002",
+      "capture_id": "capture-002"
+    }
+  ],
+  "provenance": [
+    {
+      "statement_id": "stmt-001",
+      "run_id": "synthetic-run-001",
+      "collection_method": "manual-public-web",
+      "observed_at": "2026-09-30T12:01:00Z",
+      "observation_confidence": "high",
+      "notes": "Reserved example.org domain used for demonstration."
+    },
+    {
+      "statement_id": "stmt-002",
+      "run_id": "synthetic-run-001",
+      "collection_method": "manual-public-web",
+      "observed_at": "2026-09-30T12:02:00Z",
+      "observation_confidence": "high",
+      "notes": "Reserved example.org domain used for demonstration."
+    }
+  ],
+  "resolution_candidates": [
+    {
+      "candidate_id": "resolution-001",
+      "entity_a": "org:example-research-cooperative:a",
+      "entity_b": "org:example-research-coop:b",
+      "similarity_score": 0.82,
+      "score_semantics": "similarity-not-probability",
+      "judgement": "unsure",
+      "decided_by": "auto",
+      "explanation": [
+        "normalized-name similarity",
+        "shared reserved-domain context"
+      ]
+    }
+  ]
+}
