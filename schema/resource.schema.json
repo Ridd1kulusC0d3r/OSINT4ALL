@@ -32,7 +32,8 @@
           "access",
           "languages",
           "status",
-          "last_verified"
+          "last_verified",
+          "catalog_added"
         ],
         "properties": {
           "id": {
@@ -203,37 +204,41 @@
                 "keyword",
                 "location",
                 "name",
+                "no-fixed-input",
                 "onion-service",
                 "organization-name",
                 "phone-number",
                 "repository-url",
+                "satellite-id",
                 "text",
                 "url",
                 "username",
-                "video",
-                "no-fixed-input"
+                "vessel-id",
+                "video"
               ]
             }
           },
           "implementation_type": {
             "type": "string",
             "enum": [
-              "cli",
-              "desktop",
-              "library",
-              "web-app",
-              "browser-extension",
-              "framework",
-              "platform",
-              "dataset-tool",
-              "skill",
-              "skill-pack",
-              "plugin",
-              "mcp-server",
               "agent",
               "agent-plus-mcp",
+              "bookmarklet",
+              "browser-extension",
+              "cli",
+              "dataset-tool",
+              "desktop",
+              "documentation",
+              "framework",
+              "library",
+              "mcp-server",
+              "meta-index",
+              "platform",
+              "plugin",
               "service",
-              "meta-index"
+              "skill",
+              "skill-pack",
+              "web-app"
             ]
           },
           "upstream_refs": {
@@ -243,6 +248,87 @@
               "type": "string",
               "pattern": "^[a-z0-9][a-z0-9-]+$"
             }
+          },
+          "catalog_added": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "jurisdiction_inputs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]{2}:[a-z0-9][a-z0-9-]*$"
+            }
+          },
+          "output_types": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "registry-data",
+                "registration-status",
+                "company-officers",
+                "economic-activity",
+                "address",
+                "case-record",
+                "case-parties",
+                "case-movement",
+                "certificate",
+                "criminal-record",
+                "arrest-warrant",
+                "social-benefit",
+                "public-compensation",
+                "public-contract",
+                "procurement",
+                "sanction",
+                "vehicle-data",
+                "fine",
+                "financial-debt",
+                "property-data",
+                "rural-area",
+                "environmental-license",
+                "enforcement-notice",
+                "telecom-operator",
+                "cell-site",
+                "radio-frequency",
+                "broadcast-license",
+                "dataset",
+                "official-gazette",
+                "json-api",
+                "map-layer",
+                "satellite-imagery",
+                "live-video",
+                "cv-profile",
+                "academic-publication",
+                "social-profile",
+                "search-query",
+                "statistics",
+                "professional-link",
+                "financing",
+                "registry-office"
+              ]
+            }
+          },
+          "authority_scope": {
+            "type": "string",
+            "enum": [
+              "federal",
+              "state",
+              "municipal",
+              "judiciary",
+              "public-prosecutor",
+              "legislative",
+              "public-defender",
+              "nonprofit",
+              "private",
+              "academic",
+              "international",
+              "api",
+              "dork",
+              "unknown"
+            ]
           }
         }
       }

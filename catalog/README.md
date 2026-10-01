@@ -8,6 +8,10 @@ This folder contains thematic catalogs. AI-assisted imports default to **🟡 Ne
 | [Awesome Repositories](AWESOME-REPOSITORIES.md) | Upstream lists, meta-indexes and discovery hubs |
 | [Search & Discovery](SEARCH-DISCOVERY.md) | Search surfaces, archives and discovery discipline |
 | [Tools by Target Input](INPUTS.generated.md) | Generated input-oriented resource view |
+| [Emerging Watchlist](EMERGING.generated.md) | Candidates monitored before promotion |
+| [Catalogue Timeline](TIMELINE.generated.md) | Project maturity and resource-addition history |
+| [File & Document Intelligence](FILE-DOCUMENT-INTELLIGENCE.md) | Provenance, metadata, OCR and document verification |
+| [Blockchain OSINT](BLOCKCHAIN-OSINT.md) | Public-ledger, scam/abuse and FININT research |
 | [Code Repository OSINT](CODE-REPOSITORY-OSINT.md) | Public source-code repository and identity research |
 | [Investigation Workbenches](INVESTIGATION-WORKBENCHES.md) | Cases, entities, evidence, timelines and hypotheses |
 | [Agentic OSINT](AGENTIC-OSINT.md) | Skills, MCP and agent-assisted investigation with provenance |

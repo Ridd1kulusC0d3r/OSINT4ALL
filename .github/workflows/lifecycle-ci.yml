@@ -1,0 +1,36 @@
+name: Lifecycle Views CI
+
+on:
+  pull_request:
+    paths:
+      - "data/resources.json"
+      - "data/emerging.json"
+      - "data/history.json"
+      - "scripts/generate_emerging.py"
+      - "scripts/generate_timeline.py"
+      - "catalog/EMERGING.generated.md"
+      - "catalog/TIMELINE.generated.md"
+  push:
+    branches: [main]
+    paths:
+      - "data/resources.json"
+      - "data/emerging.json"
+      - "data/history.json"
+      - "scripts/generate_emerging.py"
+      - "scripts/generate_timeline.py"
+      - "catalog/EMERGING.generated.md"
+      - "catalog/TIMELINE.generated.md"
+
+permissions:
+  contents: read
+
+jobs:
+  generated-views:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/generate_emerging.py --check
+      - run: python scripts/generate_timeline.py --check

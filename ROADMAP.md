@@ -25,11 +25,28 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [ ] Add intelligence-cycle tags to resource records
 - [ ] Add strategic/operational/tactical tags
 
+## v0.3.3 — Lifecycle & Ecosystem Intelligence
+
+- [x] Profile-level review: OSINT Shifu
+- [x] Profile-level review: K2SOsint
+- [x] Profile-level review: OSINT Brazuca
+- [x] Profile-level review: jivoi
+- [x] Emerging-project watchlist
+- [x] Catalogue timeline
+- [x] Weekly upstream diff intelligence
+- [x] Jurisdiction-specific identifier schema
+- [x] Brazil input/output/source-nature mapping
+- [x] Blockchain OSINT catalog
+- [x] File & Document Intelligence catalog
+- [ ] Normalize/import OSINT Brazuca child sources as needs-review records
+- [ ] Per-source provenance URL and upstream record ID
+- [ ] Automated source-level diff against OSINT Brazuca structured dataset
+
 ## v0.4 — Brazil Jurisdiction Atlas
 
-- [ ] Federal source pack
-- [ ] 26 state packs
-- [ ] Distrito Federal pack
+- [ ] Federal source pack generated from normalized authoritative sources
+- [ ] 26 state packs using BR subdivision metadata
+- [ ] Distrito Federal pack using BR-DF metadata
 - [ ] Courts and justice
 - [ ] Companies and procurement
 - [ ] Property/land
@@ -44,12 +61,13 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [x] Schema validation
 - [x] Duplicate canonical URL detection
 - [x] Scheduled link-health checks
-- [ ] GitHub archive/release detection
-- [ ] Stale-resource reports
+- [x] GitHub archive/default-branch/head-change detection for tracked upstreams
+- [ ] Release/version intelligence for canonical tools
+- [ ] Stale-resource scoring and review SLA
 - [ ] Ownership/domain-change detection
 - [ ] Provenance URLs
-- [ ] Emerging-project automated watchlist
-- [ ] Upstream catalogue diffing
+- [x] Emerging-project watchlist and generated view
+- [x] Upstream catalogue baseline + scheduled diff reporting
 - [ ] License field
 - [ ] API/authentication metadata
 

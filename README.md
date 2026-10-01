@@ -4,8 +4,8 @@
 > Jurisdiction-aware · evidence-first · machine-readable · bilingual · AI-assisted with human validation
 
 [![Language](https://img.shields.io/badge/language-English%20%7C%20Portugu%C3%AAs-0A66C2)](#languages)
-[![Catalog](https://img.shields.io/badge/catalog-v0.3.2-blue)](data/resources.json)
-[![Resources](https://img.shields.io/badge/resources-76-informational)](catalog/INDEX.generated.md)
+[![Catalog](https://img.shields.io/badge/catalog-v0.3.3-blue)](data/resources.json)
+[![Resources](https://img.shields.io/badge/resources-89-informational)](catalog/INDEX.generated.md)
 [![Ethics](https://img.shields.io/badge/use-ethical%20%26%20lawful-success)](ETHICS.md)
 [![AI Assisted](https://img.shields.io/badge/curation-AI--assisted-orange)](#ai-assisted-curation)
 
@@ -31,6 +31,11 @@ The canonical data source is [data/resources.json](data/resources.json). Markdow
 | Understand intelligence disciplines | [Intelligence Disciplines](docs/INTELLIGENCE-DISCIPLINES.md) |
 | Search techniques and discovery | [Search & Discovery](catalog/SEARCH-DISCOVERY.md) |
 | Start from a username/email/domain/image/etc. | [Tools by Target Input](catalog/INPUTS.generated.md) |
+| Emerging projects worth reviewing | [Emerging Watchlist](catalog/EMERGING.generated.md) |
+| See how the catalogue evolved | [Catalogue Timeline](catalog/TIMELINE.generated.md) |
+| Brazilian identifiers / local inputs | [Brazil Identifier Model](countries/BR/IDENTIFIERS.md) |
+| File/document intelligence | [File & Document Intelligence](catalog/FILE-DOCUMENT-INTELLIGENCE.md) |
+| Blockchain / crypto investigations | [Blockchain & Cryptocurrency OSINT](catalog/BLOCKCHAIN-OSINT.md) |
 | GitHub / public code repositories | [Code Repository OSINT](catalog/CODE-REPOSITORY-OSINT.md) |
 | Organize cases, evidence and hypotheses | [Investigation Workbenches](catalog/INVESTIGATION-WORKBENCHES.md) |
 | Agent/MCP-assisted workflows | [Agentic OSINT](catalog/AGENTIC-OSINT.md) |
@@ -140,7 +145,8 @@ OSINT4ALL uses major lists as **upstream discovery ecosystems**, not as content 
 | [Trace Labs repositories](https://github.com/orgs/tracelabs/repositories) | Missing-person methodology, passive research, evidence quality, analyst safety, VM/workstation, training and tooling-selection discipline |
 | [Bellingcat Toolkit](https://bellingcat.gitbook.io/toolkit) | Verification-oriented investigation resources |
 | [OSINT Framework](https://osintframework.com/) | Discovery-tree approach |
-| [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) | Brazilian OSINT ecosystem |
+| [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) | Brazilian structured-source ecosystem, local identifiers, output taxonomy and research/tooling |
+| [K2SOsint](https://github.com/K2SOsint) | Thematic curation including blockchain, railways, reporting, OSINT-for-good and browser utilities |
 
 Detailed provenance and import policy: [docs/UPSTREAM-SOURCES.md](docs/UPSTREAM-SOURCES.md).
 
@@ -263,7 +269,7 @@ The CI rejects malformed IDs, duplicate canonical URLs, invalid disciplines and 
 | Schema + taxonomy + CI | ✅ |
 | Link health | ✅ |
 | Trace Labs methodology integration | ✅ |
-| jivoi + Astrosp + OSINT Shifu upstream mapping | ✅ |
+| jivoi + Astrosp + OSINT Shifu + K2SOsint + OSINT Brazuca upstream mapping | ✅ |
 | Evidence preservation layer | ✅ |
 | Thematic catalogs | ✅ growing |
 | Brazil country seed | ✅ |
@@ -271,10 +277,47 @@ The CI rejects malformed IDs, duplicate canonical URLs, invalid disciplines and 
 | Evidence-first playbooks | 🚧 |
 | GitHub Pages searchable UI | planned |
 | Knowledge graph / case graph | planned |
-| Change intelligence / monitoring | planned |
+| Change intelligence / monitoring | ✅ upstream baseline + 🚧 deeper automation |
+| Emerging-project watchlist | ✅ |
+| Catalogue timeline | ✅ |
 | Academy / challenges | planned |
 
 Full plan: [docs/ANALYST-ROADMAP.md](docs/ANALYST-ROADMAP.md).
+
+---
+
+## Lifecycle intelligence / Inteligência de ciclo de vida
+
+OSINT4ALL now tracks **change around the tools themselves**.
+
+```text
+Upstream repository
+      ↓
+stored baseline SHA
+      ↓
+scheduled comparison
+      ↓
+change / archive / branch signal
+      ↓
+review queue
+      ↓
+promote · update · mark changed · historical
+```
+
+- [Emerging Watchlist](catalog/EMERGING.generated.md)
+- [Catalogue Timeline](catalog/TIMELINE.generated.md)
+- machine baseline: `data/upstream-snapshots.json`
+- weekly workflow: `.github/workflows/upstream-intelligence.yml`
+
+A changed upstream creates a review signal. It does **not** automatically mean the project improved, broke, or became unsafe.
+
+## Brazil structured-source model
+
+The reviewed OSINT Brazuca dataset exposes a useful jurisdictional model: **input → output → source nature → UF**.
+
+OSINT4ALL now supports identifiers such as `BR:cpf`, `BR:cnpj`, `BR:case-number`, `BR:cep`, `BR:vehicle-plate`, `BR:property-registration` and others without pretending those identifiers are globally interchangeable.
+
+See [Brazil Identifier Model](countries/BR/IDENTIFIERS.md).
 
 ---
 

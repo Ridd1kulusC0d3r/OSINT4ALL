@@ -12,6 +12,7 @@ TAXONOMY = ROOT / "data" / "taxonomies.json"
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]+$")
 TAG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 JUR_RE = re.compile(r"^(GLOBAL|[A-Z]{2}(-[A-Z0-9]{1,3})?)$")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 def fail(errors):
     for item in errors:
@@ -33,6 +34,13 @@ def main():
     allowed_access = set(taxonomy["access_models"])
     allowed_inputs = set(taxonomy.get("target_inputs", []))
     allowed_impl = set(taxonomy.get("implementation_types", []))
+    allowed_outputs = set(taxonomy.get("output_types", []))
+    allowed_authority = set(taxonomy.get("authority_scopes", []))
+    allowed_local_inputs = {
+        country + ":" + value
+        for country, values in taxonomy.get("jurisdiction_inputs", {}).items()
+        for value in values
+    }
 
     ids, urls = set(), set()
 
@@ -40,7 +48,8 @@ def main():
         prefix = f"resource[{index}]"
         required = [
             "id","name","canonical_url","jurisdictions","disciplines","domains",
-            "use_cases","source_type","access","languages","status","last_verified"
+            "use_cases","source_type","access","languages","status","last_verified",
+            "catalog_added"
         ]
         for key in required:
             if key not in r:
@@ -89,9 +98,31 @@ def main():
                 if unknown_inputs:
                     errors.append(f"{prefix}: unknown target_inputs: {sorted(unknown_inputs)}")
 
+        local_inputs = r.get("jurisdiction_inputs")
+        if local_inputs is not None:
+            if not isinstance(local_inputs, list) or not local_inputs or len(local_inputs) != len(set(local_inputs)):
+                errors.append(f"{prefix}: jurisdiction_inputs must be a non-empty unique list when present")
+            else:
+                unknown_local = set(local_inputs) - allowed_local_inputs
+                if unknown_local:
+                    errors.append(f"{prefix}: unknown jurisdiction_inputs: {sorted(unknown_local)}")
+
+        outputs = r.get("output_types")
+        if outputs is not None:
+            if not isinstance(outputs, list) or len(outputs) != len(set(outputs)):
+                errors.append(f"{prefix}: output_types must be a unique list")
+            else:
+                unknown_outputs = set(outputs) - allowed_outputs
+                if unknown_outputs:
+                    errors.append(f"{prefix}: unknown output_types: {sorted(unknown_outputs)}")
+
         impl = r.get("implementation_type")
         if impl is not None and impl not in allowed_impl:
             errors.append(f"{prefix}: unknown implementation_type {impl!r}")
+
+        authority = r.get("authority_scope")
+        if authority is not None and authority not in allowed_authority:
+            errors.append(f"{prefix}: unknown authority_scope {authority!r}")
 
         refs = r.get("upstream_refs")
         if refs is not None:
@@ -110,16 +141,19 @@ def main():
         verified = r.get("last_verified")
         if r.get("status") == "verified" and not verified:
             errors.append(f"{prefix}: verified resources require last_verified")
-        if verified is not None and not re.match(r"^\d{4}-\d{2}-\d{2}$", verified):
+        if verified is not None and not DATE_RE.match(verified):
             errors.append(f"{prefix}: last_verified must be YYYY-MM-DD or null")
+        if not DATE_RE.match(r.get("catalog_added", "")):
+            errors.append(f"{prefix}: catalog_added must be YYYY-MM-DD")
 
     if errors:
         fail(errors)
 
     with_inputs = sum(1 for r in resources if r.get("target_inputs"))
+    with_local = sum(1 for r in resources if r.get("jurisdiction_inputs"))
     print(
         f"OK: {len(resources)} resources validated; {with_inputs} have target-input metadata; "
-        "IDs/URLs unique; taxonomies canonical."
+        f"{with_local} use jurisdiction-specific identifiers; IDs/URLs unique."
     )
 
 if __name__ == "__main__":
