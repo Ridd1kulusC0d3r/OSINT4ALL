@@ -14,6 +14,9 @@ This folder contains thematic catalogs. AI-assisted imports default to **🟡 Ne
 | [Blockchain OSINT](BLOCKCHAIN-OSINT.md) | Public-ledger, scam/abuse and FININT research |
 | [Code Repository OSINT](CODE-REPOSITORY-OSINT.md) | Public source-code repository and identity research |
 | [Investigation Workbenches](INVESTIGATION-WORKBENCHES.md) | Cases, entities, evidence, timelines and hypotheses |
+| [Evidence Graph Model](../docs/EVIDENCE-GRAPH.md) | Statements, captures, provenance, typed relationships and human review |
+| [Source-Selection Playbooks](../docs/PLAYBOOKS.md) | Repeatable evidence-first plans without automatic target execution |
+| [AI Execution Contract](../docs/AI-EXECUTION-CONTRACT.md) | Read-only agent boundary and evidence requirements |
 | [Agentic OSINT](AGENTIC-OSINT.md) | Skills, MCP and agent-assisted investigation with provenance |
 | [Evidence Preservation](EVIDENCE-PRESERVATION.md) | Capture, archive, provenance and media preservation |
 | [AI-Assisted OSINT](AI-ASSISTED-OSINT.md) | Safe AI roles, provenance and validation guardrails |

@@ -21,7 +21,7 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [x] Transport / Maritime / Aviation catalog
 - [x] Academic / Media / Monitoring catalog
 - [x] Main README redesigned as project cockpit
-- [ ] Add evidence/provenance fields to the resource schema
+- [x] Add dedicated evidence/provenance bundle schema
 - [ ] Add intelligence-cycle tags to resource records
 - [ ] Add strategic/operational/tactical tags
 
@@ -41,6 +41,25 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [ ] Normalize/import OSINT Brazuca child sources as needs-review records
 - [ ] Per-source provenance URL and upstream record ID
 - [ ] Automated source-level diff against OSINT Brazuca structured dataset
+
+## v0.4.0 — OpenOSINT Architecture Adoption
+
+- [x] OpenOSINT repository + release review
+- [x] Read-only resource router
+- [x] Declarative source-selection playbooks
+- [x] Explicit playbook stop conditions
+- [x] Explicit step-state vocabulary
+- [x] Evidence bundle schema
+- [x] Statement-level provenance model
+- [x] Typed evidence relationships
+- [x] Human-reviewed entity-resolution invariant
+- [x] Separate confidence scales
+- [x] FollowTheMoney-compatible architecture guidance
+- [x] llms.txt and agent manifest
+- [x] Searchable client-only GitHub Pages UI
+- [ ] Persistent local case graph implementation
+- [ ] FtM export adapter
+- [ ] Review-queue UI for real case bundles
 
 ## v0.4 — Brazil Jurisdiction Atlas
 
@@ -68,45 +87,47 @@ The detailed analyst-centered roadmap lives in [docs/ANALYST-ROADMAP.md](docs/AN
 - [ ] Provenance URLs
 - [x] Emerging-project watchlist and generated view
 - [x] Upstream catalogue baseline + scheduled diff reporting
-- [ ] License field
+- [x] License field supported in resource schema
+- [ ] Backfill license metadata across catalog
 - [ ] API/authentication metadata
 
 ## v0.6 — Evidence-First Playbooks
 
 - [ ] People & identity
 - [x] Missing persons methodology
-- [ ] Corporate/ownership
-- [ ] GEOINT verification
-- [ ] Image/video verification
-- [ ] CTI enrichment
+- [x] Corporate/ownership source-selection playbook
+- [x] GEOINT verification source-selection playbook
+- [x] Image/geolocation verification source-selection playbook
+- [x] Defensive CTI enrichment source-selection playbook
 - [ ] Conflict verification
 - [ ] Environmental investigation
 - [ ] Transport/maritime/aviation
-- [ ] Web history
-- [ ] Evidence bundle template
-- [ ] Analytical confidence template
+- [x] Web history via domain source-selection playbook
+- [x] Evidence bundle schema + synthetic template
+- [x] Analytical confidence semantics
 
 ## v0.7 — Searchable GitHub Pages
 
-- [ ] Search
-- [ ] Filters
+- [x] Search
+- [x] Filters
 - [ ] Country pages
 - [ ] Discipline pages
 - [ ] Use-case pages
-- [ ] Resource permalinks
-- [ ] English / Portuguese
-- [ ] Mobile-first
-- [ ] Generated statistics
+- [x] Resource permalinks
+- [x] English / Portuguese
+- [x] Mobile-first
+- [x] Generated statistics
 
 ## v0.8 — Knowledge Graph
 
 - [ ] Resource graph
 - [ ] Jurisdiction graph
-- [ ] Entity/evidence model
+- [x] Entity/evidence model
 - [ ] Case graph
-- [ ] Typed relationships
-- [ ] Confidence per assertion
-- [ ] Export formats
+- [x] Typed relationships
+- [x] Confidence semantics per observation/assertion
+- [x] Portable JSON evidence-bundle foundation
+- [ ] FollowTheMoney export adapter
 
 ## v0.9 — Monitoring & Academy
 

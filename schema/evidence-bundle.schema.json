@@ -12,7 +12,8 @@
     "captures",
     "statements",
     "provenance",
-    "resolution_candidates"
+    "resolution_candidates",
+    "relationships"
   ],
   "properties": {
     "bundle_version": {
@@ -316,6 +317,53 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relationship_id",
+          "source_entity",
+          "target_entity",
+          "relationship_type",
+          "assertion_label",
+          "source_id",
+          "capture_id"
+        ],
+        "properties": {
+          "relationship_id": {
+            "type": "string"
+          },
+          "source_entity": {
+            "type": "string"
+          },
+          "target_entity": {
+            "type": "string"
+          },
+          "relationship_type": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "assertion_label": {
+            "type": "string",
+            "enum": [
+              "observed",
+              "claimed",
+              "corroborated",
+              "inferred",
+              "unresolved"
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "capture_id": {
+            "type": "string"
           }
         }
       }

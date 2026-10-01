@@ -118,5 +118,16 @@
         "shared reserved-domain context"
       ]
     }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel-001",
+      "source_entity": "org:example-research-cooperative:a",
+      "target_entity": "org:example-research-coop:b",
+      "relationship_type": "candidate-related-record",
+      "assertion_label": "unresolved",
+      "source_id": "source-002",
+      "capture_id": "capture-002"
+    }
   ]
 }

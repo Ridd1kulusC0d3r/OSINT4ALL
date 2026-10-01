@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="OSINT4ALL — jurisdiction-aware, evidence-first OSINT resource atlas">
+  <title>OSINT4ALL · Open Intelligence Atlas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="hero">
+  <nav>
+    <a class="brand" href="./">OSINT4ALL</a>
+    <div class="nav-actions">
+      <button id="langBtn" type="button" aria-label="Change language">PT</button>
+      <a href="https://github.com/Ridd1kulusC0d3r/OSINT4ALL">GitHub</a>
+    </div>
+  </nav>
+  <div class="hero-copy">
+    <p class="eyebrow" data-i18n="eyebrow">OPEN INTELLIGENCE ATLAS</p>
+    <h1 data-i18n="title">Find the right source for the evidence you actually have.</h1>
+    <p data-i18n="subtitle">Search by jurisdiction, discipline, input, validation state and execution model. The page reads the same canonical catalogue used by CI.</p>
+  </div>
+</header>
+
+<main>
+  <section class="stats" aria-label="Catalogue statistics">
+    <article><strong id="statTotal">0</strong><span data-i18n="resources">resources</span></article>
+    <article><strong id="statVerified">0</strong><span data-i18n="verified">verified</span></article>
+    <article><strong id="statJurisdictions">0</strong><span data-i18n="jurisdictions">jurisdictions</span></article>
+    <article><strong id="statInputs">0</strong><span data-i18n="inputs">input classes</span></article>
+  </section>
+
+  <section class="controls">
+    <label class="search-wrap">
+      <span class="sr-only" data-i18n="search">Search</span>
+      <input id="q" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Search name, domain, use case, discipline...">
+    </label>
+    <div class="filters">
+      <select id="jurisdiction" aria-label="Jurisdiction"><option value="" data-i18n="allJurisdictions">All jurisdictions</option></select>
+      <select id="discipline" aria-label="Discipline"><option value="" data-i18n="allDisciplines">All disciplines</option></select>
+      <select id="input" aria-label="Input"><option value="" data-i18n="allInputs">All inputs</option></select>
+      <select id="status" aria-label="Status"><option value="" data-i18n="allStatuses">All statuses</option></select>
+      <select id="execution" aria-label="Execution class"><option value="" data-i18n="allExecution">All execution classes</option></select>
+    </div>
+    <div class="result-line">
+      <span id="resultCount">0</span>
+      <button id="clearBtn" type="button" data-i18n="clear">Clear filters</button>
+    </div>
+  </section>
+
+  <section id="results" class="grid" aria-live="polite"></section>
+
+  <section class="method">
+    <h2 data-i18n="evidenceFirst">Evidence first, automation second.</h2>
+    <p data-i18n="methodText">A catalogue hit is a lead. AI output is not evidence. Entity similarity never auto-merges identities. Preserve source, capture time and provenance before drawing conclusions.</p>
+    <div class="method-links">
+      <a href="https://github.com/Ridd1kulusC0d3r/OSINT4ALL/blob/main/docs/EVIDENCE-GRAPH.md">Evidence Graph</a>
+      <a href="https://github.com/Ridd1kulusC0d3r/OSINT4ALL/blob/main/docs/PLAYBOOKS.md">Playbooks</a>
+      <a href="https://github.com/Ridd1kulusC0d3r/OSINT4ALL/blob/main/docs/AI-EXECUTION-CONTRACT.md">AI Contract</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>OSINT4ALL · v0.4.0</span>
+  <span data-i18n="footer">AI-assisted curation · human validation · lawful use</span>
+</footer>
+<script src="./app.js" defer></script>
+</body>
+</html>

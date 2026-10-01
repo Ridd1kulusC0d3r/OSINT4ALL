@@ -6,7 +6,12 @@ on:
       - "data/**"
       - "schema/**"
       - "scripts/**"
+      - "playbooks/**"
+      - "examples/**"
+      - "agent/**"
+      - "docs/data/**"
       - "catalog/INDEX.generated.md"
+      - "catalog/INPUTS.generated.md"
       - ".github/workflows/catalog-ci.yml"
   push:
     branches: [main]
@@ -14,7 +19,12 @@ on:
       - "data/**"
       - "schema/**"
       - "scripts/**"
+      - "playbooks/**"
+      - "examples/**"
+      - "agent/**"
+      - "docs/data/**"
       - "catalog/INDEX.generated.md"
+      - "catalog/INPUTS.generated.md"
 
 permissions:
   contents: read
@@ -29,7 +39,17 @@ jobs:
           python-version: "3.12"
       - name: Validate resource catalog
         run: python scripts/validate_catalog.py
+      - name: Validate source-selection playbooks
+        run: python scripts/validate_playbooks.py
+      - name: Validate evidence graph example
+        run: python scripts/validate_evidence_bundle.py
+      - name: Smoke-test read-only resource router
+        run: |
+          python scripts/osint4all_router.py --input domain --status verified --format json > /tmp/router.json
+          python scripts/osint4all_router.py --playbook domain > /tmp/playbook.json
       - name: Check generated index
         run: python scripts/generate_catalog.py --check
       - name: Check generated target-input index
         run: python scripts/generate_inputs.py --check
+      - name: Check GitHub Pages data mirror
+        run: python scripts/sync_pages_data.py --check

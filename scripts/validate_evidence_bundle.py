@@ -20,6 +20,12 @@ for s in statements.values():
     elif captures[s["capture_id"]]["source_id"] != s["source_id"]:
         errors.append(f"{s['statement_id']}: capture/source mismatch")
 
+for rel in p.get("relationships",[]):
+    if rel["source_entity"] not in entities or rel["target_entity"] not in entities:
+        errors.append(f"{rel['relationship_id']}: unknown entity")
+    if rel["source_id"] not in sources: errors.append(f"{rel['relationship_id']}: unknown source")
+    if rel["capture_id"] not in captures: errors.append(f"{rel['relationship_id']}: unknown capture")
+
 for pr in p.get("provenance",[]):
     if pr["statement_id"] not in statements: errors.append(f"provenance: unknown statement {pr['statement_id']}")
     if pr["observation_confidence"] not in {"low","medium","high"}: errors.append("invalid observation confidence")
@@ -34,4 +40,4 @@ for r in p.get("resolution_candidates",[]):
 if errors:
     print("\n".join("ERROR: "+e for e in errors),file=sys.stderr)
     raise SystemExit(1)
-print("OK: synthetic evidence bundle references and human-review invariants validated.")
+print("OK: synthetic evidence bundle references, typed relationships and human-review invariants validated.")

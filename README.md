@@ -4,8 +4,8 @@
 > Jurisdiction-aware · evidence-first · machine-readable · bilingual · AI-assisted with human validation
 
 [![Language](https://img.shields.io/badge/language-English%20%7C%20Portugu%C3%AAs-0A66C2)](#languages)
-[![Catalog](https://img.shields.io/badge/catalog-v0.3.3-blue)](data/resources.json)
-[![Resources](https://img.shields.io/badge/resources-89-informational)](catalog/INDEX.generated.md)
+[![Catalog](https://img.shields.io/badge/catalog-v0.4.0-blue)](data/resources.json)
+[![Resources](https://img.shields.io/badge/resources-90-informational)](catalog/INDEX.generated.md)
 [![Ethics](https://img.shields.io/badge/use-ethical%20%26%20lawful-success)](ETHICS.md)
 [![AI Assisted](https://img.shields.io/badge/curation-AI--assisted-orange)](#ai-assisted-curation)
 
@@ -27,6 +27,7 @@ The canonical data source is [data/resources.json](data/resources.json). Markdow
 
 | Need / Necessidade | Go to / Vá para |
 |---|---|
+| Browse the searchable web atlas | [GitHub Pages UI](docs/index.html) |
 | Find any structured resource | [Generated Resource Index](catalog/INDEX.generated.md) |
 | Understand intelligence disciplines | [Intelligence Disciplines](docs/INTELLIGENCE-DISCIPLINES.md) |
 | Search techniques and discovery | [Search & Discovery](catalog/SEARCH-DISCOVERY.md) |
@@ -39,6 +40,10 @@ The canonical data source is [data/resources.json](data/resources.json). Markdow
 | GitHub / public code repositories | [Code Repository OSINT](catalog/CODE-REPOSITORY-OSINT.md) |
 | Organize cases, evidence and hypotheses | [Investigation Workbenches](catalog/INVESTIGATION-WORKBENCHES.md) |
 | Agent/MCP-assisted workflows | [Agentic OSINT](catalog/AGENTIC-OSINT.md) |
+| Read-only AI/resource router | [AI Execution Contract](docs/AI-EXECUTION-CONTRACT.md) |
+| Evidence graph / provenance model | [Evidence Graph](docs/EVIDENCE-GRAPH.md) |
+| Repeatable source-selection plans | [Playbooks](docs/PLAYBOOKS.md) |
+| Confidence semantics | [Confidence Scales](docs/CONFIDENCE-SCALES.md) |
 | Preserve web/media evidence | [Evidence Capture & Preservation](catalog/EVIDENCE-PRESERVATION.md) |
 | People / usernames / email / phone | [People OSINT](catalog/PEOPLE-OSINT.md) |
 | Missing-person methodology | [Missing Persons OSINT](catalog/MISSING-PERSONS-OSINT.md) |
@@ -147,6 +152,7 @@ OSINT4ALL uses major lists as **upstream discovery ecosystems**, not as content 
 | [OSINT Framework](https://osintframework.com/) | Discovery-tree approach |
 | [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) | Brazilian structured-source ecosystem, local identifiers, output taxonomy and research/tooling |
 | [K2SOsint](https://github.com/K2SOsint) | Thematic curation including blockchain, railways, reporting, OSINT-for-good and browser utilities |
+| [OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | CLI/REPL/Web/MCP architecture, bounded playbooks, statement provenance, FollowTheMoney graph and human-reviewed entity resolution |
 
 Detailed provenance and import policy: [docs/UPSTREAM-SOURCES.md](docs/UPSTREAM-SOURCES.md).
 
@@ -237,6 +243,43 @@ Selection policy: [docs/TOOL-SELECTION-POLICY.md](docs/TOOL-SELECTION-POLICY.md)
 
 ---
 
+## OpenOSINT-inspired execution boundary
+
+OSINT4ALL now borrows the strongest architecture ideas from OpenOSINT **without becoming an automatic target-collection agent**.
+
+```text
+target-input class
+      ↓
+read-only resource router
+      ↓
+declarative playbook
+      ↓
+analyst-controlled collection
+      ↓
+statement + source + capture + provenance
+      ↓
+entity / typed relationship
+      ↓
+similarity candidate = unsure
+      ↓
+human resolution
+      ↓
+assessment
+```
+
+Key files:
+
+- `scripts/osint4all_router.py` — catalogue-only routing, zero network access;
+- `playbooks/*.json` — repeatable source-selection plans with stop conditions;
+- `schema/evidence-bundle.schema.json` — portable evidence/entity/relationship model;
+- `examples/evidence-bundle.synthetic.json` — safe synthetic example;
+- `agent/catalog-manifest.json` and `llms.txt` — machine-facing project contract;
+- [OpenOSINT adoption review](docs/OPENOSINT-ADOPTION.md).
+
+**Four scales remain separate:** resource validation, observation confidence, resolution similarity and analytical confidence. Do not average them. Decimals have suffered enough.
+
+---
+
 ## Machine-readable architecture
 
 ```text
@@ -244,6 +287,10 @@ data/upstreams.json  → upstream provenance + curation decisions
         │
 data/resources.json
         │
+        ├── read-only router → scripts/osint4all_router.py
+        ├── playbooks → playbooks/*.json
+        ├── evidence schema → schema/evidence-bundle.schema.json
+        ├── GitHub Pages mirror → docs/data/resources.json
         ├── validated by scripts/validate_catalog.py
         │
         ├── taxonomy → data/taxonomies.json
@@ -269,14 +316,14 @@ The CI rejects malformed IDs, duplicate canonical URLs, invalid disciplines and 
 | Schema + taxonomy + CI | ✅ |
 | Link health | ✅ |
 | Trace Labs methodology integration | ✅ |
-| jivoi + Astrosp + OSINT Shifu + K2SOsint + OSINT Brazuca upstream mapping | ✅ |
+| jivoi + Astrosp + OSINT Shifu + K2SOsint + OSINT Brazuca + OpenOSINT upstream mapping | ✅ |
 | Evidence preservation layer | ✅ |
 | Thematic catalogs | ✅ growing |
 | Brazil country seed | ✅ |
 | Brazil federal + 27 UFs | 🚧 |
-| Evidence-first playbooks | 🚧 |
-| GitHub Pages searchable UI | planned |
-| Knowledge graph / case graph | planned |
+| Evidence-first source-selection playbooks | ✅ initial 6 |
+| GitHub Pages searchable UI | ✅ client-only atlas |
+| Evidence graph schema + review model | ✅ foundation |
 | Change intelligence / monitoring | ✅ upstream baseline + 🚧 deeper automation |
 | Emerging-project watchlist | ✅ |
 | Catalogue timeline | ✅ |
