@@ -1,0 +1,47 @@
+{
+  "history_version": "0.1.0",
+  "events": [
+    {
+      "date": "2026-09-30",
+      "version": "0.1",
+      "event": "Repository foundation",
+      "detail": "Bilingual ethical OSINT atlas, validation model, INT taxonomy and country-first structure."
+    },
+    {
+      "date": "2026-09-30",
+      "version": "0.2",
+      "event": "Machine-readable catalogue",
+      "detail": "Canonical JSON resources, schema, taxonomy, validation CI and link-health automation."
+    },
+    {
+      "date": "2026-09-30",
+      "version": "0.2.1",
+      "event": "Trace Labs integration",
+      "detail": "Missing-person methodology, tooling policy and selected Trace Labs resources."
+    },
+    {
+      "date": "2026-09-30",
+      "version": "0.3.0",
+      "event": "Analyst-centered atlas",
+      "detail": "Evidence preservation, search, AI, corporate/financial, transport and monitoring layers."
+    },
+    {
+      "date": "2026-09-30",
+      "version": "0.3.1",
+      "event": "Upstream provenance",
+      "detail": "Machine-readable upstream curation decisions and historical classifications."
+    },
+    {
+      "date": "2026-09-30",
+      "version": "0.3.2",
+      "event": "Input-oriented discovery",
+      "detail": "Target-input taxonomy, agentic OSINT, code-repository intelligence and workbenches."
+    },
+    {
+      "date": "2026-09-30",
+      "version": "0.3.3",
+      "event": "Lifecycle and ecosystem intelligence",
+      "detail": "Emerging watchlist, upstream baselines, Brazil local identifiers, and profile-level ecosystem review."
+    }
+  ]
+}

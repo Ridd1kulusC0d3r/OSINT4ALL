@@ -1,5 +1,5 @@
 {
-  "upstream_registry_version": "0.1.0",
+  "upstream_registry_version": "0.2.0",
   "last_reviewed": "2026-09-30",
   "policy": "Upstreams are discovery/provenance sources. Inclusion does not imply wholesale copying or automatic verification of child resources.",
   "sources": [
@@ -165,6 +165,206 @@
           "repo": "tracelabs/B-Sides-Bloomington",
           "decision": "not-cataloged",
           "reason": "event-specific material rather than a reusable OSINT resource"
+        }
+      ]
+    },
+    {
+      "id": "osintshifu-profile",
+      "url": "https://github.com/osintshifu?tab=repositories",
+      "status": "profile-reviewed",
+      "role": "tooling-data-model-agentic-document-intelligence",
+      "reviewed_on": "2026-09-30",
+      "repositories": [
+        {
+          "repo": "osintshifu/awesome-osint-repos",
+          "decision": "incorporated",
+          "reason": "structured catalogue, input taxonomy, emerging and agentic views"
+        },
+        {
+          "repo": "osintshifu/querytool",
+          "decision": "incorporated",
+          "reason": "query builder and structured source catalogue"
+        },
+        {
+          "repo": "osintshifu/filegrail",
+          "decision": "incorporated",
+          "reason": "file provenance and evidence model"
+        },
+        {
+          "repo": "osintshifu/unmasker",
+          "decision": "incorporated",
+          "reason": "document hidden-content verification"
+        },
+        {
+          "repo": "osintshifu/cyber-intelligence-toolkit",
+          "decision": "incorporated",
+          "reason": "methodology and OPSEC documentation"
+        },
+        {
+          "repo": "osintshifu/Cyber-Intelligence-GPT",
+          "decision": "reviewed-not-primary",
+          "reason": "workflow concepts useful; model output is not evidence"
+        },
+        {
+          "repo": "osintshifu/awesome-osint",
+          "decision": "reviewed-duplicate",
+          "reason": "overlaps existing awesome-list upstreams"
+        }
+      ]
+    },
+    {
+      "id": "k2sosint-profile",
+      "url": "https://github.com/K2SOsint?tab=repositories",
+      "status": "profile-reviewed",
+      "role": "thematic-curation-browser-tools-blockchain",
+      "reviewed_on": "2026-09-30",
+      "repositories": [
+        {
+          "repo": "K2SOsint/Legendary_OSINT",
+          "decision": "incorporated",
+          "reason": "broad taxonomy with useful long-tail categories"
+        },
+        {
+          "repo": "K2SOsint/Legendary_Crypto",
+          "decision": "incorporated",
+          "reason": "blockchain/AML/scam-reference coverage"
+        },
+        {
+          "repo": "K2SOsint/Bookmarklets",
+          "decision": "incorporated",
+          "reason": "browser analyst utilities"
+        },
+        {
+          "repo": "K2SOsint/deepdarkCTI",
+          "decision": "canonicalized",
+          "reason": "OSINT4ALL points to fastfire/deepdarkCTI"
+        },
+        {
+          "repo": "K2SOsint/WhatsMyName",
+          "decision": "reviewed-duplicate",
+          "reason": "canonical WebBreacher/WhatsMyName already tracked"
+        },
+        {
+          "repo": "K2SOsint/DocuFinderJS",
+          "decision": "reviewed-not-primary",
+          "reason": "EASM overlap and potential active follow-up"
+        },
+        {
+          "repo": "K2SOsint/OSINT_CSI",
+          "decision": "emerging-not-promoted",
+          "reason": "small experimental project"
+        },
+        {
+          "repo": "K2SOsint/Basic-Chromium-Extensionv3",
+          "decision": "not-cataloged",
+          "reason": "generic extension scaffold"
+        }
+      ]
+    },
+    {
+      "id": "osintbrazuca-profile",
+      "url": "https://github.com/osintbrazuca?tab=repositories",
+      "status": "profile-reviewed",
+      "role": "brazil-jurisdiction-dataset-tools-research",
+      "reviewed_on": "2026-09-30",
+      "structured_dataset": {
+        "repository": "osintbrazuca/osint-brazuca",
+        "sources_observed": 510,
+        "flattened_links_observed": 1258,
+        "input_types_observed": 31,
+        "output_types_observed": 41,
+        "source_types_observed": 14,
+        "canonical_files": [
+          "data/sources.json",
+          "data/index.json",
+          "data/taxonomy.json",
+          "data/overrides.json"
+        ]
+      },
+      "repositories": [
+        {
+          "repo": "osintbrazuca/osint-brazuca",
+          "decision": "incorporated",
+          "reason": "Brazilian source catalogue with machine-readable data model"
+        },
+        {
+          "repo": "osintbrazuca/osint-brazuca-regex",
+          "decision": "incorporated",
+          "reason": "Brazil-specific identifier/pattern taxonomy"
+        },
+        {
+          "repo": "osintbrazuca/osint-papers",
+          "decision": "incorporated",
+          "reason": "Brazilian OSINT research/event/government material"
+        },
+        {
+          "repo": "osintbrazuca/SimpleReconURL",
+          "decision": "incorporated",
+          "reason": "URL and public-archive discovery"
+        },
+        {
+          "repo": "osintbrazuca/SimpleReconDorking",
+          "decision": "incorporated",
+          "reason": "multi-engine public search automation"
+        },
+        {
+          "repo": "osintbrazuca/SimpleReconDomain",
+          "decision": "reviewed-not-primary",
+          "reason": "mixes passive OSINT with active DNS/recon techniques"
+        },
+        {
+          "repo": "osintbrazuca/osint-brazuca-nuclei-templates",
+          "decision": "reviewed-not-primary",
+          "reason": "scanner-oriented workflows beyond evidence-first OSINT core"
+        }
+      ]
+    },
+    {
+      "id": "jivoi-profile",
+      "url": "https://github.com/jivoi?tab=repositories",
+      "status": "profile-reviewed",
+      "role": "classical-osint-and-adjacent-security-research",
+      "reviewed_on": "2026-09-30",
+      "repositories": [
+        {
+          "repo": "jivoi/awesome-osint",
+          "decision": "incorporated",
+          "reason": "classical OSINT taxonomy"
+        },
+        {
+          "repo": "jivoi/awesome-ml-for-cybersecurity",
+          "decision": "incorporated",
+          "reason": "adjacent ML/security research"
+        },
+        {
+          "repo": "jivoi/awesome-infosec",
+          "decision": "reviewed-not-primary",
+          "reason": "general infosec rather than OSINT-specific"
+        },
+        {
+          "repo": "jivoi/ids_and_siem",
+          "decision": "reviewed-not-primary",
+          "reason": "detection/SIEM focus"
+        },
+        {
+          "repo": "jivoi/pentest",
+          "decision": "not-cataloged",
+          "reason": "offensive security, not OSINT atlas"
+        },
+        {
+          "repo": "jivoi/exploits_dev",
+          "decision": "not-cataloged",
+          "reason": "exploit-development focus"
+        },
+        {
+          "repo": "jivoi/openssh-backdoor-kit",
+          "decision": "not-cataloged",
+          "reason": "outside public-source investigation scope"
+        },
+        {
+          "repo": "jivoi/Concept-Rootkit",
+          "decision": "not-cataloged",
+          "reason": "rootkit research rather than OSINT"
         }
       ]
     }

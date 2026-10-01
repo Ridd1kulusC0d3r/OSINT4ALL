@@ -1,0 +1,124 @@
+{
+  "watchlist_version": "0.1.0",
+  "reviewed_on": "2026-09-30",
+  "policy": "Emerging means worth monitoring, not recommended or verified. Promotion requires direct repository review plus OSINT4ALL validation.",
+  "candidates": [
+    {
+      "id": "world-monitor",
+      "name": "World Monitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "high",
+      "reason": "situational-awareness aggregation; validate provenance and source transparency"
+    },
+    {
+      "id": "gods-eye-view",
+      "name": "God's Eye View",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "medium",
+      "reason": "new geospatial/satellite visualization approach"
+    },
+    {
+      "id": "openjarvis",
+      "name": "OpenJarvis",
+      "url": "https://github.com/open-jarvis/OpenJarvis",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "medium",
+      "reason": "local-first research, citations and monitoring"
+    },
+    {
+      "id": "osiris",
+      "name": "osiris",
+      "url": "https://github.com/simplifaisoul/osiris",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "high",
+      "reason": "multi-domain public situational-awareness dashboard"
+    },
+    {
+      "id": "openosint",
+      "name": "OpenOSINT",
+      "url": "https://github.com/OpenOSINT/OpenOSINT",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "high",
+      "reason": "agent, CLI and MCP architecture"
+    },
+    {
+      "id": "ghost-osint-crm",
+      "name": "GHOST OSINT CRM",
+      "url": "https://github.com/elm1nst3r/GHOST-osint-crm",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "high",
+      "reason": "local relationship/evidence case-management model"
+    },
+    {
+      "id": "huntkit",
+      "name": "Huntkit",
+      "url": "https://github.com/assafkip/huntkit",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "high",
+      "reason": "cases, findings, timelines, evidence hashes and chain-of-custody concepts"
+    },
+    {
+      "id": "intellyweave",
+      "name": "IntellyWeave",
+      "url": "https://github.com/vericle/intellyweave",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "medium",
+      "reason": "archive discovery, entity extraction, maps, graphs and document analysis"
+    },
+    {
+      "id": "dark-light-viewer",
+      "name": "Dark Light Viewer",
+      "url": "https://github.com/bendobrown/Dark-Light-Viewer",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "medium",
+      "reason": "temporal nighttime-light GEOINT/change analysis"
+    },
+    {
+      "id": "bellingcat-councilsearcher",
+      "name": "Bellingcat CouncilSearcher",
+      "url": "https://github.com/bellingcat/CouncilSearcher",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "medium",
+      "reason": "local-government record search model"
+    },
+    {
+      "id": "vidit",
+      "name": "Vidit",
+      "url": "https://github.com/vidithq/vidit",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "high",
+      "reason": "source-preserving geolocated event review and verification model"
+    },
+    {
+      "id": "wayback-diff",
+      "name": "Wayback Diff",
+      "url": "https://github.com/GeiserX/Wayback-Diff",
+      "source": "osintshifu-awesome-osint-repos",
+      "status": "watch",
+      "priority": "medium",
+      "reason": "current-versus-archived content and visual diffing"
+    },
+    {
+      "id": "k2-osint-csi",
+      "name": "K2SOsint OSINT_CSI",
+      "url": "https://github.com/K2SOsint/OSINT_CSI",
+      "source": "k2sosint-profile",
+      "status": "watch",
+      "priority": "low",
+      "reason": "small experimental malicious-site analysis project; monitor maturity"
+    }
+  ]
+}

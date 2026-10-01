@@ -1,0 +1,49 @@
+{
+  "snapshot_version": "0.1.0",
+  "captured_on": "2026-09-30",
+  "policy": "Stored heads are baselines for change detection, not trust assertions.",
+  "repositories": [
+    {
+      "repo": "jivoi/awesome-osint",
+      "branch": "master",
+      "head_sha": "3ab9cde5d0f638de91bc86147db6996472d927c6",
+      "archived": false
+    },
+    {
+      "repo": "osintshifu/awesome-osint-repos",
+      "branch": "main",
+      "head_sha": "fff26433655a89ee7d44e127fd6f97199b92c4b9",
+      "archived": false
+    },
+    {
+      "repo": "osintbrazuca/osint-brazuca",
+      "branch": "main",
+      "head_sha": "579b770072c1e59e445195f935477d5418c18852",
+      "archived": false
+    },
+    {
+      "repo": "K2SOsint/Legendary_OSINT",
+      "branch": "main",
+      "head_sha": "d6566a1d79030c482939f648fbd68cb70b98f15c",
+      "archived": false
+    },
+    {
+      "repo": "K2SOsint/Legendary_Crypto",
+      "branch": "main",
+      "head_sha": "65f66eca1bff0600722f76ac4428b2c246d9a5cf",
+      "archived": false
+    },
+    {
+      "repo": "tracelabs/tlosint-vm",
+      "branch": "main",
+      "head_sha": "85945efd5329bec1ef21e12b001683287aff802a",
+      "archived": false
+    },
+    {
+      "repo": "Astrosp/Awesome-OSINT-List",
+      "branch": "main",
+      "head_sha": "b583fc595842a4e109d7987b60c0ada7aa4440bb",
+      "archived": false
+    }
+  ]
+}

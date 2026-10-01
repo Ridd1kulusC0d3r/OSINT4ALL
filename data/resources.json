@@ -1,5 +1,5 @@
 {
-  "catalog_version": "0.3.2",
+  "catalog_version": "0.3.3",
   "generated_policy": "AI-assisted entries default to needs-review until a human validates the canonical URL and core capability.",
   "resources": [
     {
@@ -26,7 +26,8 @@
         "pt-BR"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "br-osintbrazuca",
@@ -50,8 +51,239 @@
       "languages": [
         "pt-BR"
       ],
-      "status": "needs-review",
-      "last_verified": null
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "catalog_added": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "osintbrazuca-profile"
+      ],
+      "jurisdiction_inputs": [
+        "BR:cpf",
+        "BR:cnpj",
+        "BR:name",
+        "BR:company-name",
+        "BR:voter-registration",
+        "BR:case-number",
+        "BR:oab",
+        "BR:professional-registration",
+        "BR:vehicle-plate",
+        "BR:chassis",
+        "BR:renavam",
+        "BR:imei",
+        "BR:phone",
+        "BR:email",
+        "BR:domain",
+        "BR:ip-address",
+        "BR:asn",
+        "BR:cep",
+        "BR:address",
+        "BR:municipality",
+        "BR:uf",
+        "BR:property-registration",
+        "BR:rural-environmental-registry",
+        "BR:state-registration",
+        "BR:aircraft-registration",
+        "BR:vessel-registration",
+        "BR:cnes",
+        "BR:ibge-code",
+        "BR:cns"
+      ],
+      "notes": "Verified from the repository README. At review time OSINT Brazuca documented 510 sources, 1,258 flattened links, 31 input types, 41 output types and 14 source-nature classes. Child sources still require independent validation before OSINT4ALL promotion."
+    },
+    {
+      "id": "br-osintbrazuca-papers",
+      "name": "OSINT Brazuca Papers",
+      "canonical_url": "https://github.com/osintbrazuca/osint-papers",
+      "jurisdictions": [
+        "BR"
+      ],
+      "disciplines": [
+        "OSINT"
+      ],
+      "domains": [
+        "academic-research",
+        "osint-training",
+        "brazil-osint"
+      ],
+      "use_cases": [
+        "research-discovery",
+        "conference-material",
+        "government-publication-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "pt-BR"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "osintbrazuca-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a pt-BR collection of Brazilian academic, event and government OSINT material."
+    },
+    {
+      "id": "br-osintbrazuca-regex",
+      "name": "OSINT Brazuca Regex",
+      "canonical_url": "https://github.com/osintbrazuca/osint-brazuca-regex",
+      "jurisdictions": [
+        "BR"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "data-processing",
+        "document-analysis",
+        "brazil-osint"
+      ],
+      "use_cases": [
+        "pattern-detection",
+        "bulk-text-triage",
+        "identifier-extraction"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "pt-BR"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "file",
+        "document",
+        "text",
+        "dataset"
+      ],
+      "implementation_type": "dataset-tool",
+      "jurisdiction_inputs": [
+        "BR:cpf",
+        "BR:cnpj",
+        "BR:name",
+        "BR:company-name",
+        "BR:voter-registration",
+        "BR:case-number",
+        "BR:oab",
+        "BR:professional-registration",
+        "BR:vehicle-plate",
+        "BR:chassis",
+        "BR:renavam",
+        "BR:imei",
+        "BR:phone",
+        "BR:email",
+        "BR:domain",
+        "BR:ip-address",
+        "BR:asn",
+        "BR:cep",
+        "BR:address",
+        "BR:municipality",
+        "BR:uf",
+        "BR:property-registration",
+        "BR:rural-environmental-registry",
+        "BR:state-registration",
+        "BR:aircraft-registration",
+        "BR:vessel-registration",
+        "BR:cnes",
+        "BR:ibge-code",
+        "BR:cns"
+      ],
+      "upstream_refs": [
+        "osintbrazuca-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README. Format matches do not prove identifier validity; use data minimization and LGPD-aware handling."
+    },
+    {
+      "id": "br-osintbrazuca-simplerecondorking",
+      "name": "Simple Recon Dorking",
+      "canonical_url": "https://github.com/osintbrazuca/SimpleReconDorking",
+      "jurisdictions": [
+        "GLOBAL",
+        "BR"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "search-discovery",
+        "web-research"
+      ],
+      "use_cases": [
+        "multi-engine-search",
+        "query-automation",
+        "url-discovery"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "pt-BR"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "keyword",
+        "url"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintbrazuca-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a multi-engine search collector. Cataloged for lawful public-source discovery and authorized exposure auditing, not exploitation."
+    },
+    {
+      "id": "br-osintbrazuca-simplereconurl",
+      "name": "Simple Recon URL",
+      "canonical_url": "https://github.com/osintbrazuca/SimpleReconURL",
+      "jurisdictions": [
+        "GLOBAL",
+        "BR"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT",
+        "CTI"
+      ],
+      "domains": [
+        "web-research",
+        "change-intelligence"
+      ],
+      "use_cases": [
+        "url-discovery",
+        "archive-discovery",
+        "public-source-enrichment",
+        "link-mapping",
+        "website-monitoring"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "pt-BR",
+        "en",
+        "es"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "url"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintbrazuca-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README. Public archives and search/intelligence sources are central; optional crawling/browser functions mean scope and authorization still matter."
     },
     {
       "id": "br-terrabrasilis",
@@ -77,7 +309,8 @@
         "pt-BR"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-archivebox",
@@ -108,7 +341,8 @@
       "target_inputs": [
         "url"
       ],
-      "implementation_type": "platform"
+      "implementation_type": "platform",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-astrosp-awesome-osint-list",
@@ -140,7 +374,8 @@
       ],
       "status": "verified",
       "last_verified": "2026-09-30",
-      "notes": "Broad, actively maintained OSINT meta-index covering search, identity, social platforms, media verification, metadata, transport, finance, blockchain, public records, training and AI-related resources."
+      "notes": "Broad, actively maintained OSINT meta-index covering search, identity, social platforms, media verification, metadata, transport, finance, blockchain, public records, training and AI-related resources.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-bellingcat-auto-archiver",
@@ -171,7 +406,8 @@
       "target_inputs": [
         "url"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-bellingcat-octosuite",
@@ -207,7 +443,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Verified from upstream README as a terminal-based toolkit for GitHub user, repository, organization and search analysis."
+      "notes": "Verified from upstream README as a terminal-based toolkit for GitHub user, repository, organization and search analysis.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-bellingcat-toolkit",
@@ -236,7 +473,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-carbon14",
@@ -263,7 +501,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-censys-search",
@@ -294,7 +533,8 @@
         "ip-address",
         "domain"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-changedetection-io",
@@ -330,7 +570,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Verified from project README as a web-page change-monitoring platform with diffing and alert integrations. AI summaries remain secondary to the underlying captured diff."
+      "notes": "Verified from project README as a web-page change-monitoring platform with diffing and alert integrations. AI summaries remain secondary to the underlying captured diff.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-copernicus-browser",
@@ -357,7 +598,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-dangerzone",
@@ -388,7 +630,8 @@
         "document",
         "file"
       ],
-      "implementation_type": "desktop"
+      "implementation_type": "desktop",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-exiftool",
@@ -419,7 +662,44 @@
         "image",
         "video"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
+    },
+    {
+      "id": "global-fastfire-deepdarkcti",
+      "name": "deepdarkCTI",
+      "canonical_url": "https://github.com/fastfire/deepdarkCTI",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "CTI",
+        "OSINT"
+      ],
+      "domains": [
+        "threat-intelligence",
+        "underground-intelligence"
+      ],
+      "use_cases": [
+        "source-discovery",
+        "threat-monitoring-reference"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "needs-review",
+      "last_verified": null,
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "k2sosint-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Canonical upstream discovered while reviewing the K2SOsint fork. Defensive CTI source-discovery reference only; OSINT4ALL does not provide guidance for acquiring illicit material or engaging with criminal services."
     },
     {
       "id": "global-ffmpeg",
@@ -453,7 +733,8 @@
         "video",
         "file"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-flowsint",
@@ -488,7 +769,8 @@
       "implementation_type": "web-app",
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
-      ]
+      ],
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-followthemoney",
@@ -528,7 +810,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Verified from project README as a pragmatic data model for people, companies, assets, payments, court cases and related investigative entities."
+      "notes": "Verified from project README as a pragmatic data model for people, companies, assets, payments, court cases and related investigative entities.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-gallery-dl",
@@ -554,7 +837,8 @@
       ],
       "status": "needs-review",
       "last_verified": null,
-      "notes": "Use only where lawful and consistent with platform terms and evidence-handling requirements."
+      "notes": "Use only where lawful and consistent with platform terms and evidence-handling requirements.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-ghunt",
@@ -584,7 +868,8 @@
       "target_inputs": [
         "name"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-gitfive",
@@ -618,7 +903,8 @@
       "implementation_type": "cli",
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
-      ]
+      ],
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-global-fishing-watch",
@@ -647,9 +933,11 @@
       "status": "needs-review",
       "last_verified": null,
       "target_inputs": [
+        "vessel-id",
         "location"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-global-forest-watch",
@@ -676,7 +964,8 @@
         "pt-BR"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-gowitness",
@@ -707,7 +996,8 @@
       "target_inputs": [
         "url"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-haveibeenpwned",
@@ -734,7 +1024,8 @@
       ],
       "status": "needs-review",
       "last_verified": null,
-      "notes": "Defensive exposure-checking reference; OSINT4ALL does not promote access to stolen credentials or illicit datasets."
+      "notes": "Defensive exposure-checking reference; OSINT4ALL does not promote access to stolen credentials or illicit datasets.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-holehe",
@@ -766,7 +1057,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Candidate identity-discovery tool. Registration/account hits are leads, not identity proof."
+      "notes": "Candidate identity-discovery tool. Registration/account hits are leads, not identity proof.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-httrack",
@@ -793,7 +1085,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-icij-datashare",
@@ -832,7 +1125,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Verified from ICIJ README as a self-hosted document search and analysis platform with OCR, metadata and named-entity extraction."
+      "notes": "Verified from ICIJ README as a self-hosted document search and analysis platform with OCR, metadata and named-entity extraction.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-instaloader",
@@ -865,7 +1159,8 @@
         "username",
         "image"
       ],
-      "implementation_type": "library"
+      "implementation_type": "library",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-intelowl",
@@ -897,7 +1192,8 @@
         "file-hash",
         "url"
       ],
-      "implementation_type": "platform"
+      "implementation_type": "platform",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-internetarchive-cli",
@@ -924,7 +1220,47 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
+    },
+    {
+      "id": "global-jivoi-awesome-ml-cybersecurity",
+      "name": "Awesome Machine Learning for Cyber Security",
+      "canonical_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "CYBINT",
+        "CTI",
+        "OSINT"
+      ],
+      "domains": [
+        "machine-learning-security",
+        "academic-research",
+        "ai-assisted-analysis"
+      ],
+      "use_cases": [
+        "dataset-discovery",
+        "paper-discovery",
+        "training-resource-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "jivoi-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a curated machine-learning-for-cybersecurity collection of datasets, papers, books, talks, tutorials and courses."
     },
     {
       "id": "global-jivoi-awesome-osint",
@@ -949,7 +1285,129 @@
       ],
       "status": "verified",
       "last_verified": "2026-09-30",
-      "notes": "Large, actively maintained OSINT reference covering search, SOCMINT, people, domains, web history, imagery, academic research, geospatial analysis, monitoring, CTI and related resources."
+      "notes": "Large, actively maintained OSINT reference covering search, SOCMINT, people, domains, web history, imagery, academic research, geospatial analysis, monitoring, CTI and related resources.",
+      "catalog_added": "2026-09-30"
+    },
+    {
+      "id": "global-k2-bookmarklets",
+      "name": "K2SOsint Bookmarklets",
+      "canonical_url": "https://github.com/K2SOsint/Bookmarklets",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CTI",
+        "WEBINT"
+      ],
+      "domains": [
+        "browser-tools",
+        "search-discovery"
+      ],
+      "use_cases": [
+        "browser-assisted-research",
+        "cti-pivoting",
+        "page-analysis"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "url",
+        "domain",
+        "email",
+        "username"
+      ],
+      "implementation_type": "bookmarklet",
+      "upstream_refs": [
+        "k2sosint-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a browser-bookmarklet collection for OSINT/CTI pivots and page analysis. Use proportionately and within platform terms."
+    },
+    {
+      "id": "global-k2-legendary-crypto",
+      "name": "Legendary Crypto",
+      "canonical_url": "https://github.com/K2SOsint/Legendary_Crypto",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "FININT",
+        "CTI"
+      ],
+      "domains": [
+        "blockchain-intelligence",
+        "financial-intelligence",
+        "fraud-intelligence"
+      ],
+      "use_cases": [
+        "blockchain-resource-discovery",
+        "public-ledger-research",
+        "aml-reference",
+        "scam-research"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "crypto-address"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "k2sosint-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a curated blockchain-investigation reference covering public explorers, visualization, abuse/scam databases, APIs, AML/compliance and learning material."
+    },
+    {
+      "id": "global-k2-legendary-osint",
+      "name": "Legendary OSINT",
+      "canonical_url": "https://github.com/K2SOsint/Legendary_OSINT",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "SOCMINT",
+        "GEOINT",
+        "IMINT",
+        "CTI",
+        "FININT",
+        "SIGINT"
+      ],
+      "domains": [
+        "meta-index"
+      ],
+      "use_cases": [
+        "resource-discovery",
+        "taxonomy-discovery"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "meta-index",
+      "upstream_refs": [
+        "k2sosint-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README. Broad thematic OSINT reference including academic research, AI, aviation, business, communications, legal records, intelligence feeds, CTI, media monitoring, railways, reporting, maritime and archiving."
     },
     {
       "id": "global-maigret",
@@ -978,7 +1436,8 @@
       "target_inputs": [
         "username"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-maltego",
@@ -1006,7 +1465,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-mapillary",
@@ -1040,7 +1500,8 @@
         "coordinates",
         "image"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-mat2",
@@ -1067,7 +1528,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-misp",
@@ -1099,7 +1561,8 @@
         "ip-address",
         "file-hash"
       ],
-      "implementation_type": "platform"
+      "implementation_type": "platform",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-monolith",
@@ -1124,7 +1587,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-n2yo",
@@ -1150,7 +1614,12 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30",
+      "target_inputs": [
+        "satellite-id"
+      ],
+      "implementation_type": "service"
     },
     {
       "id": "global-nasa-worldview",
@@ -1177,7 +1646,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-opencorporates",
@@ -1203,7 +1673,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-opencti",
@@ -1235,7 +1706,8 @@
         "ip-address",
         "file-hash"
       ],
-      "implementation_type": "platform"
+      "implementation_type": "platform",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-openrefine",
@@ -1270,7 +1742,8 @@
       "implementation_type": "desktop",
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
-      ]
+      ],
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-opensky",
@@ -1301,7 +1774,8 @@
         "aircraft-id",
         "location"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-opentrace",
@@ -1342,7 +1816,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Verified from project README as an offline, privacy-oriented investigation workspace with relationships, hypotheses, sources, SHA-256 integrity data and portable exports."
+      "notes": "Verified from project README as an offline, privacy-oriented investigation workspace with relationships, hypotheses, sources, SHA-256 integrity data and portable exports.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-osint-framework",
@@ -1366,7 +1841,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-osintshifu-awesome-osint-repos",
@@ -1408,7 +1884,170 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Repository-first OSINT catalogue with category, target-input, emerging-project, agentic/MCP and timeline views. Useful as a structured upstream rather than a list to mirror wholesale."
+      "notes": "Repository-first OSINT catalogue with category, target-input, emerging-project, agentic/MCP and timeline views. Useful as a structured upstream rather than a list to mirror wholesale.",
+      "catalog_added": "2026-09-30"
+    },
+    {
+      "id": "global-osintshifu-cyber-intelligence-toolkit",
+      "name": "Cyber Intelligence Toolkit",
+      "canonical_url": "https://github.com/osintshifu/cyber-intelligence-toolkit",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "CTI",
+        "CYBINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "investigation-methodology",
+        "media-verification",
+        "analyst-safety",
+        "ai-assisted-analysis"
+      ],
+      "use_cases": [
+        "playbooks",
+        "checklists",
+        "verification",
+        "opsec-guidance"
+      ],
+      "source_type": "community",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "documentation",
+      "upstream_refs": [
+        "osintshifu-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a documentation toolkit covering OSINT, digital forensics, synthetic-media detection, investigator OPSEC and reproducible investigation frameworks."
+    },
+    {
+      "id": "global-osintshifu-filegrail",
+      "name": "FileGrail",
+      "canonical_url": "https://github.com/osintshifu/filegrail",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX",
+        "IMINT"
+      ],
+      "domains": [
+        "file-intelligence",
+        "evidence-preservation",
+        "document-analysis"
+      ],
+      "use_cases": [
+        "file-provenance",
+        "metadata-analysis",
+        "timeline-analysis",
+        "investigative-pivots",
+        "evidence-graph"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "file",
+        "document",
+        "image",
+        "video"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintshifu-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a local, read-only file-intelligence tool that preserves source, match basis, location and time context; also exposes an MCP interface."
+    },
+    {
+      "id": "global-osintshifu-querytool",
+      "name": "QueryTool",
+      "canonical_url": "https://github.com/osintshifu/querytool",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "WEBINT"
+      ],
+      "domains": [
+        "search-discovery",
+        "analyst-workbench"
+      ],
+      "use_cases": [
+        "query-building",
+        "source-filtering",
+        "session-export"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "no-fixed-input"
+      ],
+      "implementation_type": "web-app",
+      "upstream_refs": [
+        "osintshifu-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a dependency-free standalone HTML query builder with an embedded curated source catalogue and JSON browser-session import/export."
+    },
+    {
+      "id": "global-osintshifu-unmasker",
+      "name": "unmasker",
+      "canonical_url": "https://github.com/osintshifu/unmasker",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "disciplines": [
+        "OSINT",
+        "DOMEX"
+      ],
+      "domains": [
+        "document-analysis",
+        "file-intelligence",
+        "evidence-verification"
+      ],
+      "use_cases": [
+        "failed-redaction-detection",
+        "hidden-content-detection",
+        "document-verification"
+      ],
+      "source_type": "open-source",
+      "access": "free",
+      "languages": [
+        "en"
+      ],
+      "status": "verified",
+      "last_verified": "2026-09-30",
+      "target_inputs": [
+        "document",
+        "file"
+      ],
+      "implementation_type": "cli",
+      "upstream_refs": [
+        "osintshifu-profile"
+      ],
+      "catalog_added": "2026-09-30",
+      "notes": "Verified from README as a local, read-only detector for hidden, residual and failed-redaction content. Findings are indicators to validate, not automatic conclusions."
     },
     {
       "id": "global-phoneinfoga",
@@ -1436,7 +2075,8 @@
       "target_inputs": [
         "phone-number"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-qgis",
@@ -1469,7 +2109,8 @@
         "coordinates",
         "location"
       ],
-      "implementation_type": "desktop"
+      "implementation_type": "desktop",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-rawfilejson-awesome-osint-arsenal",
@@ -1493,7 +2134,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-recon-ng",
@@ -1525,7 +2167,8 @@
         "name",
         "organization-name"
       ],
-      "implementation_type": "framework"
+      "implementation_type": "framework",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-safecast",
@@ -1556,7 +2199,8 @@
         "location",
         "coordinates"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-searxng",
@@ -1582,7 +2226,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-sherlock",
@@ -1611,7 +2256,8 @@
       "target_inputs": [
         "username"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-shodan",
@@ -1641,7 +2287,8 @@
         "ip-address",
         "domain"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-singlefile",
@@ -1674,7 +2321,8 @@
       "implementation_type": "browser-extension",
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
-      ]
+      ],
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-sn0int",
@@ -1701,7 +2349,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-social-analyzer",
@@ -1735,7 +2384,8 @@
       "implementation_type": "platform",
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
-      ]
+      ],
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-space-track",
@@ -1763,9 +2413,10 @@
       "status": "needs-review",
       "last_verified": null,
       "target_inputs": [
-        "aircraft-id"
+        "satellite-id"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-spiderfoot",
@@ -1798,7 +2449,8 @@
         "username",
         "email"
       ],
-      "implementation_type": "platform"
+      "implementation_type": "platform",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tesseract-ocr",
@@ -1831,7 +2483,8 @@
         "image",
         "document"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-theharvester",
@@ -1862,7 +2515,8 @@
       "target_inputs": [
         "domain"
       ],
-      "implementation_type": "cli"
+      "implementation_type": "cli",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-timesketch",
@@ -1896,7 +2550,8 @@
       "implementation_type": "platform",
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
-      ]
+      ],
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-awesome-osint",
@@ -1927,7 +2582,8 @@
       ],
       "status": "verified",
       "last_verified": "2026-09-30",
-      "notes": "Trace Labs-endorsed curated list specifically scoped to missing-person searches and freely accessible resources."
+      "notes": "Trace Labs-endorsed curated list specifically scoped to missing-person searches and freely accessible resources.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-gumshoe",
@@ -1954,7 +2610,8 @@
       ],
       "status": "historical",
       "last_verified": "2026-09-30",
-      "notes": "Historical proof-of-concept for recursively expanding OSINT findings into a directed investigation graph. Useful as an architectural antecedent, not a current primary tool."
+      "notes": "Historical proof-of-concept for recursively expanding OSINT findings into a directed investigation graph. Useful as an architectural antecedent, not a current primary tool.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-searchparty-writeups",
@@ -1985,7 +2642,8 @@
       ],
       "status": "historical",
       "last_verified": "2026-09-30",
-      "notes": "Archived Trace Labs Search Party CTF writeup repository. Retained as a historical learning reference rather than a current operational source."
+      "notes": "Archived Trace Labs Search Party CTF writeup repository. Retained as a historical learning reference rather than a current operational source.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-tlosint-live",
@@ -2011,7 +2669,8 @@
       ],
       "status": "historical",
       "last_verified": "2026-09-30",
-      "notes": "Legacy Trace Labs Kali live-build project. Retained for historical/build-reference value; current OSINT VM work is centered on tracelabs/tlosint-vm."
+      "notes": "Legacy Trace Labs Kali live-build project. Retained for historical/build-reference value; current OSINT VM work is centered on tracelabs/tlosint-vm.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-tlosint-vm",
@@ -2040,7 +2699,8 @@
       ],
       "status": "verified",
       "last_verified": "2026-09-30",
-      "notes": "Actively maintained Trace Labs Kali/Debian-based OSINT VM recipe and tool installer. Current repository also documents capture, archiving, SOCMINT and OPSEC tooling."
+      "notes": "Actively maintained Trace Labs Kali/Debian-based OSINT VM recipe and tool installer. Current repository also documents capture, archiving, SOCMINT and OPSEC tooling.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-tofm",
@@ -2072,7 +2732,8 @@
       ],
       "status": "verified",
       "last_verified": "2026-09-30",
-      "notes": "People-centric OSINT field manual covering ethics, safety, passive reconnaissance, planning, threat modeling, enumeration, pivoting and geolocation."
+      "notes": "People-centric OSINT field manual covering ethics, safety, passive reconnaissance, planning, threat modeling, enumeration, pivoting and geolocation.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-tracelabs-weekly-challenges",
@@ -2102,7 +2763,8 @@
       ],
       "status": "verified",
       "last_verified": "2026-09-30",
-      "notes": "Educational repository with sanitized OSINT challenges, methodologies, verification steps and redacted answers."
+      "notes": "Educational repository with sanitized OSINT challenges, methodologies, verification steps and redacted answers.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-useosint-skills",
@@ -2140,7 +2802,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Verified from README as an agent skill pack emphasizing source-backed reports and confidence. OSINT4ALL treats agent output as analysis assistance, never as a source."
+      "notes": "Verified from README as an agent skill pack emphasizing source-backed reports and confidence. OSINT4ALL treats agent output as analysis assistance, never as a source.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-usgs-earthexplorer",
@@ -2166,7 +2829,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-wayback-machine",
@@ -2197,7 +2861,8 @@
       "target_inputs": [
         "url"
       ],
-      "implementation_type": "service"
+      "implementation_type": "service",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-whatsmyname",
@@ -2226,7 +2891,8 @@
       "target_inputs": [
         "username"
       ],
-      "implementation_type": "framework"
+      "implementation_type": "framework",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-wigle",
@@ -2252,7 +2918,8 @@
         "en"
       ],
       "status": "needs-review",
-      "last_verified": null
+      "last_verified": null,
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-world-intel-mcp",
@@ -2291,7 +2958,8 @@
       "upstream_refs": [
         "osintshifu-awesome-osint-repos"
       ],
-      "notes": "Candidate agentic integration. Any generated brief must retain underlying source provenance."
+      "notes": "Candidate agentic integration. Any generated brief must retain underlying source provenance.",
+      "catalog_added": "2026-09-30"
     },
     {
       "id": "global-yt-dlp",
@@ -2317,7 +2985,8 @@
       ],
       "status": "needs-review",
       "last_verified": null,
-      "notes": "Use only where lawful and consistent with platform terms and evidence-handling requirements."
+      "notes": "Use only where lawful and consistent with platform terms and evidence-handling requirements.",
+      "catalog_added": "2026-09-30"
     }
   ]
 }
